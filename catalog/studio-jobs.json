@@ -1,0 +1,802 @@
+[
+  {
+    "id": "sailor-bear-knit-ivory",
+    "number": 1,
+    "source": "2f3f530e-7771-40a5-8b9d-735f74e57a3f.JPG",
+    "localSource": "dist/assets/catalog/source/source-01.jpg",
+    "name": "Sailor Bear Knit",
+    "color": "Ivory",
+    "target": "the single ivory crewneck sweater on the hanger, with the sailor bear graphic; remove the hanger but preserve the complete knit and graphic",
+    "family": "Knitwear",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "preppy-bear-knit-navy",
+    "number": 2,
+    "source": "69edfd03-546c-44fd-ba77-74fe5c3b6be1.JPG",
+    "localSource": "dist/assets/catalog/source/source-02.jpg",
+    "name": "Preppy Bear Knit",
+    "color": "Navy",
+    "target": "only the navy crewneck sweater worn by the man, with the dressed bear in yellow trousers; remove the man, shirt collar, and trousers without inventing a new sweater design",
+    "family": "Knitwear",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "rider-pullover-grey",
+    "number": 3,
+    "source": "484a0d97-0c7d-4a50-a54a-b0a88c2484d6.JPEG",
+    "localSource": "dist/assets/catalog/source/source-03.jpeg",
+    "name": "Essential Rider Zip",
+    "color": "Grey",
+    "target": "only the grey zip-up hoodie at the foreground left, with its small rider chest embroidery; omit all other garments",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "rider-pullover-pink",
+    "number": 3,
+    "source": "484a0d97-0c7d-4a50-a54a-b0a88c2484d6.JPEG",
+    "localSource": "dist/assets/catalog/source/source-03.jpeg",
+    "name": "Essential Rider Zip",
+    "color": "Pink",
+    "target": "only the pink zip-up hoodie at the upper left, with its small rider chest embroidery; omit all other garments",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "rider-pullover-navy",
+    "number": 3,
+    "source": "484a0d97-0c7d-4a50-a54a-b0a88c2484d6.JPEG",
+    "localSource": "dist/assets/catalog/source/source-03.jpeg",
+    "name": "Essential Rider Zip",
+    "color": "Navy",
+    "target": "only the navy zip-up hoodie at the upper center, with its small rider chest embroidery; omit all other garments",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "rider-pullover-red",
+    "number": 3,
+    "source": "484a0d97-0c7d-4a50-a54a-b0a88c2484d6.JPEG",
+    "localSource": "dist/assets/catalog/source/source-03.jpeg",
+    "name": "Essential Rider Zip",
+    "color": "Red",
+    "target": "only the red zip-up hoodie at the upper right, with its small rider chest embroidery; omit all other garments",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "rider-pullover-yellow",
+    "number": 3,
+    "source": "484a0d97-0c7d-4a50-a54a-b0a88c2484d6.JPEG",
+    "localSource": "dist/assets/catalog/source/source-03.jpeg",
+    "name": "Essential Rider Zip",
+    "color": "Yellow",
+    "target": "only the yellow zip-up hoodie at the foreground center, with its small rider chest embroidery; omit all other garments",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "rider-pullover-blue",
+    "number": 3,
+    "source": "484a0d97-0c7d-4a50-a54a-b0a88c2484d6.JPEG",
+    "localSource": "dist/assets/catalog/source/source-03.jpeg",
+    "name": "Essential Rider Zip",
+    "color": "Blue",
+    "target": "only the blue zip-up hoodie at the foreground right, with its small rider chest embroidery; omit all other garments",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "rl-block-hoodie-grey",
+    "number": 4,
+    "source": "511e87ba-97b1-47bb-b712-25bb6e93a5fa.JPEG",
+    "localSource": "dist/assets/catalog/source/source-04.jpeg",
+    "name": "RL Block Hoodie",
+    "color": "Grey",
+    "target": "only the grey RL block-letter pullover hoodie at the upper left; preserve the RL letter shapes, drawstrings, hood, pocket and small lower emblem",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "rl-block-hoodie-black",
+    "number": 4,
+    "source": "511e87ba-97b1-47bb-b712-25bb6e93a5fa.JPEG",
+    "localSource": "dist/assets/catalog/source/source-04.jpeg",
+    "name": "RL Block Hoodie",
+    "color": "Black",
+    "target": "only the black RL block-letter pullover hoodie at the upper right; preserve the RL letter shapes, drawstrings, hood, pocket and small lower emblem",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "rl-block-hoodie-navy",
+    "number": 4,
+    "source": "511e87ba-97b1-47bb-b712-25bb6e93a5fa.JPEG",
+    "localSource": "dist/assets/catalog/source/source-04.jpeg",
+    "name": "RL Block Hoodie",
+    "color": "Navy",
+    "target": "only the navy RL block-letter pullover hoodie at the lower left; preserve the RL letter shapes, drawstrings, hood, pocket and small lower emblem",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "rl-block-hoodie-ivory",
+    "number": 4,
+    "source": "511e87ba-97b1-47bb-b712-25bb6e93a5fa.JPEG",
+    "localSource": "dist/assets/catalog/source/source-04.jpeg",
+    "name": "RL Block Hoodie",
+    "color": "Ivory",
+    "target": "only the ivory RL block-letter pullover hoodie at the lower right; preserve the RL letter shapes, drawstrings, hood, pocket and small lower emblem",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "rider-zip-grey",
+    "number": 5,
+    "source": "744bd845-568d-46e6-bba0-1775c3d32fb1.JPEG",
+    "localSource": "dist/assets/catalog/source/source-05.jpeg",
+    "name": "Rider Zip Hoodie",
+    "color": "Grey",
+    "target": "only the grey zip-up hoodie at the upper left, with the rider chest logo and number 3 on the upper sleeve; keep its zipper and panels",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "rider-zip-black",
+    "number": 5,
+    "source": "744bd845-568d-46e6-bba0-1775c3d32fb1.JPEG",
+    "localSource": "dist/assets/catalog/source/source-05.jpeg",
+    "name": "Rider Zip Hoodie",
+    "color": "Black",
+    "target": "only the black zip-up hoodie at the upper right, with the rider chest logo and number 3 on the upper sleeve; keep its zipper and panels",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "rider-zip-navy",
+    "number": 5,
+    "source": "744bd845-568d-46e6-bba0-1775c3d32fb1.JPEG",
+    "localSource": "dist/assets/catalog/source/source-05.jpeg",
+    "name": "Rider Zip Hoodie",
+    "color": "Navy",
+    "target": "only the navy zip-up hoodie at the lower left, with the rider chest logo and number 3 on the upper sleeve; keep its zipper and panels",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "rider-zip-white",
+    "number": 5,
+    "source": "744bd845-568d-46e6-bba0-1775c3d32fb1.JPEG",
+    "localSource": "dist/assets/catalog/source/source-05.jpeg",
+    "name": "Rider Zip Hoodie",
+    "color": "White",
+    "target": "only the white zip-up hoodie at the lower right, with the rider chest logo and number 3 on the upper sleeve; keep its zipper and panels",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "bear-hooded-knit-grey",
+    "number": 6,
+    "source": "966caf5e-2b55-464f-9c53-3a9ceca5b17b.JPG",
+    "localSource": "dist/assets/catalog/source/source-06.jpg",
+    "name": "Bear Hooded Knit",
+    "color": "Grey",
+    "target": "only the grey knitted hooded sweater worn by the woman, with the central bear graphic; remove the woman and all other clothing, preserve the knit pattern, bear artwork, long silhouette and hood",
+    "family": "Knitwear",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "college-bear-knit-navy",
+    "number": 7,
+    "source": "977ed8d0-36f2-491e-8b26-c2e1390f8591.JPG",
+    "localSource": "dist/assets/catalog/source/source-07.jpg",
+    "name": "College Bear Knit",
+    "color": "Navy",
+    "target": "only the navy crewneck sweater hanging at the left, with the bear in a letter R varsity jacket; preserve exact bear design",
+    "family": "Knitwear",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "college-bear-knit-green",
+    "number": 7,
+    "source": "977ed8d0-36f2-491e-8b26-c2e1390f8591.JPG",
+    "localSource": "dist/assets/catalog/source/source-07.jpg",
+    "name": "College Bear Knit",
+    "color": "Green",
+    "target": "only the green crewneck sweater hanging at the right, with the bear in a letter R varsity jacket; preserve exact bear design",
+    "family": "Knitwear",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "crest-zip-navy",
+    "number": 8,
+    "source": "b1784026-e44c-486e-be51-308d207240a3.JPEG",
+    "localSource": "dist/assets/catalog/source/source-08.jpeg",
+    "name": "Crest Collared Sweatshirt",
+    "color": "Navy",
+    "target": "only the navy collared sweatshirt on the left; preserve both chest motifs, crest, rider emblem, and number 3 sleeve marking",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "crest-zip-ivory",
+    "number": 8,
+    "source": "b1784026-e44c-486e-be51-308d207240a3.JPEG",
+    "localSource": "dist/assets/catalog/source/source-08.jpeg",
+    "name": "Crest Collared Sweatshirt",
+    "color": "Ivory",
+    "target": "only the ivory collared sweatshirt on the right; preserve both chest motifs, crest, rider emblem, and number 3 sleeve marking",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "outdoor-bear-knit-olive",
+    "number": 9,
+    "source": "c6c3e6c0-db50-4659-971d-dfb16dbe9407.JPEG",
+    "localSource": "dist/assets/catalog/source/source-09.jpeg",
+    "name": "Outdoor Bear Knit",
+    "color": "Olive",
+    "target": "only the larger olive-green bear crewneck knit on the right; omit the smaller duplicate garment and preserve the original bear graphic and knit",
+    "family": "Knitwear",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "baseball-bear-knit-ivory",
+    "number": 42,
+    "source": "IMG_4286.PNG",
+    "localSource": "dist/assets/catalog/source/source-42.png",
+    "name": "Baseball Bear Knit",
+    "color": "Ivory",
+    "target": "only the ivory crewneck sweater with baseball bear and sleeve NY motif shown in the product photograph; remove all phone and website interface, preserve original artwork and garment proportions",
+    "family": "Knitwear",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "s-beanie-navy",
+    "number": 17,
+    "source": "IMG_2416.PNG",
+    "localSource": "dist/assets/catalog/source/source-17.png",
+    "name": "S Ribbed Beanie",
+    "color": "Navy",
+    "target": "the single navy ribbed beanie with embroidered white S and side flag logo. Preserve the actual S embroidery shape and all knit rib details; remove phone UI, marble platform and reflection",
+    "family": "Headwear",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "s-beanie-grey",
+    "number": 18,
+    "source": "IMG_2417.PNG",
+    "localSource": "dist/assets/catalog/source/source-18.png",
+    "name": "S Ribbed Beanie",
+    "color": "Grey",
+    "target": "the single grey ribbed beanie with embroidered white S and side flag logo. Preserve the actual S embroidery shape and all knit rib details; remove phone UI, marble platform and reflection",
+    "family": "Headwear",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "s-beanie-red",
+    "number": 19,
+    "source": "IMG_2418.PNG",
+    "localSource": "dist/assets/catalog/source/source-19.png",
+    "name": "S Ribbed Beanie",
+    "color": "Red",
+    "target": "the single red ribbed beanie with embroidered white S and side flag logo. Preserve the actual S embroidery shape and all knit rib details; remove phone UI, marble platform and reflection",
+    "family": "Headwear",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "s-beanie-pink",
+    "number": 20,
+    "source": "IMG_2419.PNG",
+    "localSource": "dist/assets/catalog/source/source-20.png",
+    "name": "S Ribbed Beanie",
+    "color": "Pink",
+    "target": "the single pink ribbed beanie with embroidered white S and side flag logo. Preserve the actual S embroidery shape and all knit rib details; remove phone UI, marble platform and reflection",
+    "family": "Headwear",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "s-beanie-purple",
+    "number": 21,
+    "source": "IMG_2420.PNG",
+    "localSource": "dist/assets/catalog/source/source-21.png",
+    "name": "S Ribbed Beanie",
+    "color": "Purple",
+    "target": "the single purple ribbed beanie with embroidered white S and side flag logo. Preserve the actual S embroidery shape and all knit rib details; remove phone UI, marble platform and reflection",
+    "family": "Headwear",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "s-beanie-black",
+    "number": 22,
+    "source": "IMG_2421.PNG",
+    "localSource": "dist/assets/catalog/source/source-22.png",
+    "name": "S Ribbed Beanie",
+    "color": "Black",
+    "target": "the single black ribbed beanie with embroidered white S and side flag logo. Preserve the actual S embroidery shape and all knit rib details; remove phone UI, marble platform and reflection",
+    "family": "Headwear",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "horned-s-beanie-grey",
+    "number": 24,
+    "source": "IMG_2425.PNG",
+    "localSource": "dist/assets/catalog/source/source-24.png",
+    "name": "Horned S Beanie",
+    "color": "Grey",
+    "target": "the single grey ribbed beanie with horned S embroidery and side flag. Preserve the horn details and embroidery colors exactly; remove phone UI, marble platform and reflection",
+    "family": "Headwear",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "horned-s-beanie-orange",
+    "number": 25,
+    "source": "IMG_2426.PNG",
+    "localSource": "dist/assets/catalog/source/source-25.png",
+    "name": "Horned S Beanie",
+    "color": "Orange",
+    "target": "the single orange ribbed beanie with horned S embroidery and side flag. Preserve the horn details and embroidery colors exactly; remove phone UI, marble platform and reflection",
+    "family": "Headwear",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "horned-s-beanie-purple",
+    "number": 26,
+    "source": "IMG_2427.PNG",
+    "localSource": "dist/assets/catalog/source/source-26.png",
+    "name": "Horned S Beanie",
+    "color": "Purple",
+    "target": "the single purple ribbed beanie with horned S embroidery and side flag. Preserve the horn details and embroidery colors exactly; remove phone UI, marble platform and reflection",
+    "family": "Headwear",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "horned-s-beanie-blue",
+    "number": 27,
+    "source": "IMG_2428.PNG",
+    "localSource": "dist/assets/catalog/source/source-27.png",
+    "name": "Horned S Beanie",
+    "color": "Blue",
+    "target": "the single blue ribbed beanie with horned S embroidery and side flag. Preserve the horn details and embroidery colors exactly; remove phone UI, marble platform and reflection",
+    "family": "Headwear",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "horned-s-beanie-black",
+    "number": 28,
+    "source": "IMG_2429.PNG",
+    "localSource": "dist/assets/catalog/source/source-28.png",
+    "name": "Horned S Beanie",
+    "color": "Black",
+    "target": "the single black ribbed beanie with horned S embroidery and side flag. Preserve the horn details and embroidery colors exactly; remove phone UI, marble platform and reflection",
+    "family": "Headwear",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "box-beanie-30",
+    "number": 30,
+    "source": "IMG_2431.PNG",
+    "localSource": "dist/assets/catalog/source/source-30.png",
+    "name": "Box Logo Beanie",
+    "color": "Black",
+    "target": "the single beanie with red rectangular box logo. Preserve the visible Supreme wordmark lettering and actual patch proportions, fabric and side logo; remove phone UI and reflections",
+    "family": "Headwear",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "box-beanie-31",
+    "number": 31,
+    "source": "IMG_2432.PNG",
+    "localSource": "dist/assets/catalog/source/source-31.png",
+    "name": "Box Logo Beanie",
+    "color": "Ivory",
+    "target": "the single beanie with red rectangular box logo. Preserve the visible Supreme wordmark lettering and actual patch proportions, fabric and side logo; remove phone UI and reflections",
+    "family": "Headwear",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "box-beanie-32",
+    "number": 32,
+    "source": "IMG_2433.PNG",
+    "localSource": "dist/assets/catalog/source/source-32.png",
+    "name": "Box Logo Beanie",
+    "color": "Ivory Tonal",
+    "target": "the single beanie with tonal white rectangular box logo. Preserve the visible Supreme wordmark lettering and actual patch proportions, fabric and side logo; remove phone UI and reflections",
+    "family": "Headwear",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "box-beanie-33",
+    "number": 33,
+    "source": "IMG_2434.PNG",
+    "localSource": "dist/assets/catalog/source/source-33.png",
+    "name": "Box Logo Beanie",
+    "color": "Red",
+    "target": "the single beanie with red rectangular box logo. Preserve the visible Supreme wordmark lettering and actual patch proportions, fabric and side logo; remove phone UI and reflections",
+    "family": "Headwear",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "box-beanie-34",
+    "number": 34,
+    "source": "IMG_2435.PNG",
+    "localSource": "dist/assets/catalog/source/source-34.png",
+    "name": "Box Logo Beanie",
+    "color": "Black Pattern",
+    "target": "the single beanie with black patterned rectangular box logo. Preserve the visible Supreme wordmark lettering and actual patch proportions, fabric and side logo; remove phone UI and reflections",
+    "family": "Headwear",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "crew-socks-black",
+    "number": 35,
+    "source": "IMG_2436.PNG",
+    "localSource": "dist/assets/catalog/source/source-35.png",
+    "name": "Logo Crew Socks",
+    "color": "Black",
+    "target": "only the loose pair of black crew socks on the left with small white cuff lettering; remove the retail packet and all phone UI. Keep the two socks together as a sellable pair",
+    "family": "Socks",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "crew-socks-white",
+    "number": 39,
+    "source": "IMG_2441.PNG",
+    "localSource": "dist/assets/catalog/source/source-39.png",
+    "name": "Logo Crew Socks",
+    "color": "White",
+    "target": "only the loose pair of white crew socks on the left with small red cuff lettering; remove the retail packet and all phone UI. Keep the two socks together as a sellable pair",
+    "family": "Socks",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "panel-jacket-black",
+    "number": 50,
+    "source": "IMG_5137.PNG",
+    "localSource": "dist/assets/catalog/source/source-50.png",
+    "name": "Panel Track Jacket",
+    "color": "Black",
+    "target": "only the black zip track jacket on the LEFT; remove the matching trousers, hanger, phone UI and bed. Preserve white curved contrast panels, front wordmark and chest crest",
+    "family": "Jackets",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "panel-trousers-black",
+    "number": 50,
+    "source": "IMG_5137.PNG",
+    "localSource": "dist/assets/catalog/source/source-50.png",
+    "name": "Panel Track Trousers",
+    "color": "Black",
+    "target": "only the black track trousers on the RIGHT; remove the jacket, phone UI and bed. Preserve curved white panels, front crest and lower leg lettering",
+    "family": "Trousers",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "panel-jacket-silver",
+    "number": 51,
+    "source": "IMG_5138.PNG",
+    "localSource": "dist/assets/catalog/source/source-51.png",
+    "name": "Panel Track Jacket",
+    "color": "Silver",
+    "target": "only the silver zip track jacket on the LEFT; remove the matching trousers, hanger, phone UI and bed. Preserve white curved contrast panels, front wordmark and chest crest",
+    "family": "Jackets",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "panel-trousers-silver",
+    "number": 51,
+    "source": "IMG_5138.PNG",
+    "localSource": "dist/assets/catalog/source/source-51.png",
+    "name": "Panel Track Trousers",
+    "color": "Silver",
+    "target": "only the silver track trousers on the RIGHT; remove the jacket, phone UI and bed. Preserve curved white panels, front crest and lower leg lettering",
+    "family": "Trousers",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "panel-jacket-navy",
+    "number": 52,
+    "source": "IMG_5139.PNG",
+    "localSource": "dist/assets/catalog/source/source-52.png",
+    "name": "Panel Track Jacket",
+    "color": "Navy",
+    "target": "only the navy zip track jacket on the LEFT; remove the matching trousers, hanger, phone UI and bed. Preserve white curved contrast panels, front wordmark and chest crest",
+    "family": "Jackets",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "panel-trousers-navy",
+    "number": 52,
+    "source": "IMG_5139.PNG",
+    "localSource": "dist/assets/catalog/source/source-52.png",
+    "name": "Panel Track Trousers",
+    "color": "Navy",
+    "target": "only the navy track trousers on the RIGHT; remove the jacket, phone UI and bed. Preserve curved white panels, front crest and lower leg lettering",
+    "family": "Trousers",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "wg-signature-hoodie",
+    "number": 46,
+    "source": "IMG_4580.PNG",
+    "localSource": "dist/assets/catalog/source/source-46.png",
+    "name": "Wholesale Gods Signature Hoodie",
+    "color": "Black / Gold",
+    "target": "only the front view of the black-and-gold WHOLESALE GODS hoodie at upper left. Preserve gold embroidery, crown WG chest design, hood lettering and sleeve words exactly. Omit all back views and detail tiles",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Design reference",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "vertical-logo-hoodie-black",
+    "number": 48,
+    "source": "IMG_4691.PNG",
+    "localSource": "dist/assets/catalog/source/source-48.png",
+    "name": "Vertical Logo Hoodie",
+    "color": "Black",
+    "target": "the single black hoodie shown from the BACK with vertical white Supreme print down the hood and back; keep this back view, do not invent an unseen front",
+    "family": "Hoodies",
+    "pose": "back",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "vertical-logo-trousers-black",
+    "number": 49,
+    "source": "IMG_4692.PNG",
+    "localSource": "dist/assets/catalog/source/source-49.png",
+    "name": "Vertical Logo Joggers",
+    "color": "Black",
+    "target": "the single black drawstring joggers with large vertical white Supreme lettering on the leg; remove all phone interface and other photos",
+    "family": "Trousers",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  }
+]

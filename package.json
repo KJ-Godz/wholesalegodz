@@ -1,0 +1,18 @@
+{
+  "name": "wholesale-gods-showroom",
+  "private": true,
+  "version": "0.5.0",
+  "scripts": {
+    "start": "python3 scripts/serve.py",
+    "test": "node scripts/check_showroom.cjs",
+    "build:catalog": "python3 scripts/build_catalog.py",
+    "test:legacy-render": "node scripts/render_legacy.cjs"
+  },
+  "devDependencies": {
+    "@napi-rs/canvas": "1.1.0",
+    "jsdom": "29.1.1"
+  },
+  "dependencies": {
+    "gsap": "3.15.0"
+  }
+}

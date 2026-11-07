@@ -1,0 +1,81 @@
+/* DOM and animation-controller regression checks. This is not browser visual QA. */
+const {JSDOM}=require('jsdom');
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.resolve(__dirname,'..');
+const html=fs.readFileSync(path.join(root,'dist/index.html'),'utf8');
+const renderer=fs.readFileSync(path.join(root,'dist/motion-preferences.js'),'utf8');
+const app=fs.readFileSync(path.join(root,'dist/app.js'),'utf8');
+function setup({mode='campaign',reduced=false,floor='',source='',brokenAssets=false,storage}={}){
+  const dom=new JSDOM(html,{url:'http://localhost:4173/?view='+mode+'&floor='+floor+'&source='+source,runScripts:'outside-only',pretendToBeVisual:true});
+  const w=dom.window,q=s=>w.document.querySelector(s);let timers=[],raf=new Map(),rafId=0,download,virtualNow=100000;w.Date.now=()=>virtualNow;
+  w.matchMedia=()=>({matches:reduced,addEventListener(){}});
+  w.HTMLElement.prototype.scrollIntoView=function(){};
+  w.HTMLDialogElement.prototype.showModal=function(){this.setAttribute('open','');};
+  w.HTMLDialogElement.prototype.close=function(){this.removeAttribute('open');this.dispatchEvent(new w.Event('close'));};
+  w.HTMLAnchorElement.prototype.click=function(){};
+  w.HTMLCanvasElement.prototype.getContext=function(){
+    if(this._ctx)return this._ctx;
+    this._ctx=new Proxy({canvas:this,createImageData:(x,y)=>({data:new Uint8ClampedArray(x*y*4)}),createRadialGradient:()=>({addColorStop(){}})}, {get:(obj,key)=>key in obj?obj[key]:()=>{},set:(obj,key,value)=>{obj[key]=value;return true;}});return this._ctx;
+  };
+  w.Image=class {constructor(){this.width=1536;this.height=1024;}set src(value){this._src=value;Promise.resolve().then(()=>brokenAssets?this.onerror?.():this.onload?.());}get src(){return this._src;}};
+  w.setTimeout=(fn,ms)=>{timers.push({fn,ms});return timers.length;};w.clearTimeout=()=>{};
+  w.requestAnimationFrame=fn=>{const id=++rafId;raf.set(id,fn);return id;};w.cancelAnimationFrame=id=>raf.delete(id);
+  w.Blob=Blob;w.URL.createObjectURL=blob=>{download=blob;return 'blob:demo-test';};w.URL.revokeObjectURL=()=>{};
+  if(storage)w.localStorage.setItem('wg.showroom.order.v1',JSON.stringify(storage));
+  w.eval(fs.readFileSync(path.join(root,'dist/catalog.js'),'utf8'));w.eval(renderer);w.eval(fs.readFileSync(path.join(root,'dist/vendor/gsap.min.js'),'utf8'));w.eval(fs.readFileSync(path.join(root,'dist/hero.js'),'utf8'));w.eval(app);
+  return {w,q,click:s=>{assert(q(s),'Missing '+s);q(s).click();},download:()=>download,
+    step:stamp=>{virtualNow=100000+stamp;const todo=[...raf.values()];raf.clear();for(const fn of todo)fn(stamp);},
+    flush:async()=>{let guard=0;while(timers.length){assert(guard++<50,'Timer overflow');timers.shift().fn();await Promise.resolve();await Promise.resolve();}},
+    ready:()=>w.wgDelivery.ready, close:()=>{w.wgDelivery?.pause();w.gsap?.ticker.sleep();w.close();}};
+}
+(async()=>{
+const data=JSON.parse(fs.readFileSync(path.join(root,'catalog/products.json'),'utf8'));
+assert.equal(data.length,97);assert.equal(data.filter(p=>p.category==='Apparel').length,69);assert.equal(data.filter(p=>p.category==='Accessories').length,28);
+for(const p of data){assert(!p.id.startsWith('demo-'));assert(p.image.includes('/catalog/studio/'));assert(fs.existsSync(path.join(root,'dist',p.image)));assert(fs.existsSync(path.join(root,'dist',p.sourceImage)));if(p.backImage)assert(fs.existsSync(path.join(root,'dist',p.backImage)));assert(!p.departments.includes('kids'));}
+for(const mode of ['campaign','studio','linesheet']){
+ const t=setup({mode}),{w,q,click}=t;await t.ready();
+ assert.equal(q('#match-count').textContent,'97 PIECES');assert.equal(q('#campaign').hidden,mode!=='campaign');assert.equal(q('#studio').hidden,mode!=='studio');assert.equal(w.document.querySelectorAll('video').length,0);
+ assert.equal(w.WGCatalog.length,97);assert.equal(q('#delivery-scene').dataset.engine,'gsap');assert.equal(q('#delivery-scene').querySelectorAll('.parcel-face').length,6);assert.equal(q('#campaign').querySelectorAll('canvas,video').length,0);assert.equal(q('#delivery-scene').dataset.ready,'true');assert(!q('#products').textContent.includes('DEMO'));
+ for(const floor of ['men','women','kids']){
+  click('[data-floor="'+floor+'"]');assert(q('#elevator').classList.contains('is-travelling'));assert.equal(q('main').inert,true);
+  if(floor==='kids')assert(q('#lift-preview').textContent.includes('Awaiting confirmed'));else assert.equal(q('#lift-preview').querySelectorAll('figure').length,2);
+  await t.flush();assert.equal(q('#collection').dataset.department,floor);assert(!q('main').inert);assert(!q('#elevator').classList.contains('is-travelling'));assert.equal(w.document.activeElement.id,'collection-title');
+  assert.equal(q('#match-count').textContent,floor==='kids'?'00 PIECES':'69 PIECES');
+  if(floor==='kids'){assert.equal(q('#products').querySelectorAll('[data-open]').length,0);assert(q('#department-wardrobe').textContent.includes('confirmed'));}
+  else{assert.equal(q('#department-wardrobe').querySelectorAll('[data-open]').length,2);assert(q('#department-wardrobe img').src.includes('/catalog/studio/'));}
+  click('[data-filter="Accessories"]');assert.equal(q('#collection').dataset.department,'all');assert.equal(q('#match-count').textContent,'28 PIECES');
+ }
+ // Preserve category access without inventing missing Tech or Fragrance goods.
+ for(const category of ['Fragrance','Tech']){click('[data-filter="'+category+'"]');assert.equal(q('#match-count').textContent,'00 PIECES');assert(q('#products').textContent.includes('No supplied products'));}
+ click('[data-family="Headwear"]');assert.equal(q('#match-count').textContent,'26 PIECES');click('[data-family="Trousers"]');assert.equal(q('#match-count').textContent,'08 PIECES');click('[data-filter="All"]');
+ click('[data-open="sailor-bear-knit-ivory"]');assert(q('#product-dialog').open);assert(q('#pd-photo').src.endsWith('/studio/sailor-bear-knit-ivory.webp'));
+ click('[data-action="alternate"]');assert(q('#pd-photo').src.endsWith('/source/source-01.jpg'));assert(q('#pd-image-note').textContent.includes('Original photo'));assert(q('#pd-source').href.endsWith('/source/source-01.jpg'));
+ click('[data-action="detail"]');assert(q('.zoom-area').classList.contains('zoomed'));click('[data-action="add"]');
+ click('[data-open="bear-rider-hoodie-ivory"]');assert(!q('[data-action="back"]').hidden);click('[data-action="back"]');assert(q('#pd-photo').src.endsWith('bear-rider-hoodie-ivory-back.webp'));assert.equal(q('#pd-frame').textContent,'04 / 04');q('#pd-qty').value=12;click('[data-action="add"]');
+ click('[data-action="bag"]');assert(q('#bag-body').textContent.includes('Sailor Bear Knit'));assert(q('#bag-body').textContent.includes('Bear Rider Hoodie'));assert.equal(JSON.parse(w.localStorage.getItem('wg.showroom.order.v1'))['bear-rider-hoodie-ivory'],12);
+ click('[data-action="export-bag"]');const csv=await t.download().text();const rows=csv.replace(/^\uFEFF/,'').split('\r\n');assert.equal(rows[0].split(',').length,9);assert.equal(rows[1].split(',').length,9);assert(csv.includes('"Unisex","Apparel","Knitwear"'));assert(csv.includes('Availability unconfirmed'));assert(csv.includes('source-')===false);assert(csv.includes('"12"'));click('#bag-dialog .close');
+ click('[data-open="wg-signature-hoodie"]');assert(q('[data-action="add"]').disabled);assert(q('.order-controls').hidden);click('#product-dialog .close');
+ click('[data-floor="kids"]');await t.flush();click('[data-action="search"]');q('#search-input').value='sailor';q('#search-input').dispatchEvent(new w.Event('input'));assert.equal(q('#search-matches').querySelectorAll('[data-open]').length,1);q('#search-form').dispatchEvent(new w.Event('submit',{bubbles:true,cancelable:true}));assert.equal(q('#collection').dataset.department,'all');assert.equal(q('#match-count').textContent,'01 PIECE');
+ w.wgDelivery.pause();q('#film-seek').value='10.5';q('#film-seek').dispatchEvent(new w.Event('input'));assert.equal(w.wgDelivery.currentTime,10.5);
+ click('[data-action="film-start"]');assert(!w.wgDelivery.paused);assert.equal(w.wgDelivery.currentTime,0);assert(q('#delivery-replay-overlay').hidden);t.step(1000);t.step(1100);assert(w.wgDelivery.currentTime>0);
+ click('[data-action="film-toggle"]');assert(w.wgDelivery.paused);w.wgDelivery.currentTime=21.95;click('[data-action="film-toggle"]');t.step(1200);t.step(1300);assert(w.wgDelivery.ended);assert(!q('#delivery-replay-overlay').hidden);assert(q('#delivery-replay-overlay').textContent.includes('Replay delivery'));
+ q('#reduced-motion').checked=true;q('#reduced-motion').dispatchEvent(new w.Event('change'));assert(w.WGPreferences.reducedMotion);click('[data-action="film-replay"]');assert(w.wgDelivery.paused);assert.equal(w.wgDelivery.currentTime,22);
+ click('[data-floor="kids"]');assert.equal(q('#match-count').textContent,'00 PIECES');assert(!q('#elevator').classList.contains('is-travelling'));assert(!q('main').inert);
+ click('[data-action="film-start"]');assert(!w.WGPreferences.reducedMotion);assert(!w.wgDelivery.paused);assert(w.document.body.classList.contains('full-motion'));
+ console.log(mode+': source catalog, 3 floors, category/style filters, source/back views, bag/CSV, playback, visible replay, reduced motion PASS');t.close();
+}
+const os=setup({reduced:true});await os.ready();assert(os.w.wgDelivery.paused);assert.equal(os.w.wgDelivery.currentTime,22);assert(os.q('#reduced-motion').checked);os.q('#reduced-motion').checked=false;os.q('#reduced-motion').dispatchEvent(new os.w.Event('change'));assert(!os.w.WGPreferences.reducedMotion);assert(os.w.document.body.classList.contains('full-motion'));os.click('[data-floor="men"]');await os.flush();os.w.localStorage.setItem('wg.motion.v1','reduced');os.w.dispatchEvent(new os.w.StorageEvent('storage',{key:'wg.motion.v1'}));assert(os.q('#reduced-motion').checked);os.close();
+const link=setup({floor:'women',mode:'studio'});await link.ready();assert.equal(link.q('#match-count').textContent,'69 PIECES');link.close();
+const broken=setup({brokenAssets:true});await broken.ready();assert(broken.w.wgDelivery.error);assert(broken.q('#dispatch-loading').textContent.includes('unavailable'));assert.equal(broken.q('#match-count').textContent,'97 PIECES');broken.close();
+const stored=setup({storage:{'sailor-bear-knit-ivory':20,'box-beanie-30':10,hoodie:10,'demo-kids-knit':5,'wg-signature-hoodie':100}});await stored.ready();stored.click('[data-action="bag"]');assert(stored.q('#bag-body').textContent.includes('Sailor Bear Knit'));assert(stored.q('#bag-body').textContent.includes('Box Logo Beanie'));assert(!stored.q('#bag-body').textContent.includes('Essential Pullover'));assert(!stored.q('#bag-body').textContent.includes('Signature Hoodie'));stored.close();
+for(const filename of ['index.html','brand.html','motion-proof.html','sources.html']){
+ const source=fs.readFileSync(path.join(root,'dist',filename),'utf8');for(const m of source.matchAll(/(?:src|href)="((?:assets\/[^"?#]+)|(?:[^"?#]+\.(?:css|js|html)))(?:\?[^"\s]*)?"/g))assert(fs.existsSync(path.join(root,'dist',m[1])),'Missing asset '+m[1]);assert(!source.includes('<video'),'Unexpected video dependency');
+}
+for(const file of ['logo-primary','logo-stacked','logo-gold','logo-black','logo-white','brand-symbol','brand-symbol-gold']){const svg=fs.readFileSync(path.join(root,'dist/assets',file+'.svg'),'utf8');assert(!/<(?:image|text|foreignObject)\b/.test(svg));}
+const poses=setup();await poses.ready();const hero=poses.w.wgDelivery,prop=(selector,key)=>Number(poses.w.gsap.getProperty(poses.q(selector),key));assert(hero._idleMode);assert(prop('.parcel-rig','opacity')>.99);hero.pause();hero.currentTime=10.6;assert(prop('.parcel-rig','opacity')>.99);assert(prop('.parcel-rig','rotationY')<-19);hero.currentTime=13.2;assert(prop('.parcel-rig','x')<0);assert(prop('.parcel-rig','scaleX')<1);hero.currentTime=17;assert(prop('.delivery-truck','x')>100);hero.currentTime=21;assert.equal(poses.q('.hero-ending').getAttribute('aria-hidden'),'false');assert(poses.q('.dispatch-copy').inert);hero.currentTime=0;assert(!poses.q('.dispatch-copy').inert);assert.equal(poses.q('.hero-ending').getAttribute('aria-hidden'),'true');poses.close();
+console.log('GSAP hero: ambient landing, dimensional ascent, cargo loading, departure, ending and replay focus states PASS');
+const inventory=JSON.parse(fs.readFileSync(path.join(root,'catalog/sources.json'),'utf8'));assert.equal(inventory.length,52);assert(inventory.every(s=>s.status&&s.note));assert.equal(inventory.filter(s=>s.status==='Reference board').length,1);
+const grouped=setup({source:'47'});await grouped.ready();assert.equal(grouped.q('#match-count').textContent,'15 PIECES');assert(grouped.q('#query-note').textContent.includes('source 47'));grouped.click('[data-action="clear-query"]');assert.equal(grouped.q('#match-count').textContent,'97 PIECES');grouped.close();
+const sourcePage=new JSDOM(fs.readFileSync(path.join(root,'dist/sources.html'),'utf8'),{url:'http://localhost:4173/sources.html',runScripts:'outside-only'});sourcePage.window.eval(fs.readFileSync(path.join(root,'dist/source-data.js'),'utf8'));sourcePage.window.eval(fs.readFileSync(path.join(root,'dist/source-library.js'),'utf8'));assert.equal(sourcePage.window.document.querySelectorAll('.source-card').length,52);sourcePage.window.document.querySelector('[data-status="Reference board"]').click();assert.equal(sourcePage.window.document.querySelectorAll('.source-card').length,1);sourcePage.window.document.querySelector('[data-status="Individual pieces prepared"]').click();assert.equal(sourcePage.window.document.querySelectorAll('.source-card').length,43);assert(sourcePage.window.document.querySelector('.piece-link').href.includes('source='));sourcePage.window.close();
+console.log('All 52 sources accounted for; staged image paths, OS/saved motion, deep links, asset failure, cart migration and SVG independence PASS');
+})().catch(error=>{console.error(error);process.exitCode=1;});

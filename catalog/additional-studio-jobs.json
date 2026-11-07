@@ -1,0 +1,788 @@
+[
+  {
+    "id": "summer-bear-knit-navy",
+    "number": 41,
+    "source": "IMG_4192.PNG",
+    "localSource": "dist/assets/catalog/source/source-41.png",
+    "name": "Summer Bear Crew",
+    "color": "Navy",
+    "target": "only the navy crewneck sweater with the bear wearing a white shirt and blue shorts. Remove phone UI and preserve the exact bear graphic and fabric",
+    "family": "Knitwear",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "pitcher-bear-knit-navy",
+    "number": 43,
+    "source": "IMG_4521.PNG",
+    "localSource": "dist/assets/catalog/source/source-43.png",
+    "name": "Pitcher Bear Knit",
+    "color": "Navy",
+    "target": "only the navy baseball bear sweater, including the NY sleeve motif and RL hem embroidery; omit phone UI and preserve the original bear artwork",
+    "family": "Knitwear",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "bear-rider-hoodie-ivory",
+    "number": 45,
+    "source": "IMG_4569.PNG",
+    "localSource": "dist/assets/catalog/source/source-45.png",
+    "name": "Bear Rider Hoodie",
+    "color": "Ivory",
+    "target": "only the FRONT view ivory pullover hoodie at the upper LEFT, with the small rider chest motif and number 3 sleeve. Omit the back-view hoodie and all website UI",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "bear-rider-hoodie-ivory-back",
+    "number": 45,
+    "source": "IMG_4569.PNG",
+    "localSource": "dist/assets/catalog/source/source-45.png",
+    "name": "Bear Rider Hoodie \u2014 Back",
+    "color": "Ivory",
+    "target": "only the BACK view ivory pullover hoodie at lower RIGHT, with the large central bear, number 3 sleeve and rider on back of hood. Keep the back view; omit other garment and all UI",
+    "family": "Hoodies",
+    "pose": "back",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "alternateFor": "bear-rider-hoodie-ivory"
+  },
+  {
+    "id": "wrap-logo-beanie-1",
+    "number": 44,
+    "source": "IMG_4567.PNG",
+    "localSource": "dist/assets/catalog/source/source-44.png",
+    "name": "Wrap Logo Beanie",
+    "color": "Red Snowflake",
+    "target": "only the upper-left red snowflake/bandana-pattern cap. Preserve the oversized white Supreme knit lettering wrapping around the hat, its exact existing visible word layout, pattern and colors; do not replace with a box logo",
+    "family": "Headwear",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "wrap-logo-beanie-2",
+    "number": 44,
+    "source": "IMG_4567.PNG",
+    "localSource": "dist/assets/catalog/source/source-44.png",
+    "name": "Wrap Logo Beanie",
+    "color": "Navy Snowflake",
+    "target": "only the upper-right navy snowflake/bandana-pattern cap. Preserve the oversized white Supreme knit lettering wrapping around the hat, its exact existing visible word layout, pattern and colors; do not replace with a box logo",
+    "family": "Headwear",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "wrap-logo-beanie-3",
+    "number": 44,
+    "source": "IMG_4567.PNG",
+    "localSource": "dist/assets/catalog/source/source-44.png",
+    "name": "Wrap Logo Beanie",
+    "color": "Purple",
+    "target": "only the second-row LEFT purple cap. Preserve the oversized white Supreme knit lettering wrapping around the hat, its exact existing visible word layout, pattern and colors; do not replace with a box logo",
+    "family": "Headwear",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "wrap-logo-beanie-4",
+    "number": 44,
+    "source": "IMG_4567.PNG",
+    "localSource": "dist/assets/catalog/source/source-44.png",
+    "name": "Wrap Logo Beanie",
+    "color": "Brown",
+    "target": "only the second-row RIGHT brown cap. Preserve the oversized white Supreme knit lettering wrapping around the hat, its exact existing visible word layout, pattern and colors; do not replace with a box logo",
+    "family": "Headwear",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "wrap-logo-beanie-5",
+    "number": 44,
+    "source": "IMG_4567.PNG",
+    "localSource": "dist/assets/catalog/source/source-44.png",
+    "name": "Wrap Logo Beanie",
+    "color": "Black",
+    "target": "only the third-row LEFT black cap. Preserve the oversized white Supreme knit lettering wrapping around the hat, its exact existing visible word layout, pattern and colors; do not replace with a box logo",
+    "family": "Headwear",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "wrap-logo-beanie-6",
+    "number": 44,
+    "source": "IMG_4567.PNG",
+    "localSource": "dist/assets/catalog/source/source-44.png",
+    "name": "Wrap Logo Beanie",
+    "color": "Red",
+    "target": "only the third-row RIGHT red cap. Preserve the oversized white Supreme knit lettering wrapping around the hat, its exact existing visible word layout, pattern and colors; do not replace with a box logo",
+    "family": "Headwear",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "wrap-logo-beanie-7",
+    "number": 44,
+    "source": "IMG_4567.PNG",
+    "localSource": "dist/assets/catalog/source/source-44.png",
+    "name": "Wrap Logo Beanie",
+    "color": "Brown Camo",
+    "target": "only the fourth-row LEFT brown/black/cream camouflage cap. Preserve the oversized white Supreme knit lettering wrapping around the hat, its exact existing visible word layout, pattern and colors; do not replace with a box logo",
+    "family": "Headwear",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "wrap-logo-beanie-8",
+    "number": 44,
+    "source": "IMG_4567.PNG",
+    "localSource": "dist/assets/catalog/source/source-44.png",
+    "name": "Wrap Logo Beanie",
+    "color": "Grey Camo",
+    "target": "only the fourth-row RIGHT grey/black/cream camouflage cap. Preserve the oversized white Supreme knit lettering wrapping around the hat, its exact existing visible word layout, pattern and colors; do not replace with a box logo",
+    "family": "Headwear",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "wrap-logo-beanie-9",
+    "number": 44,
+    "source": "IMG_4567.PNG",
+    "localSource": "dist/assets/catalog/source/source-44.png",
+    "name": "Wrap Logo Beanie",
+    "color": "Green Camo",
+    "target": "only the bottom-row LEFT green/grey camouflage cap. Preserve the oversized white Supreme knit lettering wrapping around the hat, its exact existing visible word layout, pattern and colors; do not replace with a box logo",
+    "family": "Headwear",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "wrap-logo-beanie-10",
+    "number": 44,
+    "source": "IMG_4567.PNG",
+    "localSource": "dist/assets/catalog/source/source-44.png",
+    "name": "Wrap Logo Beanie",
+    "color": "Mint",
+    "target": "only the bottom-row RIGHT pale mint cap. Preserve the oversized white Supreme knit lettering wrapping around the hat, its exact existing visible word layout, pattern and colors; do not replace with a box logo",
+    "family": "Headwear",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "crest-pattern-hoodie-1",
+    "number": 47,
+    "source": "IMG_4682.PNG",
+    "localSource": "dist/assets/catalog/source/source-47.png",
+    "name": "Crest Pattern Hoodie",
+    "color": "Black",
+    "target": "only the black pullover hoodie at top row, first from LEFT. Preserve the repeating floral/crest emblems, their original positions and tonal contrast. Omit all adjacent garments; reconstruct only obscured plain fabric",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "crest-pattern-hoodie-2",
+    "number": 47,
+    "source": "IMG_4682.PNG",
+    "localSource": "dist/assets/catalog/source/source-47.png",
+    "name": "Crest Pattern Hoodie",
+    "color": "Pink",
+    "target": "only the pink pullover hoodie at top row, second from LEFT. Preserve the repeating floral/crest emblems, their original positions and tonal contrast. Omit all adjacent garments; reconstruct only obscured plain fabric",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "crest-pattern-hoodie-3",
+    "number": 47,
+    "source": "IMG_4682.PNG",
+    "localSource": "dist/assets/catalog/source/source-47.png",
+    "name": "Crest Pattern Hoodie",
+    "color": "Purple",
+    "target": "only the purple pullover hoodie at top row, third from LEFT. Preserve the repeating floral/crest emblems, their original positions and tonal contrast. Omit all adjacent garments; reconstruct only obscured plain fabric",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "crest-pattern-hoodie-4",
+    "number": 47,
+    "source": "IMG_4682.PNG",
+    "localSource": "dist/assets/catalog/source/source-47.png",
+    "name": "Crest Pattern Hoodie",
+    "color": "Sky Blue",
+    "target": "only the sky blue pullover hoodie at top row, fourth from LEFT. Preserve the repeating floral/crest emblems, their original positions and tonal contrast. Omit all adjacent garments; reconstruct only obscured plain fabric",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "crest-pattern-hoodie-5",
+    "number": 47,
+    "source": "IMG_4682.PNG",
+    "localSource": "dist/assets/catalog/source/source-47.png",
+    "name": "Crest Pattern Hoodie",
+    "color": "White",
+    "target": "only the white pullover hoodie at top row, fifth from LEFT. Preserve the repeating floral/crest emblems, their original positions and tonal contrast. Omit all adjacent garments; reconstruct only obscured plain fabric",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "crest-pattern-hoodie-6",
+    "number": 47,
+    "source": "IMG_4682.PNG",
+    "localSource": "dist/assets/catalog/source/source-47.png",
+    "name": "Crest Pattern Hoodie",
+    "color": "Grey",
+    "target": "only the grey pullover hoodie at middle row, first from LEFT. Preserve the repeating floral/crest emblems, their original positions and tonal contrast. Omit all adjacent garments; reconstruct only obscured plain fabric",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "crest-pattern-hoodie-7",
+    "number": 47,
+    "source": "IMG_4682.PNG",
+    "localSource": "dist/assets/catalog/source/source-47.png",
+    "name": "Crest Pattern Hoodie",
+    "color": "Teal",
+    "target": "only the teal pullover hoodie at middle row, second from LEFT. Preserve the repeating floral/crest emblems, their original positions and tonal contrast. Omit all adjacent garments; reconstruct only obscured plain fabric",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "crest-pattern-hoodie-8",
+    "number": 47,
+    "source": "IMG_4682.PNG",
+    "localSource": "dist/assets/catalog/source/source-47.png",
+    "name": "Crest Pattern Hoodie",
+    "color": "Orange",
+    "target": "only the orange pullover hoodie at middle row, third from LEFT. Preserve the repeating floral/crest emblems, their original positions and tonal contrast. Omit all adjacent garments; reconstruct only obscured plain fabric",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "crest-pattern-hoodie-9",
+    "number": 47,
+    "source": "IMG_4682.PNG",
+    "localSource": "dist/assets/catalog/source/source-47.png",
+    "name": "Crest Pattern Hoodie",
+    "color": "Royal Blue",
+    "target": "only the royal blue pullover hoodie at middle row, fourth from LEFT. Preserve the repeating floral/crest emblems, their original positions and tonal contrast. Omit all adjacent garments; reconstruct only obscured plain fabric",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "crest-pattern-hoodie-10",
+    "number": 47,
+    "source": "IMG_4682.PNG",
+    "localSource": "dist/assets/catalog/source/source-47.png",
+    "name": "Crest Pattern Hoodie",
+    "color": "Navy",
+    "target": "only the navy pullover hoodie at middle row, fifth from LEFT. Preserve the repeating floral/crest emblems, their original positions and tonal contrast. Omit all adjacent garments; reconstruct only obscured plain fabric",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "crest-pattern-hoodie-11",
+    "number": 47,
+    "source": "IMG_4682.PNG",
+    "localSource": "dist/assets/catalog/source/source-47.png",
+    "name": "Crest Pattern Hoodie",
+    "color": "Black White",
+    "target": "only the black white pullover hoodie at bottom row, first from LEFT. Preserve the repeating floral/crest emblems, their original positions and tonal contrast. Omit all adjacent garments; reconstruct only obscured plain fabric",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "crest-pattern-hoodie-12",
+    "number": 47,
+    "source": "IMG_4682.PNG",
+    "localSource": "dist/assets/catalog/source/source-47.png",
+    "name": "Crest Pattern Hoodie",
+    "color": "Red",
+    "target": "only the red pullover hoodie at bottom row, second from LEFT. Preserve the repeating floral/crest emblems, their original positions and tonal contrast. Omit all adjacent garments; reconstruct only obscured plain fabric",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "crest-pattern-hoodie-13",
+    "number": 47,
+    "source": "IMG_4682.PNG",
+    "localSource": "dist/assets/catalog/source/source-47.png",
+    "name": "Crest Pattern Hoodie",
+    "color": "Charcoal",
+    "target": "only the charcoal pullover hoodie at bottom row, third from LEFT. Preserve the repeating floral/crest emblems, their original positions and tonal contrast. Omit all adjacent garments; reconstruct only obscured plain fabric",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "crest-pattern-hoodie-14",
+    "number": 47,
+    "source": "IMG_4682.PNG",
+    "localSource": "dist/assets/catalog/source/source-47.png",
+    "name": "Crest Pattern Hoodie",
+    "color": "Brown",
+    "target": "only the brown pullover hoodie at bottom row, fourth from LEFT. Preserve the repeating floral/crest emblems, their original positions and tonal contrast. Omit all adjacent garments; reconstruct only obscured plain fabric",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "crest-pattern-hoodie-15",
+    "number": 47,
+    "source": "IMG_4682.PNG",
+    "localSource": "dist/assets/catalog/source/source-47.png",
+    "name": "Crest Pattern Hoodie",
+    "color": "Green",
+    "target": "only the green pullover hoodie at bottom row, fifth from LEFT. Preserve the repeating floral/crest emblems, their original positions and tonal contrast. Omit all adjacent garments; reconstruct only obscured plain fabric",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "forty-jersey-black",
+    "number": 11,
+    "source": "IMG_1842.PNG",
+    "localSource": "dist/assets/catalog/source/source-11.png",
+    "name": "Forty Baseball Jersey",
+    "color": "Black",
+    "target": "only the black FRONT-view baseball button jersey at upper-left, with the round 40 patch, sleeve stripes, small chest wordmark and lower label. Omit its back view and all other garments",
+    "family": "Tops",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "forty-jersey-white",
+    "number": 11,
+    "source": "IMG_1842.PNG",
+    "localSource": "dist/assets/catalog/source/source-11.png",
+    "name": "Forty Baseball Jersey",
+    "color": "White / Red",
+    "target": "only the white/red FRONT-view baseball button jersey at upper-middle-right, with the round 40 patch, red piping and sleeve stripes. Omit its back view and all other garments",
+    "family": "Tops",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "eleven-mesh-jersey-black",
+    "number": 11,
+    "source": "IMG_1842.PNG",
+    "localSource": "dist/assets/catalog/source/source-11.png",
+    "name": "Eleven Mesh Jersey",
+    "color": "Black",
+    "target": "only the black FRONT-view mesh baseball jersey in lower-left, with large white S chest, colored sleeve patch and red hem label. Preserve exact patches and perforation; omit back views",
+    "family": "Tops",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "eleven-mesh-jersey-white",
+    "number": 11,
+    "source": "IMG_1842.PNG",
+    "localSource": "dist/assets/catalog/source/source-11.png",
+    "name": "Eleven Mesh Jersey",
+    "color": "White",
+    "target": "only the white FRONT-view mesh baseball jersey in lower middle, with black S chest, colored sleeve patch and red hem label. Preserve exact patches and perforation; omit back views",
+    "family": "Tops",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "trefoil-track-hoodie",
+    "number": 11,
+    "source": "IMG_1842.PNG",
+    "localSource": "dist/assets/catalog/source/source-11.png",
+    "name": "Trefoil Track Hoodie",
+    "color": "Black / Red",
+    "target": "only the FRONT-view black/red hooded zip jacket at lower-right with red trefoil chest, red sleeve stripes and shark-style hood details. Preserve exact visible design; omit its back view and other products",
+    "family": "Jackets",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "wordmark-panel-pants-ivory",
+    "number": 13,
+    "source": "IMG_1845.PNG",
+    "localSource": "dist/assets/catalog/source/source-13.png",
+    "name": "Wordmark Panel Trousers",
+    "color": "Ivory",
+    "target": "only the ivory trousers at the top-left FRONT view, with contrast triangular side panel and outlined vertical Supreme leg lettering. Omit back views and close-up tiles",
+    "family": "Trousers",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "wordmark-panel-pants-black",
+    "number": 13,
+    "source": "IMG_1845.PNG",
+    "localSource": "dist/assets/catalog/source/source-13.png",
+    "name": "Wordmark Panel Trousers",
+    "color": "Black",
+    "target": "only the black trousers at the top-middle FRONT view, with contrast triangular side panel and outlined vertical Supreme leg lettering. Omit back views and close-up tiles",
+    "family": "Trousers",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "racing-crew-blue",
+    "number": 13,
+    "source": "IMG_1845.PNG",
+    "localSource": "dist/assets/catalog/source/source-13.png",
+    "name": "Racing Graphic Crew",
+    "color": "Blue",
+    "target": "only the blue-trim racing crewneck at middle-left FRONT view, preserving all Vanson, Supreme, Klotz, Wiseco and American flag graphics exactly. Omit back views and detail tiles",
+    "family": "Tops",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "racing-crew-red",
+    "number": 13,
+    "source": "IMG_1845.PNG",
+    "localSource": "dist/assets/catalog/source/source-13.png",
+    "name": "Racing Graphic Crew",
+    "color": "Red",
+    "target": "only the red-trim racing crewneck at middle-right FRONT view, preserving all Vanson, Supreme, Klotz, Wiseco and American flag graphics exactly. Omit back views and detail tiles",
+    "family": "Tops",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "champions-jacket-charcoal",
+    "number": 14,
+    "source": "IMG_1846.PNG",
+    "localSource": "dist/assets/catalog/source/source-14.png",
+    "name": "Champions Track Jacket",
+    "color": "Charcoal",
+    "target": "only the charcoal FRONT-view zip jacket at upper-left FRONT view, preserving chest script, crest, collar and original gradient colors. Omit back views, matching pants and detail tiles",
+    "family": "Jackets",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "champions-jacket-pink",
+    "number": 14,
+    "source": "IMG_1846.PNG",
+    "localSource": "dist/assets/catalog/source/source-14.png",
+    "name": "Champions Track Jacket",
+    "color": "Pink",
+    "target": "only the pink FRONT-view zip jacket at upper-middle-right FRONT view, preserving chest script, crest, collar and original gradient colors. Omit back views, matching pants and detail tiles",
+    "family": "Jackets",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "champions-pants-blue",
+    "number": 14,
+    "source": "IMG_1846.PNG",
+    "localSource": "dist/assets/catalog/source/source-14.png",
+    "name": "Champions Track Trousers",
+    "color": "Blue",
+    "target": "only the blue FRONT-view trousers at lower-left FRONT view, preserving gradient panels, original embroidered crest and logos. Omit back views, jackets and detail tiles",
+    "family": "Trousers",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "champions-pants-pink",
+    "number": 14,
+    "source": "IMG_1846.PNG",
+    "localSource": "dist/assets/catalog/source/source-14.png",
+    "name": "Champions Track Trousers",
+    "color": "Pink",
+    "target": "only the pink FRONT-view trousers at lower-middle-right FRONT view, preserving gradient panels, original embroidered crest and logos. Omit back views, jackets and detail tiles",
+    "family": "Trousers",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "vertical-logo-hoodie-red",
+    "number": 15,
+    "source": "IMG_1847.PNG",
+    "localSource": "dist/assets/catalog/source/source-15.png",
+    "name": "Vertical Logo Hoodie",
+    "color": "Red",
+    "target": "only the red FRONT-view pullover hoodie, top row number 1 from left. Preserve the lowercase outlined Supreme chest script, drawstrings, kangaroo pocket and original color. Omit all back views and other colors",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "vertical-logo-hoodie-green",
+    "number": 15,
+    "source": "IMG_1847.PNG",
+    "localSource": "dist/assets/catalog/source/source-15.png",
+    "name": "Vertical Logo Hoodie",
+    "color": "Green",
+    "target": "only the green FRONT-view pullover hoodie, top row number 2 from left. Preserve the lowercase outlined Supreme chest script, drawstrings, kangaroo pocket and original color. Omit all back views and other colors",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "vertical-logo-hoodie-brown",
+    "number": 15,
+    "source": "IMG_1847.PNG",
+    "localSource": "dist/assets/catalog/source/source-15.png",
+    "name": "Vertical Logo Hoodie",
+    "color": "Brown",
+    "target": "only the brown FRONT-view pullover hoodie, top row number 3 from left. Preserve the lowercase outlined Supreme chest script, drawstrings, kangaroo pocket and original color. Omit all back views and other colors",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "vertical-logo-hoodie-blue",
+    "number": 15,
+    "source": "IMG_1847.PNG",
+    "localSource": "dist/assets/catalog/source/source-15.png",
+    "name": "Vertical Logo Hoodie",
+    "color": "Blue",
+    "target": "only the blue FRONT-view pullover hoodie, top row number 4 from left. Preserve the lowercase outlined Supreme chest script, drawstrings, kangaroo pocket and original color. Omit all back views and other colors",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "vertical-logo-hoodie-navy",
+    "number": 15,
+    "source": "IMG_1847.PNG",
+    "localSource": "dist/assets/catalog/source/source-15.png",
+    "name": "Vertical Logo Hoodie",
+    "color": "Navy",
+    "target": "only the navy FRONT-view pullover hoodie, top row number 5 from left. Preserve the lowercase outlined Supreme chest script, drawstrings, kangaroo pocket and original color. Omit all back views and other colors",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "vertical-logo-hoodie-ivory",
+    "number": 15,
+    "source": "IMG_1847.PNG",
+    "localSource": "dist/assets/catalog/source/source-15.png",
+    "name": "Vertical Logo Hoodie",
+    "color": "Ivory",
+    "target": "only the ivory FRONT-view pullover hoodie, top row number 6 from left. Preserve the lowercase outlined Supreme chest script, drawstrings, kangaroo pocket and original color. Omit all back views and other colors",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "id": "vertical-logo-hoodie-black-front",
+    "number": 15,
+    "source": "IMG_1847.PNG",
+    "localSource": "dist/assets/catalog/source/source-15.png",
+    "name": "Vertical Logo Hoodie",
+    "color": "Black",
+    "target": "only the black FRONT-view pullover hoodie, top row number 7 from left. Preserve the lowercase outlined Supreme chest script, drawstrings, kangaroo pocket and original color. Omit all back views and other colors",
+    "family": "Hoodies",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "frontFor": "vertical-logo-hoodie-black"
+  }
+]

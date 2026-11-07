@@ -1,0 +1,31 @@
+node_modules/
+__pycache__/
+*.rendering.mp4
+.DS_Store
+
+# Credentials and machine/account configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.npmrc
+.netrc
+.git-credentials
+.openai/
+.vercel/
+.aws/
+.ssh/
+.local-backups/
+
+# Local generation provenance and review outputs (not required by the site)
+catalog/*results.json
+catalog/*review*.jpg
+catalog/collection-preview.jpg
+brand/identity-review.png
+brand/demo-product-prompts.txt
+motion/
+dist/assets/dispatch-legacy-poster.jpg
+*.log

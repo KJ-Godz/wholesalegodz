@@ -1,0 +1,767 @@
+[
+  {
+    "number": 1,
+    "file": "2f3f530e-7771-40a5-8b9d-735f74e57a3f.JPG",
+    "size": [
+      810,
+      1080
+    ],
+    "local": "dist/assets/catalog/source/source-01.jpg",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "sailor-bear-knit-ivory"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 2,
+    "file": "69edfd03-546c-44fd-ba77-74fe5c3b6be1.JPG",
+    "size": [
+      768,
+      1024
+    ],
+    "local": "dist/assets/catalog/source/source-02.jpg",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "preppy-bear-knit-navy"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 3,
+    "file": "484a0d97-0c7d-4a50-a54a-b0a88c2484d6.JPEG",
+    "size": [
+      982,
+      1280
+    ],
+    "local": "dist/assets/catalog/source/source-03.jpeg",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "rider-pullover-grey",
+      "rider-pullover-pink",
+      "rider-pullover-navy",
+      "rider-pullover-red",
+      "rider-pullover-yellow",
+      "rider-pullover-blue"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 4,
+    "file": "511e87ba-97b1-47bb-b712-25bb6e93a5fa.JPEG",
+    "size": [
+      976,
+      1280
+    ],
+    "local": "dist/assets/catalog/source/source-04.jpeg",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "rl-block-hoodie-grey",
+      "rl-block-hoodie-black",
+      "rl-block-hoodie-navy",
+      "rl-block-hoodie-ivory"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 5,
+    "file": "744bd845-568d-46e6-bba0-1775c3d32fb1.JPEG",
+    "size": [
+      1064,
+      1280
+    ],
+    "local": "dist/assets/catalog/source/source-05.jpeg",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "rider-zip-grey",
+      "rider-zip-black",
+      "rider-zip-navy",
+      "rider-zip-white"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 6,
+    "file": "966caf5e-2b55-464f-9c53-3a9ceca5b17b.JPG",
+    "size": [
+      810,
+      1080
+    ],
+    "local": "dist/assets/catalog/source/source-06.jpg",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "bear-hooded-knit-grey"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 7,
+    "file": "977ed8d0-36f2-491e-8b26-c2e1390f8591.JPG",
+    "size": [
+      810,
+      1080
+    ],
+    "local": "dist/assets/catalog/source/source-07.jpg",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "college-bear-knit-navy",
+      "college-bear-knit-green"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 8,
+    "file": "b1784026-e44c-486e-be51-308d207240a3.JPEG",
+    "size": [
+      1034,
+      1280
+    ],
+    "local": "dist/assets/catalog/source/source-08.jpeg",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "crest-zip-navy",
+      "crest-zip-ivory"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 9,
+    "file": "c6c3e6c0-db50-4659-971d-dfb16dbe9407.JPEG",
+    "size": [
+      1080,
+      1020
+    ],
+    "local": "dist/assets/catalog/source/source-09.jpeg",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "outdoor-bear-knit-olive"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 10,
+    "file": "fd8627c8-5e23-482d-84b1-6378e8c340bd.JPG",
+    "size": [
+      824,
+      1080
+    ],
+    "local": "dist/assets/catalog/source/source-10.jpg",
+    "status": "Duplicate / supporting view",
+    "productIds": [],
+    "note": "Alternate model view of baseball knit, represented by source 42."
+  },
+  {
+    "number": 11,
+    "file": "IMG_1842.PNG",
+    "size": [
+      1536,
+      1024
+    ],
+    "local": "dist/assets/catalog/source/source-11.png",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "forty-jersey-black",
+      "forty-jersey-white",
+      "eleven-mesh-jersey-black",
+      "eleven-mesh-jersey-white",
+      "trefoil-track-hoodie"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 12,
+    "file": "IMG_1844.PNG",
+    "size": [
+      1536,
+      1024
+    ],
+    "local": "dist/assets/catalog/source/source-12.png",
+    "status": "Reference board",
+    "productIds": [],
+    "note": "Dense assortment/pricing board retained as a reference; its small thumbnails are not treated as verified individual stock."
+  },
+  {
+    "number": 13,
+    "file": "IMG_1845.PNG",
+    "size": [
+      1536,
+      1024
+    ],
+    "local": "dist/assets/catalog/source/source-13.png",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "wordmark-panel-pants-ivory",
+      "wordmark-panel-pants-black",
+      "racing-crew-blue",
+      "racing-crew-red"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 14,
+    "file": "IMG_1846.PNG",
+    "size": [
+      1536,
+      1024
+    ],
+    "local": "dist/assets/catalog/source/source-14.png",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "champions-jacket-charcoal",
+      "champions-jacket-pink",
+      "champions-pants-blue",
+      "champions-pants-pink"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 15,
+    "file": "IMG_1847.PNG",
+    "size": [
+      1536,
+      1024
+    ],
+    "local": "dist/assets/catalog/source/source-15.png",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "vertical-logo-hoodie-black",
+      "vertical-logo-hoodie-red",
+      "vertical-logo-hoodie-green",
+      "vertical-logo-hoodie-brown",
+      "vertical-logo-hoodie-blue",
+      "vertical-logo-hoodie-navy",
+      "vertical-logo-hoodie-ivory"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 16,
+    "file": "IMG_2415.PNG",
+    "size": [
+      1170,
+      2532
+    ],
+    "local": "dist/assets/catalog/source/source-16.png",
+    "status": "Duplicate / supporting view",
+    "productIds": [],
+    "note": "Color overview; individual S beanies use sources 17\u201322."
+  },
+  {
+    "number": 17,
+    "file": "IMG_2416.PNG",
+    "size": [
+      1170,
+      2532
+    ],
+    "local": "dist/assets/catalog/source/source-17.png",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "s-beanie-navy"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 18,
+    "file": "IMG_2417.PNG",
+    "size": [
+      1170,
+      2532
+    ],
+    "local": "dist/assets/catalog/source/source-18.png",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "s-beanie-grey"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 19,
+    "file": "IMG_2418.PNG",
+    "size": [
+      1170,
+      2532
+    ],
+    "local": "dist/assets/catalog/source/source-19.png",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "s-beanie-red"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 20,
+    "file": "IMG_2419.PNG",
+    "size": [
+      1170,
+      2532
+    ],
+    "local": "dist/assets/catalog/source/source-20.png",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "s-beanie-pink"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 21,
+    "file": "IMG_2420.PNG",
+    "size": [
+      1170,
+      2532
+    ],
+    "local": "dist/assets/catalog/source/source-21.png",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "s-beanie-purple"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 22,
+    "file": "IMG_2421.PNG",
+    "size": [
+      1170,
+      2532
+    ],
+    "local": "dist/assets/catalog/source/source-22.png",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "s-beanie-black"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 23,
+    "file": "IMG_2423.PNG",
+    "size": [
+      1170,
+      2532
+    ],
+    "local": "dist/assets/catalog/source/source-23.png",
+    "status": "Duplicate / supporting view",
+    "productIds": [],
+    "note": "Color overview; individual horned S beanies use sources 24\u201328."
+  },
+  {
+    "number": 24,
+    "file": "IMG_2425.PNG",
+    "size": [
+      1170,
+      2532
+    ],
+    "local": "dist/assets/catalog/source/source-24.png",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "horned-s-beanie-grey"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 25,
+    "file": "IMG_2426.PNG",
+    "size": [
+      1170,
+      2532
+    ],
+    "local": "dist/assets/catalog/source/source-25.png",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "horned-s-beanie-orange"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 26,
+    "file": "IMG_2427.PNG",
+    "size": [
+      1170,
+      2532
+    ],
+    "local": "dist/assets/catalog/source/source-26.png",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "horned-s-beanie-purple"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 27,
+    "file": "IMG_2428.PNG",
+    "size": [
+      1170,
+      2532
+    ],
+    "local": "dist/assets/catalog/source/source-27.png",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "horned-s-beanie-blue"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 28,
+    "file": "IMG_2429.PNG",
+    "size": [
+      1170,
+      2532
+    ],
+    "local": "dist/assets/catalog/source/source-28.png",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "horned-s-beanie-black"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 29,
+    "file": "IMG_2430.PNG",
+    "size": [
+      1170,
+      2532
+    ],
+    "local": "dist/assets/catalog/source/source-29.png",
+    "status": "Duplicate / supporting view",
+    "productIds": [],
+    "note": "Color overview; individual box-logo beanies use sources 30\u201334."
+  },
+  {
+    "number": 30,
+    "file": "IMG_2431.PNG",
+    "size": [
+      1170,
+      2532
+    ],
+    "local": "dist/assets/catalog/source/source-30.png",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "box-beanie-30"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 31,
+    "file": "IMG_2432.PNG",
+    "size": [
+      1170,
+      2532
+    ],
+    "local": "dist/assets/catalog/source/source-31.png",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "box-beanie-31"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 32,
+    "file": "IMG_2433.PNG",
+    "size": [
+      1170,
+      2532
+    ],
+    "local": "dist/assets/catalog/source/source-32.png",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "box-beanie-32"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 33,
+    "file": "IMG_2434.PNG",
+    "size": [
+      1170,
+      2532
+    ],
+    "local": "dist/assets/catalog/source/source-33.png",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "box-beanie-33"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 34,
+    "file": "IMG_2435.PNG",
+    "size": [
+      1170,
+      2532
+    ],
+    "local": "dist/assets/catalog/source/source-34.png",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "box-beanie-34"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 35,
+    "file": "IMG_2436.PNG",
+    "size": [
+      1170,
+      2532
+    ],
+    "local": "dist/assets/catalog/source/source-35.png",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "crew-socks-black"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 36,
+    "file": "IMG_2437.PNG",
+    "size": [
+      1170,
+      2532
+    ],
+    "local": "dist/assets/catalog/source/source-36.png",
+    "status": "Duplicate / supporting view",
+    "productIds": [],
+    "note": "Duplicate black-sock view, represented by source 35."
+  },
+  {
+    "number": 37,
+    "file": "IMG_2438.PNG",
+    "size": [
+      1170,
+      2532
+    ],
+    "local": "dist/assets/catalog/source/source-37.png",
+    "status": "Duplicate / supporting view",
+    "productIds": [],
+    "note": "Duplicate black-sock view, represented by source 35."
+  },
+  {
+    "number": 38,
+    "file": "IMG_2439.PNG",
+    "size": [
+      1170,
+      2532
+    ],
+    "local": "dist/assets/catalog/source/source-38.png",
+    "status": "Duplicate / supporting view",
+    "productIds": [],
+    "note": "Black-sock packaging reference, retained beside source 35."
+  },
+  {
+    "number": 39,
+    "file": "IMG_2441.PNG",
+    "size": [
+      1170,
+      2532
+    ],
+    "local": "dist/assets/catalog/source/source-39.png",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "crew-socks-white"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 40,
+    "file": "IMG_2442.PNG",
+    "size": [
+      1170,
+      2532
+    ],
+    "local": "dist/assets/catalog/source/source-40.png",
+    "status": "Duplicate / supporting view",
+    "productIds": [],
+    "note": "White-sock packaging reference, retained beside source 39."
+  },
+  {
+    "number": 41,
+    "file": "IMG_4192.PNG",
+    "size": [
+      1179,
+      2556
+    ],
+    "local": "dist/assets/catalog/source/source-41.png",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "summer-bear-knit-navy"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 42,
+    "file": "IMG_4286.PNG",
+    "size": [
+      1179,
+      2556
+    ],
+    "local": "dist/assets/catalog/source/source-42.png",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "baseball-bear-knit-ivory"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 43,
+    "file": "IMG_4521.PNG",
+    "size": [
+      1179,
+      2556
+    ],
+    "local": "dist/assets/catalog/source/source-43.png",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "pitcher-bear-knit-navy"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 44,
+    "file": "IMG_4567.PNG",
+    "size": [
+      1179,
+      2556
+    ],
+    "local": "dist/assets/catalog/source/source-44.png",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "wrap-logo-beanie-1",
+      "wrap-logo-beanie-2",
+      "wrap-logo-beanie-3",
+      "wrap-logo-beanie-4",
+      "wrap-logo-beanie-5",
+      "wrap-logo-beanie-6",
+      "wrap-logo-beanie-7",
+      "wrap-logo-beanie-8",
+      "wrap-logo-beanie-9",
+      "wrap-logo-beanie-10"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 45,
+    "file": "IMG_4569.PNG",
+    "size": [
+      1179,
+      2556
+    ],
+    "local": "dist/assets/catalog/source/source-45.png",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "bear-rider-hoodie-ivory"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 46,
+    "file": "IMG_4580.PNG",
+    "size": [
+      1254,
+      1254
+    ],
+    "local": "dist/assets/catalog/source/source-46.png",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "wg-signature-hoodie"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 47,
+    "file": "IMG_4682.PNG",
+    "size": [
+      1179,
+      2556
+    ],
+    "local": "dist/assets/catalog/source/source-47.png",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "crest-pattern-hoodie-1",
+      "crest-pattern-hoodie-2",
+      "crest-pattern-hoodie-3",
+      "crest-pattern-hoodie-4",
+      "crest-pattern-hoodie-5",
+      "crest-pattern-hoodie-6",
+      "crest-pattern-hoodie-7",
+      "crest-pattern-hoodie-8",
+      "crest-pattern-hoodie-9",
+      "crest-pattern-hoodie-10",
+      "crest-pattern-hoodie-11",
+      "crest-pattern-hoodie-12",
+      "crest-pattern-hoodie-13",
+      "crest-pattern-hoodie-14",
+      "crest-pattern-hoodie-15"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 48,
+    "file": "IMG_4691.PNG",
+    "size": [
+      1179,
+      2556
+    ],
+    "local": "dist/assets/catalog/source/source-48.png",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "vertical-logo-hoodie-black"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 49,
+    "file": "IMG_4692.PNG",
+    "size": [
+      1179,
+      2556
+    ],
+    "local": "dist/assets/catalog/source/source-49.png",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "vertical-logo-trousers-black"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 50,
+    "file": "IMG_5137.PNG",
+    "size": [
+      1179,
+      2556
+    ],
+    "local": "dist/assets/catalog/source/source-50.png",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "panel-jacket-black",
+      "panel-trousers-black"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 51,
+    "file": "IMG_5138.PNG",
+    "size": [
+      1179,
+      2556
+    ],
+    "local": "dist/assets/catalog/source/source-51.png",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "panel-jacket-silver",
+      "panel-trousers-silver"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  },
+  {
+    "number": 52,
+    "file": "IMG_5139.PNG",
+    "size": [
+      1179,
+      2556
+    ],
+    "local": "dist/assets/catalog/source/source-52.png",
+    "status": "Individual pieces prepared",
+    "productIds": [
+      "panel-jacket-navy",
+      "panel-trousers-navy"
+    ],
+    "note": "Individual studio edits are linked to their supplied original."
+  }
+]
