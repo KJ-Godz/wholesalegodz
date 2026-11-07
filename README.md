@@ -54,3 +54,5 @@ Checks cover catalog assets, all three showroom modes, department routing, empty
 `npm run test:legacy-render` optionally renders the archived Canvas implementation into ignored local review files; it does not verify the active GSAP hero.
 
 Hosting account settings, credentials, installed dependencies, local generation logs, and review archives are excluded from Git. Preserve the bundled GSAP copyright and license notice; see `dist/vendor/README.md`.
+
+The production deployment was checked at `https://wholesalegodz.vercel.app`, including the homepage, animation files, mobile styles, product imagery, and supporting pages. A Chrome iPhone SE preview was used to review navigation, collection layout, and product details. Physical iOS/Android performance still benefits from device testing.
