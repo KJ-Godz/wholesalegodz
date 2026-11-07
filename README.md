@@ -13,7 +13,7 @@ npm start
 
 Open [the showroom](http://127.0.0.1:4173), [the dispatch sequence](http://127.0.0.1:4173/?play=1#campaign), [the logo collection](http://127.0.0.1:4173/brand.html), or [the supplied-photo library](http://127.0.0.1:4173/sources.html).
 
-The server serves `dist/` on port 4173 with caching disabled for local review. No API keys, accounts, or environment variables are required. To deploy, serve `dist/` as the static website root; there is no compilation step.
+The server serves `dist/` on port 4173 with caching disabled for local review. No API keys, accounts, or environment variables are required. To deploy, serve `dist/` as the static website root; there is no compilation step. The committed `vercel.json` sets this output directory and skips installation/build commands, so GitHub-connected Vercel deployments publish the website instead of the repository root. It contains no account credentials.
 
 ## Project files
 
@@ -34,11 +34,13 @@ Studio images were prepared from supplied photographs and may reconstruct obscur
 
 ## Delivery campaign
 
-The active hero uses locally bundled GSAP and a six-face CSS 3D package, with separate truck, headlight, halo, mist, and typography layers. “Watch the dispatch” starts the replayable sequence. Motion controls respect the operating-system setting and retain an explicit reduced-motion preference. Elevator transitions use the same preference.
+The active hero uses locally bundled GSAP and a six-face CSS 3D package, with separate truck, headlight, halo, mist, and typography layers. The sequence starts automatically and loops continuously, fading through darkness between deliveries. There are no playback, replay, speed, seek, or time controls. It pauses offscreen or in background tabs and resumes when visible. The reduced-motion option respects the operating-system setting and retains an explicit preference; elevator transitions use the same preference.
 
 The truck is a photographic plane. Fully realistic camera movement, tire contact, suspension, and cargo-door motion still need a rigged 3D truck or production footage. Earlier Canvas code and video assets are retained as inactive references; they are not the main hero.
 
 The crown-and-globe logo is supplied as standalone scalable SVGs for website, packaging, and truck use. Physical foil and print finishes need a manufacturing proof.
+
+The phone layout uses larger touch targets, compact navigation, horizontally scrollable filters, responsive product dialogs, and a reframed delivery scene.
 
 ## Development checks
 
@@ -47,7 +49,7 @@ npm run build:catalog
 npm test
 ```
 
-Checks cover catalog assets, all three showroom modes, department routing, empty Kids, search and filtering, original-photo comparison, bag persistence, CSV output, source-library grouping, GSAP timeline states, replay, reduced-motion preferences, asset failures, and focus restoration. These use jsdom and do not replace a visual review in a real browser.
+Checks cover catalog assets, all three showroom modes, department routing, empty Kids, search and filtering, original-photo comparison, bag persistence, CSV output, source-library grouping, GSAP timeline states, repeated autoplay loops, visibility resume, reduced-motion preferences, asset failures, and focus restoration. These use jsdom and do not replace a visual review in a real browser.
 
 `npm run test:legacy-render` optionally renders the archived Canvas implementation into ignored local review files; it does not verify the active GSAP hero.
 

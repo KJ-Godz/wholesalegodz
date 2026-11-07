@@ -1,0 +1,78 @@
+/* Phone layouts and touch targets shared by the showroom views. */
+img{max-width:100%}
+.mast .brand,.catalog-controls,.filters,.bag-row .row-body{min-width:0}
+.toast{white-space:normal;text-align:center;width:max-content;line-height:1.5}
+.premium-hero .film-stage{aspect-ratio:auto}
+.premium-hero .motion-preferences label{min-height:44px;padding:8px 0;font-size:11px;color:#b1b8a3}
+.premium-hero .motion-preferences input{width:18px;height:18px}
+.premium-hero .film-stage::before{display:none}
+@media(max-width:680px){
+ html{scrollbar-gutter:auto}
+ .demo-bar{flex-direction:column;align-items:flex-start;gap:0;padding:10px 19px 0}
+ .demo-label{font-size:8px;letter-spacing:.1em;white-space:normal;line-height:1.5}
+ .demo-nav{width:100%;gap:22px;justify-content:space-between}
+ .demo-nav a{min-height:44px;font-size:11px}
+ .mast{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;min-height:76px}
+ .mast .brand img{width:clamp(155px,48vw,205px);max-width:100%}
+ .tools{gap:8px;margin:0}
+ .tools button{min-width:44px;min-height:44px;justify-content:center}
+ .tools .bag-tool{min-width:58px}
+ .premium-hero .film-stage{height:clamp(650px,calc(100svh - 138px),860px);min-height:650px}
+ .premium-hero .dispatch-copy{left:22px;top:34px;width:calc(100% - 44px)}
+ .hero-eyebrow{font-size:8px;line-height:1.5;letter-spacing:.12em;margin-bottom:23px}
+ .premium-hero h1{font-size:clamp(60px,16vw,89px)}
+ .premium-hero .dispatch-copy p{font-size:12px;max-width:235px;margin-bottom:12px}
+ .hero-collection-link{font-size:12px;min-height:44px;width:210px}
+ .premium-hero .motion-preferences{bottom:max(12px,env(safe-area-inset-bottom));left:22px}
+ .premium-hero .motion-preferences label{font-size:11px}
+ .premium-hero .dispatch-loading{bottom:68px;font-size:10px;max-width:calc(100% - 44px)}
+ .department-nav{gap:0 23px}
+ .department-nav button,.filters button,.family-filters button{min-height:44px;font-size:12px}
+ .filters{gap:22px;overscroll-behavior-x:contain}
+ .family-filters{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:thin;gap:8px;padding-bottom:6px;overscroll-behavior-x:contain}
+ .family-filters button{flex:0 0 auto;padding:10px 12px}
+ .card-plus{width:32px;height:32px}
+ .card-img .card-no{font-size:8px}
+ .department-wardrobe{min-width:0}
+ .department-wardrobe button{min-width:0}
+ .department-wardrobe button>span:last-child{overflow-wrap:anywhere}
+ .arrival-note{flex-wrap:wrap;gap:12px}
+ .arrival-note>div{flex:1;min-width:140px}
+ .arrival-note button{min-height:44px;max-width:none;font-size:11px}
+ .collection-notice p{font-size:12px;line-height:1.6}
+ .collection-notice a{min-height:44px;display:inline-flex;align-items:center;font-size:11px}
+ .tiers{grid-template-columns:1fr;gap:20px}
+ .tiers>div{display:grid;grid-template-columns:1fr 1fr;gap:8px 12px;align-items:start}
+ .tiers strong{margin:0;font-size:29px;text-align:right}
+ .tiers p{grid-column:1/-1;font-size:12px}
+ .tiers .micro{font-size:10px;line-height:1.5}
+ .footer-links{flex-wrap:wrap;gap:5px 18px}
+ .footer-links a{min-height:44px;display:flex;align-items:center;font-size:11px}
+ .close{width:44px;height:44px}
+ .photo-tools{max-width:calc(100% - 16px)}
+ .photo-tools button{min-height:44px;flex:1;padding:7px 8px;font-size:10px}
+ .stepper button{width:44px;height:44px}
+ .stepper input,.bag-edit input{font-size:16px;min-height:44px}
+ .row-add{min-height:44px;white-space:nowrap}
+ .bag-row{flex-wrap:wrap;gap:10px}
+ .bag-edit{margin-left:auto}
+ .remove{min-height:44px;margin:0}
+ .mini-name{overflow-wrap:anywhere}
+ .drawer-inner{padding-bottom:max(30px,env(safe-area-inset-bottom))}
+ .arrows button{width:44px;height:44px}
+ .text-link{min-height:44px}
+}
+@media(max-width:360px){
+ .mast{padding-inline:14px;gap:8px}
+ .demo-nav{gap:12px}
+ .card-title{font-size:20px}
+ .line-title{font-size:17px;overflow-wrap:anywhere}
+ .line-item img{width:34px;height:46px}
+ .department-wardrobe button img{height:180px}
+}
+@media(max-height:500px) and (orientation:landscape){
+ .product-shell{grid-template-columns:1fr 1fr;width:min(960px,calc(100vw - 24px))}
+ .product-visual{height:calc(100dvh - 20px);min-height:260px}
+ .premium-hero .film-stage{min-height:580px}
+ .lift-preview img{height:20vh}
+}

@@ -3,19 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="wholesale-gods-build" content="05-gsap-hero">
+  <meta name="wholesale-gods-build" content="06-continuous-showroom">
   <meta name="theme-color" content="#f7f5ef">
   <meta name="description" content="Explore Wholesale Gods through three buyer showroom presentations. Browse pieces, inspect details and build a selection request.">
   <title>Wholesale Gods — A Higher Standard</title>
   <link rel="icon" href="assets/brand-icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="showroom.css?v=6">
+  <link rel="stylesheet" href="showroom.css?v=7">
   <script src="motion-preferences.js?v=1" defer></script>
   <script src="catalog.js?v=04" defer></script>
-  <link rel="stylesheet" href="hero.css?v=1">
+  <link rel="stylesheet" href="hero.css?v=2">
+  <link rel="stylesheet" href="mobile.css?v=1">
   <script src="vendor/gsap.min.js" defer></script>
-  <script src="hero.js?v=1" defer></script>
-  <script src="app.js?v=6" defer></script>
+  <script src="hero.js?v=2" defer></script>
+  <script src="app.js?v=7" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -46,7 +47,6 @@
           <h1 id="campaign-title">A higher<br><i>standard.</i></h1>
           <p>Considered pieces.<br>Delivered with distinction.</p>
           <a class="hero-collection-link" href="#collection">Explore the collection <span aria-hidden="true">↗</span></a>
-          <button class="hero-story-link" data-action="film-start">Watch the dispatch <span aria-hidden="true">↻</span></button>
         </div>
         <div id="delivery-scene" class="delivery-scene" role="img" aria-label="A Wholesale Gods delivery: headlights, halo and a dimensional branded package" aria-describedby="film-description">
           <div class="delivery-world" aria-hidden="true">
@@ -64,13 +64,11 @@
         <div class="hero-ending" aria-hidden="true" inert><img src="assets/logo-gold.svg" alt="Wholesale Gods"><h2>Your package<br>is on its way.</h2><a href="#collection">Explore the collection ↗</a></div>
         <p id="film-description" class="visually-hidden">Headlights emerge from darkness as the branded truck approaches. A halo opens in mist. A black-and-gold package rises, turns, and moves into the truck. The truck departs. Your package is on its way.</p>
         <div id="dispatch-loading" class="dispatch-loading" role="status">Preparing your delivery…</div>
-        <button id="delivery-replay-overlay" class="delivery-replay-overlay" data-action="film-start" hidden><span>THE ART OF ARRIVAL</span><b>Replay delivery ↻</b><small>Play the delivery sequence</small></button>
-        <div class="film-controls"><button id="film-toggle" data-action="film-toggle" aria-label="Pause delivery motion"><span id="film-icon" aria-hidden="true">Ⅱ</span><span id="film-label">Pause</span></button><input class="film-seek" id="film-seek" type="range" min="0" max="22" step="0.05" value="0" aria-label="Delivery position in seconds"><span id="film-time">00:00</span><button data-action="film-fullscreen" aria-label="View delivery fullscreen">⛶</button><button data-action="film-replay" aria-label="Replay delivery">↻</button></div>
-        <div class="motion-preferences"><label><input id="reduced-motion" type="checkbox"> Reduced motion</label><p id="motion-note">A quiet moment, in motion.</p></div>
+        <div class="motion-preferences"><label><input id="reduced-motion" type="checkbox"> Reduced motion</label><p id="motion-note">The delivery plays continuously.</p></div>
         <div class="hero-footnote">GLOBAL REACH. CONSIDERED DELIVERY.</div>
       </div>
     </section>
-    <div class="film-caption" id="film-caption"><span id="dispatch-status" role="status" aria-live="polite">The approach</span></div>
+    <div class="film-caption" id="film-caption"><span id="dispatch-status">The approach</span></div>
     <section class="floor-selector" aria-labelledby="floors-title">
       <div class="floor-intro"><div class="kicker"><b></b> THE WHOLESALE GODS BUILDING <em>/</em> CONCEPT</div><h2 id="floors-title">Choose your <i>floor.</i></h2><p>A private lift. Three departments. Select a floor and step inside.</p></div>
       <div class="floor-buttons" aria-label="Choose a showroom floor">

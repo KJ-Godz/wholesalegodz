@@ -125,7 +125,7 @@ function bag() {
     get("#bag-body").innerHTML='<p class="empty">Your bag is empty. Choose a piece to begin a selection request.</p><button class="button dark-btn" data-action="browse">Browse the goods <span>↗</span></button>'; return;
   }
   const total=items.reduce((sum,p)=>sum+order[p.id],0);
-  get("#bag-body").innerHTML=items.map(p=>'<div class="mini-row bag-row">'+thumb(p)+'<div class="row-body"><span class="mini-name">'+p.name+'</span><small>'+p.color+'</small><button class="remove" data-remove="'+p.id+'" aria-label="Remove '+p.name+'">Remove</button></div><label class="bag-edit"><input type="number" min="1" max="99999" required step="1" value="'+order[p.id]+'" data-qty="'+p.id+'" aria-label="Quantity for '+p.name+'"> units</label></div>').join("")+'<div class="bag-summary"><div><span>Total units</span><strong>'+total.toLocaleString("en-US")+'</strong></div><div><span>Illustrative volume tier</span><strong>'+tier(total)+'</strong></div><button class="button dark-btn" data-action="export-bag">Download selection request <span>↓</span></button><button class="text-link" data-action="preview-dispatch">Preview the delivery animation <span>▷</span></button><p>The CSV records your selection request. Sizes, final pricing and stock require confirmation.</p></div>';
+  get("#bag-body").innerHTML=items.map(p=>'<div class="mini-row bag-row">'+thumb(p)+'<div class="row-body"><span class="mini-name">'+p.name+'</span><small>'+p.color+'</small><button class="remove" data-remove="'+p.id+'" aria-label="Remove '+p.name+'">Remove</button></div><label class="bag-edit"><input type="number" min="1" max="99999" required step="1" value="'+order[p.id]+'" data-qty="'+p.id+'" aria-label="Quantity for '+p.name+'"> units</label></div>').join("")+'<div class="bag-summary"><div><span>Total units</span><strong>'+total.toLocaleString("en-US")+'</strong></div><div><span>Illustrative volume tier</span><strong>'+tier(total)+'</strong></div><button class="button dark-btn" data-action="export-bag">Download selection request <span>↓</span></button><button class="text-link" data-action="preview-dispatch">View the delivery campaign <span>↗</span></button><p>The CSV records your selection request. Sizes, final pricing and stock require confirmation.</p></div>';
 }
 function exportCSV(isOrder) {
   const items=isOrder?catalog.filter(p=>order[p.id]):results();
@@ -143,27 +143,15 @@ function browse() { all("dialog[open]").forEach(d=>d.close());get("#collection")
 const film=new WGDeliveryHero(get("#delivery-scene"));
 window.wgDelivery=film;
 function filmState() {
-  const playing=!film.paused && !film.ended;
-  const label=WGPreferences.reducedMotion?"Delivery summary":film.ended?"Replay animation":playing?"Pause animation":"Play animation";
-  get("#film-label").textContent=label;get("#film-toggle").setAttribute("aria-label",label);
-  get("#film-icon").textContent=playing?"Ⅱ":"▷";
-  const seek=get("#film-seek"); if(Number.isFinite(film.duration))seek.max=film.duration; if(document.activeElement!==seek)seek.value=film.currentTime||0;
-  const replay=get("#delivery-replay-overlay");replay.hidden=playing;replay.querySelector("b").textContent=WGPreferences.reducedMotion?"Enable motion & play":film.ended?"Replay delivery ↻":film.currentTime<.1?"Play delivery sequence ▷":"Restart delivery ↻";get("#film-stage").classList.toggle("is-paused",!playing);get("#film-stage").classList.toggle("is-ended",film.ended);get("#film-stage").classList.toggle("is-reduced",WGPreferences.reducedMotion);
-  get("#film-time").textContent="00:"+num(Math.floor(film.currentTime||0));
-  seek.setAttribute("aria-valuetext",film.currentTime.toFixed(1)+" seconds: "+WGDeliveryHero.sceneAt(film.currentTime).label);
+  get("#film-stage").classList.toggle("is-reduced",WGPreferences.reducedMotion);
 }
-function playFilm(restart=false) {
-  if(restart||film.ended)film.currentTime=0;
-  film.play().catch(()=>{filmState();if(film.error)toast("The delivery assets could not load. Please refresh to retry.");});
-}
-["timeupdate","play","pause","ended","loadedmetadata","motionchange"].forEach(type=>film.addEventListener(type,filmState));
+["motionchange","loadedmetadata"].forEach(type=>film.addEventListener(type,filmState));
 function dispatchPreview() {
   all("dialog[open]").forEach(d=>d.close());
   if(view!=="campaign"){location.href="?view=campaign&play=1#campaign";return;}
-  get("#campaign").scrollIntoView();playFilm(true);
+  get("#campaign").scrollIntoView();
 }
 const actions={
-  "film-start"(){if(WGPreferences.reducedMotion)WGPreferences.setReducedMotion(false);playFilm(true);},
   close:b=>b.closest("dialog")?.close(),
   search(){get("#search-input").value=query;searchMatches();popup("#search-dialog","input");},
   bag(){bag();popup("#bag-dialog",".close");},browse,
@@ -175,7 +163,7 @@ const actions={
   less(){get("#pd-qty").stepDown();productTier();},more(){get("#pd-qty").stepUp();productTier();},
   add(){const input=get("#pd-qty");if(!units(input.value)){input.reportValidity();input.focus();return;}if(add(selected.id,Number(input.value))){get("#product-dialog").close();toast(input.value+" units added to buyer bag");}},
   "export-sheet":()=>exportCSV(false),"export-bag":()=>exportCSV(true),
-  "film-toggle"(){if(film.paused||film.ended)playFilm();else film.pause();},"film-fullscreen"(){const stage=get("#film-stage");if(document.fullscreenElement)document.exitFullscreen?.();else if(stage.requestFullscreen)stage.requestFullscreen().catch(()=>toast("Fullscreen is unavailable in this browser."));else toast("Fullscreen is unavailable in this browser.");},"film-replay":()=>playFilm(true),"preview-dispatch":dispatchPreview
+  "preview-dispatch":dispatchPreview
 };
 document.addEventListener("click",event=>{
   const b=event.target.closest("button");if(!b)return;
@@ -210,7 +198,6 @@ if(view==="linesheet"){
   get("#section-meta").innerHTML="Compare the goods by item number.<br> Add units or download the filtered sheet.";
   get("#catalog-action").dataset.action="export-sheet";get("#catalog-action").innerHTML='<span>Download CSV</span><span>↓</span>';get("#layout-note").textContent="BUYER INDEX";
 }
-if(view==="campaign" && new URLSearchParams(location.search).get("play")==="1"){playFilm(true);}
 badge();render();filmState();
 
 let productFrame=0;
@@ -245,8 +232,7 @@ get("#product-dialog").addEventListener("keydown",e=>{
 // Shared garments are unisex, confirmed by the user. Kids awaits confirmed items.
 const floorNames={men:["01","Men","Walnut. Bronze. A considered perspective."],women:["02","Women","Champagne. Travertine. A different point of view."],kids:["03","Kids","Sage. Pale oak. Room for discovery."],all:["G","All goods","The complete showroom edit."]};
 actions["return-floors"]=()=>{get(".floor-selector").scrollIntoView({block:"start"});get('[data-floor="'+currentFloor+'"]').focus({preventScroll:true});};
-get("#film-seek").addEventListener("input",e=>{film.currentTime=Number(e.target.value);filmState();});
-film.addEventListener("loadedmetadata",()=>get("#film-seek").max=film.duration);
+
 
 const originalHeading=get("#collection-title").innerHTML;
 const originalMeta=get("#section-meta").innerHTML;
@@ -334,7 +320,7 @@ const motionToggle=get("#reduced-motion");
 function syncMotion(){
   const reduced=WGPreferences.reducedMotion;
   motionToggle.checked=reduced;document.body.classList.toggle("reduce-motion",reduced);document.body.classList.toggle("full-motion",!reduced);
-  get("#motion-note").textContent=reduced?"Static delivery summary. Floor changes are immediate.":"A quiet moment, in motion.";
+  get("#motion-note").textContent=reduced?"Static delivery summary. Floor changes are immediate.":"The delivery plays continuously.";
   filmState();
 }
 motionToggle.addEventListener("change",()=>WGPreferences.setReducedMotion(motionToggle.checked));
