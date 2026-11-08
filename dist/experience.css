@@ -42,7 +42,13 @@ body>footer{background:var(--brand-dark);color:#e3d4b0}body>footer p{color:#aaa2
 .department-wardrobe{padding-top:55px;padding-bottom:55px;gap:20px}.department-wardrobe::before{top:38px;box-shadow:0 0 16px #d3ad6155}.department-wardrobe::after{top:52px;background:linear-gradient(130deg,#fff4d41f,transparent);border-color:#fff8e680}
 .department-wardrobe button>span:last-child{font-size:23px;text-wrap:balance;max-width:240px}.department-wardrobe small{font-size:9px;letter-spacing:.11em;color:#6c624c}
 .department-editorial p{font-size:14px}.department-disclosure{font-size:9px;color:#706044}.department-corner{font-size:8px}
+body>footer{flex-wrap:wrap}
+.site-accessibility{flex:0 0 100%;order:4;display:flex;align-items:center;justify-content:flex-end;border-top:1px solid #c8ac6533;padding-top:10px}
+.site-accessibility label{display:flex;align-items:center;gap:10px;min-height:44px;color:#bbb29c;font-size:11px;cursor:pointer}
+.site-accessibility input{width:18px;height:18px;accent-color:#b99a57}
 @media(max-width:680px){
+ .demo-bar{display:none}
+ .site-accessibility{justify-content:flex-start}
  .mast{min-height:88px}.mast .brand img{width:clamp(170px,52vw,220px)}.foot-brand img{width:235px}
  .tools{gap:4px}.tools .bag-tool{min-width:52px}.mast{gap:8px}
  .brand-page header img,.sources-page header img{width:210px}

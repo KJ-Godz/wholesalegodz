@@ -5,7 +5,7 @@ const root=path.resolve(__dirname,'..');
 const html=fs.readFileSync(path.join(root,'dist/index.html'),'utf8');
 const renderer=fs.readFileSync(path.join(root,'dist/motion-preferences.js'),'utf8');
 const app=fs.readFileSync(path.join(root,'dist/app.js'),'utf8');
-function setup({mode='campaign',reduced=false,floor='',source='',brokenAssets=false,rejectAutoplay=false,deferredPlayback=false,storage}={}){
+function setup({mode='campaign',reduced=false,floor='',source='',brokenAssets=false,rejectAutoplay=false,rejectFirst=0,deferredPlayback=false,legacyMotion,savedMotion,storage}={}){
   const dom=new JSDOM(html,{url:'http://localhost:4173/?view='+mode+'&floor='+floor+'&source='+source,runScripts:'outside-only',pretendToBeVisual:true});
   const w=dom.window,q=s=>w.document.querySelector(s);let timers=[],raf=new Map(),rafId=0,download,visibleCallback,virtualNow=100000;w.Date.now=()=>virtualNow;
   w.IntersectionObserver=class {constructor(callback){visibleCallback=callback;}observe(){}disconnect(){}};
@@ -24,7 +24,7 @@ function setup({mode='campaign',reduced=false,floor='',source='',brokenAssets=fa
   w.HTMLMediaElement.prototype.play=function(){
     this._plays=(this._plays||0)+1;
     if(brokenAssets)return Promise.reject(new Error('Missing media'));
-    if(rejectAutoplay)return Promise.reject(new w.DOMException('Autoplay disabled','NotAllowedError'));
+    if(rejectAutoplay||this._plays<=rejectFirst)return Promise.reject(new w.DOMException('Autoplay disabled','NotAllowedError'));
     const begin=()=>{this._mediaPaused=false;this.dispatchEvent(new w.Event('playing'));};
     if(deferredPlayback)return new Promise(resolve=>{this.resolvePlayback=()=>{begin();resolve();};});
     begin();return Promise.resolve();
@@ -34,6 +34,8 @@ function setup({mode='campaign',reduced=false,floor='',source='',brokenAssets=fa
   w.setTimeout=(fn,ms)=>{timers.push({fn,ms});return timers.length;};w.clearTimeout=()=>{};
   w.requestAnimationFrame=fn=>{const id=++rafId;raf.set(id,fn);return id;};w.cancelAnimationFrame=id=>raf.delete(id);
   w.Blob=Blob;w.URL.createObjectURL=blob=>{download=blob;return 'blob:demo-test';};w.URL.revokeObjectURL=()=>{};
+  if(legacyMotion)w.localStorage.setItem('wg.motion.v1',legacyMotion);
+  if(savedMotion)w.localStorage.setItem('wg.accessibility.motion.v2',savedMotion);
   if(storage)w.localStorage.setItem('wg.showroom.order.v1',JSON.stringify(storage));
   w.eval(fs.readFileSync(path.join(root,'dist/catalog.js'),'utf8'));w.eval(renderer);w.eval(fs.readFileSync(path.join(root,'dist/hero.js'),'utf8'));w.eval(app);
   return {w,q,click:s=>{assert(q(s),'Missing '+s);q(s).click();},download:()=>download,
@@ -93,7 +95,7 @@ const hiddenRide=setup();await hiddenRide.ready();hiddenRide.click('[data-floor=
 const failedRide=setup({brokenAssets:true});await failedRide.ready();failedRide.click('[data-floor="women"]');await failedRide.flush();assert.equal(failedRide.q('#match-count').textContent,'69 PIECES');assert(!failedRide.q('main').inert);failedRide.close();
 const icons=setup();await icons.ready();for(const selector of ['.floor-buttons b','.arrows button','.lift-indicator i','.hero-collection-link'])assert(icons.q(selector).querySelector('svg.wg-icon path'));assert(!/[↗↑↓←→]/.test(icons.w.document.body.textContent));assert(!icons.q('.floor-intro').textContent.includes('CONCEPT'));icons.close();
 console.log('Lift: real body layer, preload failures, busy re-entry, Escape/skip, mid-ride motion changes and visibility cleanup PASS; vector arrows PASS');
-const os=setup({reduced:true});await os.ready();assert(os.w.wgDelivery.paused);assert.equal(os.w.wgDelivery.currentTime,0);assert(os.q('#reduced-motion').checked);os.q('#reduced-motion').checked=false;os.q('#reduced-motion').dispatchEvent(new os.w.Event('change'));assert(!os.w.WGPreferences.reducedMotion);assert(os.w.document.body.classList.contains('full-motion'));os.click('[data-floor="men"]');await os.flush();os.w.localStorage.setItem('wg.motion.v1','reduced');os.w.dispatchEvent(new os.w.StorageEvent('storage',{key:'wg.motion.v1'}));assert(os.q('#reduced-motion').checked);os.close();
+const os=setup({reduced:true});await os.ready();assert(os.w.wgDelivery.paused);assert.equal(os.w.wgDelivery.currentTime,0);assert(os.q('#reduced-motion').checked);os.q('#reduced-motion').checked=false;os.q('#reduced-motion').dispatchEvent(new os.w.Event('change'));assert(!os.w.WGPreferences.reducedMotion);assert(os.w.document.body.classList.contains('full-motion'));os.click('[data-floor="men"]');await os.flush();os.w.localStorage.setItem('wg.accessibility.motion.v2','reduced');os.w.dispatchEvent(new os.w.StorageEvent('storage',{key:'wg.accessibility.motion.v2'}));assert(os.q('#reduced-motion').checked);os.close();
 const link=setup({floor:'women',mode:'studio'});await link.ready();assert.equal(link.q('#match-count').textContent,'69 PIECES');link.close();
 const broken=setup({brokenAssets:true});await broken.ready();assert(broken.w.wgDelivery.error);assert(broken.q('#dispatch-loading').textContent.includes('unavailable'));assert.equal(broken.q('#match-count').textContent,'97 PIECES');broken.close();
 const stored=setup({storage:{'sailor-bear-knit-ivory':20,'box-beanie-30':10,hoodie:10,'demo-kids-knit':5,'wg-signature-hoodie':100}});await stored.ready();stored.click('[data-action="bag"]');assert(stored.q('#bag-body').textContent.includes('Sailor Bear Knit'));assert(stored.q('#bag-body').textContent.includes('Box Logo Beanie'));assert(!stored.q('#bag-body').textContent.includes('Essential Pullover'));assert(!stored.q('#bag-body').textContent.includes('Signature Hoodie'));stored.close();
@@ -106,10 +108,16 @@ assert(!hero.paused);assert(movie.q('.hero-film-poster').hidden);assert(video.mu
 for(let cycle=0;cycle<3;cycle++){hero.currentTime=31.375;video.dispatchEvent(new movie.w.Event('ended'));assert.equal(hero.currentTime,0);assert(!hero.paused);assert.equal(video._loads,1);}
 hero.currentTime=8.5;movie.visibility(false);assert(hero.paused);movie.visibility(true);assert(!hero.paused);assert.equal(hero.currentTime,8.5);movie.tabVisibility(true);assert(hero.paused);movie.tabVisibility(false);assert(!hero.paused);
 movie.w.WGPreferences.setReducedMotion(true);assert(hero.paused);assert(!movie.q('.hero-film-poster').hidden);assert.equal(movie.q('#delivery-scene').dataset.playback,'reduced');movie.w.WGPreferences.setReducedMotion(false);assert(!hero.paused);movie.close();
-const blockedMovie=setup({rejectAutoplay:true});await blockedMovie.ready();assert(blockedMovie.w.wgDelivery.paused);assert(!blockedMovie.q('.hero-film-poster').hidden);assert(!blockedMovie.w.wgDelivery.error);assert.equal(blockedMovie.q('#match-count').textContent,'97 PIECES');blockedMovie.close();
+const blockedMovie=setup({rejectAutoplay:true});await blockedMovie.ready();assert(blockedMovie.w.wgDelivery.paused);assert(!blockedMovie.q('.hero-film-poster').hidden);assert(!blockedMovie.w.wgDelivery.error);assert.equal(blockedMovie.q('#match-count').textContent,'97 PIECES');await blockedMovie.flush();assert.equal(blockedMovie.q('#delivery-video')._plays,4);blockedMovie.close();
 const reducedFilm=setup({reduced:true});await reducedFilm.ready();assert(!reducedFilm.q('#delivery-video source').hasAttribute('src'));assert.equal(reducedFilm.q('#delivery-video')._loads,undefined);assert(!reducedFilm.q('.hero-film-poster').hidden);reducedFilm.close();
 const pending=setup({deferredPlayback:true});await new Promise(resolve=>setImmediate(resolve));pending.visibility(false);pending.q('#delivery-video').resolvePlayback();await pending.ready();assert(pending.w.wgDelivery.paused);assert(!pending.q('.hero-film-poster').hidden);pending.close();
+const interrupted=setup({rejectFirst:1});await interrupted.ready();assert(interrupted.w.wgDelivery.paused);await interrupted.flush();assert(!interrupted.w.wgDelivery.paused);assert(interrupted.q('.hero-film-poster').hidden);assert.equal(interrupted.q('#delivery-video')._plays,2);interrupted.close();
+const readyAgain=setup({rejectFirst:1});await readyAgain.ready();readyAgain.q('#delivery-video').dispatchEvent(new readyAgain.w.Event('canplay'));await readyAgain.flush();assert(!readyAgain.w.wgDelivery.paused);assert.equal(readyAgain.q('#delivery-video')._plays,2);readyAgain.close();
+const concurrent=setup({deferredPlayback:true});await new Promise(resolve=>setImmediate(resolve));concurrent.q('#delivery-video').dispatchEvent(new concurrent.w.Event('loadeddata'));concurrent.q('#delivery-video').dispatchEvent(new concurrent.w.Event('canplay'));concurrent.visibility(true);assert.equal(concurrent.q('#delivery-video')._plays,1);concurrent.q('#delivery-video').resolvePlayback();await concurrent.ready();assert(!concurrent.w.wgDelivery.paused);concurrent.close();
+const legacy=setup({legacyMotion:'reduced'});await legacy.ready();assert(!legacy.w.wgDelivery.paused);assert(!legacy.q('#reduced-motion').checked);assert.equal(legacy.q('#campaign').querySelectorAll('input,button').length,0);assert(legacy.q('footer #reduced-motion'));legacy.q('#delivery-video').pause();legacy.w.dispatchEvent(new legacy.w.Event('pageshow'));assert(!legacy.w.wgDelivery.paused);legacy.close();
+const saved=setup({savedMotion:'reduced'});await saved.ready();assert(saved.w.wgDelivery.paused);assert(saved.q('#reduced-motion').checked);saved.close();
 const filmBytes=fs.readFileSync(path.join(root,'dist/assets/wholesale-gods-arrival.mp4'));let offset=0,boxes=[];while(offset+8<=filmBytes.length){const size=filmBytes.readUInt32BE(offset);assert(size>=8);boxes.push(filmBytes.toString('ascii',offset+4,offset+8));offset+=size;}assert(boxes.indexOf('moov')>=0&&boxes.indexOf('moov')<boxes.indexOf('mdat'),'MP4 must be fast-start');assert(fs.existsSync(path.join(root,'dist/assets/wholesale-gods-arrival-poster.jpg')));
+console.log('Automatic startup: interrupted-request retry, readiness recovery, concurrent request deduplication, pageshow resume, legacy review settings and footer accessibility PASS');
 console.log('Native film: autoplay/muted/inline/loop, no controls, full-frame media, visibility resume, reduced-motion, autoplay rejection, delayed-play races and fast-start asset PASS');
 const inventory=JSON.parse(fs.readFileSync(path.join(root,'catalog/sources.json'),'utf8'));assert.equal(inventory.length,52);assert(inventory.every(s=>s.status&&s.note));assert.equal(inventory.filter(s=>s.status==='Reference board').length,1);
 const grouped=setup({source:'47'});await grouped.ready();assert.equal(grouped.q('#match-count').textContent,'15 PIECES');assert(grouped.q('#query-note').textContent.includes('source 47'));grouped.click('[data-action="clear-query"]');assert.equal(grouped.q('#match-count').textContent,'97 PIECES');grouped.close();

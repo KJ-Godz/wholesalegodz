@@ -20,3 +20,7 @@ The single supplied landscape film remains complete on mobile. A separately comp
 ## Verification
 
 The source and web-export frames were inspected; the web export was decoded end-to-end. Application tests simulate native media events, blocked autoplay and delayed playback, and check that the catalog, buyer bag, filters and elevator continue working. Streaming tests cover byte ranges and HEAD requests. These do not replace an actual browser/device playback review; localhost browser automation remains blocked by a saved user permission.
+
+## Automatic startup refinement
+
+Normal page load starts the muted film without a play choice. Playback requests are deduplicated; media readiness, short bounded retries and page restoration recover interrupted startup. Browser-level autoplay restrictions cannot be overridden by the website. The optional reduce-motion control is in the footer, with a current accessibility preference key independent of the old campaign-review toggle. The presentation-switching strip is hidden at phone widths.

@@ -1,7 +1,9 @@
-/* Shared motion preference for the GSAP hero and showroom elevators. */
+/* Explicit accessibility preference for the film and showroom elevators. */
 (function(root){
  'use strict';
- const key='wg.motion.v1',system=root.matchMedia?.('(prefers-reduced-motion: reduce)');
+ // The old campaign-review toggle is not an accessibility choice for this film.
+ // Default to the OS preference until the visitor uses the footer setting.
+ const key='wg.accessibility.motion.v2',system=root.matchMedia?.('(prefers-reduced-motion: reduce)');
  class MotionPreferences{
   static get reducedMotion(){try{const value=root.localStorage.getItem(key);if(value!==null)return value==='reduced';}catch{}return !!system?.matches;}
   static setReducedMotion(reduced){try{root.localStorage.setItem(key,reduced?'reduced':'full');}catch{}notify();}

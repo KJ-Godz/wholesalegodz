@@ -11,7 +11,7 @@ class PreviewHandler(SimpleHTTPRequestHandler):
 
  def end_headers(self):
   self.send_header('Cache-Control','no-store, max-age=0')
-  self.send_header('X-Wholesale-Gods-Revision','08-supplied-film-local')
+  self.send_header('X-Wholesale-Gods-Revision','09-automatic-film')
   self.send_header('Accept-Ranges','bytes')
   super().end_headers()
 
@@ -53,5 +53,5 @@ class PreviewHandler(SimpleHTTPRequestHandler):
 
 if __name__=='__main__':
  directory=str(Path(__file__).resolve().parents[1]/'dist')
- print('Wholesale Gods revision 08: http://127.0.0.1:4173 — '+directory,flush=True)
+ print('Wholesale Gods revision 09: http://127.0.0.1:4173 — '+directory,flush=True)
  ThreadingHTTPServer(('127.0.0.1',4173),partial(PreviewHandler,directory=directory)).serve_forever()

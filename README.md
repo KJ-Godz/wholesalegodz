@@ -38,7 +38,7 @@ Studio images were prepared from supplied photographs and may reconstruct obscur
 
 The active hero plays the supplied 31.375-second film using a native HTML video element. Its web export is H.264, 1280 × 720, muted, and about 5.5 MB, with the MP4 metadata placed first for streaming. The original `.m4v` master is preserved outside the public website. A real frame from the film is used for the poster and reduced-motion presentation.
 
-The film starts automatically, loops, and plays inline without playback buttons, speed controls, scrubbing, time counters, picture-in-picture or fullscreen controls. Scrolling and shopping remain available. The controller pauses video offscreen or in background tabs and resumes it when visible. Reduced motion shows the poster without loading video initially. Autoplay rejection and media errors retain the poster and the working collection.
+The film starts automatically, loops, and plays inline without playback buttons, speed controls, scrubbing, time counters, picture-in-picture or fullscreen controls. Startup keeps one pending playback request and retries automatically when media becomes ready, after interrupted attempts, and on browser-page restoration. Scrolling and shopping remain available. The controller pauses video offscreen or in background tabs and resumes it when visible. The optional reduced-motion setting is in the footer rather than the hero, and shows the poster without loading video initially. The older campaign-review preference does not govern the new film; current accessibility choices and the operating-system preference remain respected. Autoplay rejection and media errors retain the poster and the working collection.
 
 Desktop and mobile both show the complete 16:9 frame, with contained video against the brand background. Mobile editorial copy and navigation sit outside the action rather than covering faces, the package or truck branding. A separate portrait edit could fill more phone height, but is not required to see the complete supplied film.
 
@@ -46,7 +46,7 @@ Earlier CSS 3D, Canvas and video implementations remain in Git history or inacti
 
 The final crown/WG/globe/truck artwork is preserved unchanged in `dist/assets/logo-final-approved.png`. Native SVG web adaptations provide compact, full and single-ink placements. `brand.html` distinguishes the approved original from these adaptations. Manufacturing artwork and physical foil/print finishes need specialist verification.
 
-The phone layout uses larger touch targets, compact navigation, horizontally scrollable filters, responsive product dialogs, and a reframed delivery scene.
+The phone layout hides the presentation-switching strip above the logo and uses larger touch targets, compact navigation, horizontally scrollable filters, responsive product dialogs, and a contained delivery film.
 
 ## Development checks
 
