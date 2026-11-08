@@ -2,6 +2,8 @@
 
 A static wholesale showroom with a black-and-gold identity, the supplied delivery campaign film, department elevator transitions, and a source-backed clothing collection.
 
+[Live client showroom](https://www.wholesalegods.net/) · [Client repository](https://github.com/KJ-Godz/wholesalegodz)
+
 ## Run locally
 
 Requires Node.js 22.13 or later (or Node.js 24+) and Python 3.9 or later.
@@ -59,7 +61,7 @@ Checks cover catalog assets, all three showroom modes, department routing, empty
 
 Hosting account settings, credentials, installed dependencies, local generation logs, and review archives are excluded from Git. Preserve the bundled GSAP copyright and license notice; see `dist/vendor/README.md`.
 
-The production deployment was checked at `https://wholesalegodz.vercel.app`, including the homepage, animation files, mobile styles, product imagery, and supporting pages. A Chrome iPhone SE preview was used to review navigation, collection layout, and product details. Physical iOS/Android performance still benefits from device testing.
+The current production domain is `https://www.wholesalegods.net`. The homepage, supplied-film assets, poster, logo, styling and HTTP byte-range streaming were verified on that domain. The old `wholesalegodz.vercel.app` preview address is no longer available. Physical iOS/Android playback remains to be verified.
 
 ## Current campaign integration
 
