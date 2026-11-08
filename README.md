@@ -38,7 +38,7 @@ The active hero uses locally bundled GSAP and a six-face CSS 3D package, with se
 
 The truck is a photographic plane. Fully realistic camera movement, tire contact, suspension, and cargo-door motion still need a rigged 3D truck or production footage. Earlier Canvas code and video assets are retained as inactive references; they are not the main hero.
 
-The crown-and-globe logo is supplied as standalone scalable SVGs for website, packaging, and truck use. Physical foil and print finishes need a manufacturing proof.
+The final crown/WG/globe/truck artwork is preserved unchanged in `dist/assets/logo-final-approved.png`. Native SVG web adaptations provide compact, full and single-ink placements. `brand.html` distinguishes the approved original from these adaptations. Manufacturing artwork and physical foil/print finishes need specialist verification.
 
 The phone layout uses larger touch targets, compact navigation, horizontally scrollable filters, responsive product dialogs, and a reframed delivery scene.
 
@@ -56,3 +56,9 @@ Checks cover catalog assets, all three showroom modes, department routing, empty
 Hosting account settings, credentials, installed dependencies, local generation logs, and review archives are excluded from Git. Preserve the bundled GSAP copyright and license notice; see `dist/vendor/README.md`.
 
 The production deployment was checked at `https://wholesalegodz.vercel.app`, including the homepage, animation files, mobile styles, product imagery, and supporting pages. A Chrome iPhone SE preview was used to review navigation, collection layout, and product details. Physical iOS/Android performance still benefits from device testing.
+
+## Local revision 07 — deployment on hold
+
+The final logo, native SVG arrows, customer-facing department copy, and more resilient elevator transitions are prepared locally. No GitHub push or Vercel redeploy should happen until the replacement campaign video is supplied and reviewed. The current GSAP campaign continues to run while that asset is pending. See `docs/campaign-video-handoff.md`.
+
+The lift lives outside the inert browsing page, preloads its department imagery, masks previous sections during travel, and releases focus/scroll locks on normal arrival, the Enter department shortcut, Escape, reduced-motion changes, tab visibility changes and image-load failures. Regression checks exercise those paths. The latest browser visual review is pending because a saved localhost browser permission blocks agent access.

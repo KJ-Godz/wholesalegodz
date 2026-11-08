@@ -28,7 +28,7 @@ function setup({mode='campaign',reduced=false,floor='',source='',brokenAssets=fa
     visibility:visible=>visibleCallback([{isIntersecting:visible}]),
     tabVisibility:hidden=>{Object.defineProperty(w.document,'hidden',{configurable:true,value:hidden});w.document.dispatchEvent(new w.Event('visibilitychange'));},
     step:stamp=>{virtualNow=100000+stamp;const todo=[...raf.values()];raf.clear();for(const fn of todo)fn(stamp);},
-    flush:async()=>{let guard=0;while(timers.length){assert(guard++<50,'Timer overflow');timers.shift().fn();await Promise.resolve();await Promise.resolve();}},
+    flush:async()=>{let guard=0;do{if(timers.length){assert(guard++<50,'Timer overflow');timers.shift().fn();}await new Promise(resolve=>setImmediate(resolve));}while(timers.length);},
     ready:()=>w.wgDelivery.ready, close:()=>{w.wgDelivery?.pause();w.gsap?.ticker.sleep();w.close();}};
 }
 (async()=>{
@@ -65,6 +65,22 @@ for(const mode of ['campaign','studio','linesheet']){
  q('#reduced-motion').checked=false;q('#reduced-motion').dispatchEvent(new w.Event('change'));assert(!w.WGPreferences.reducedMotion);assert.equal(w.wgDelivery.paused,mode!=='campaign');
  console.log(mode+': source catalog, 3 floors, category/style filters, source/back views, bag/CSV, passive continuous hero, reduced motion PASS');t.close();
 }
+// A separate, accessible lift layer must always release the underlying showroom.
+const escapeRide=setup();await escapeRide.ready();
+assert.equal(escapeRide.q('#elevator').parentElement,escapeRide.w.document.body);
+escapeRide.click('[data-floor="men"]');
+assert.equal(escapeRide.q('#elevator').getAttribute('aria-hidden'),'false');
+assert(!escapeRide.q('#elevator').inert);assert.equal(escapeRide.w.document.activeElement,escapeRide.q('.lift-skip'));
+const tabDuringRide=new escapeRide.w.KeyboardEvent('keydown',{key:'Tab',bubbles:true,cancelable:true});escapeRide.w.document.dispatchEvent(tabDuringRide);assert(tabDuringRide.defaultPrevented);assert.equal(escapeRide.w.document.activeElement,escapeRide.q('.lift-skip'));
+escapeRide.click('[data-floor="women"]');assert.equal(escapeRide.q('#elevator').dataset.destination,'men');
+escapeRide.w.document.dispatchEvent(new escapeRide.w.KeyboardEvent('keydown',{key:'Escape',bubbles:true}));await escapeRide.flush();
+assert.equal(escapeRide.q('#collection').dataset.department,'men');assert(!escapeRide.q('main').inert);assert(!escapeRide.w.document.body.classList.contains('lift-active'));assert.equal(escapeRide.q('#elevator').getAttribute('aria-hidden'),'true');
+escapeRide.click('[data-floor="kids"]');escapeRide.click('[data-action="skip-lift"]');await escapeRide.flush();assert.equal(escapeRide.q('#collection').dataset.department,'kids');assert(escapeRide.q('#floor-announcement').textContent.includes('await confirmation'));escapeRide.close();
+const motionRide=setup();await motionRide.ready();motionRide.click('[data-floor="women"]');motionRide.w.WGPreferences.setReducedMotion(true);await motionRide.flush();assert.equal(motionRide.q('#collection').dataset.department,'women');assert(!motionRide.q('main').inert);assert(!motionRide.q('#elevator').classList.contains('is-travelling'));motionRide.close();
+const hiddenRide=setup();await hiddenRide.ready();hiddenRide.click('[data-floor="men"]');hiddenRide.tabVisibility(true);await hiddenRide.flush();assert(!hiddenRide.q('main').inert);assert.equal(hiddenRide.q('#collection').dataset.department,'men');hiddenRide.close();
+const failedRide=setup({brokenAssets:true});await failedRide.ready();failedRide.click('[data-floor="women"]');await failedRide.flush();assert.equal(failedRide.q('#match-count').textContent,'69 PIECES');assert(!failedRide.q('main').inert);failedRide.close();
+const icons=setup();await icons.ready();for(const selector of ['.floor-buttons b','.arrows button','.lift-indicator i','.hero-collection-link'])assert(icons.q(selector).querySelector('svg.wg-icon path'));assert(!/[↗↑↓←→]/.test(icons.w.document.body.textContent));assert(!icons.q('.floor-intro').textContent.includes('CONCEPT'));icons.close();
+console.log('Lift: real body layer, preload failures, busy re-entry, Escape/skip, mid-ride motion changes and visibility cleanup PASS; vector arrows PASS');
 const os=setup({reduced:true});await os.ready();assert(os.w.wgDelivery.paused);assert.equal(os.w.wgDelivery.currentTime,10.6);assert(os.q('#reduced-motion').checked);os.q('#reduced-motion').checked=false;os.q('#reduced-motion').dispatchEvent(new os.w.Event('change'));assert(!os.w.WGPreferences.reducedMotion);assert(os.w.document.body.classList.contains('full-motion'));os.click('[data-floor="men"]');await os.flush();os.w.localStorage.setItem('wg.motion.v1','reduced');os.w.dispatchEvent(new os.w.StorageEvent('storage',{key:'wg.motion.v1'}));assert(os.q('#reduced-motion').checked);os.close();
 const link=setup({floor:'women',mode:'studio'});await link.ready();assert.equal(link.q('#match-count').textContent,'69 PIECES');link.close();
 const broken=setup({brokenAssets:true});await broken.ready();assert(broken.w.wgDelivery.error);assert(broken.q('#dispatch-loading').textContent.includes('unavailable'));assert.equal(broken.q('#match-count').textContent,'97 PIECES');broken.close();

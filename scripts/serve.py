@@ -6,9 +6,9 @@ from pathlib import Path
 class PreviewHandler(SimpleHTTPRequestHandler):
  def end_headers(self):
   self.send_header('Cache-Control','no-store, max-age=0')
-  self.send_header('X-Wholesale-Gods-Revision','06-continuous-showroom')
+  self.send_header('X-Wholesale-Gods-Revision','07-final-identity-local')
   super().end_headers()
 if __name__=='__main__':
  directory=str(Path(__file__).resolve().parents[1]/'dist')
- print('Wholesale Gods revision 06: http://127.0.0.1:4173 — '+directory,flush=True)
+ print('Wholesale Gods revision 07: http://127.0.0.1:4173 — '+directory,flush=True)
  ThreadingHTTPServer(('127.0.0.1',4173),partial(PreviewHandler,directory=directory)).serve_forever()

@@ -117,15 +117,15 @@ function add(id,n) {
 }
 function searchMatches() {
   const list=catalog.filter(p=>matches(p,get("#search-input").value));
-  get("#search-matches").innerHTML=list.length ? list.map(p=>'<button class="mini-row" data-open="'+p.id+'">'+thumb(p)+'<span><span class="mini-name">'+p.name+'</span><small>'+p.ref+' · '+p.color+'</small></span><span class="go">↗</span></button>').join("") : '<p class="empty">No matches. Try another name, color or item number.</p>';
+  get("#search-matches").innerHTML=list.length ? list.map(p=>'<button class="mini-row" data-open="'+p.id+'">'+thumb(p)+'<span><span class="mini-name">'+p.name+'</span><small>'+p.ref+' · '+p.color+'</small></span><span class="go"><svg class=\"wg-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 19 19 5M5 5h14v14\"/></svg></span></button>').join("") : '<p class="empty">No matches. Try another name, color or item number.</p>';
 }
 function bag() {
   const items=catalog.filter(p=>order[p.id]);
   if (!items.length) {
-    get("#bag-body").innerHTML='<p class="empty">Your bag is empty. Choose a piece to begin a selection request.</p><button class="button dark-btn" data-action="browse">Browse the goods <span>↗</span></button>'; return;
+    get("#bag-body").innerHTML='<p class="empty">Your bag is empty. Choose a piece to begin a selection request.</p><button class="button dark-btn" data-action="browse">Browse the goods <span><svg class=\"wg-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 19 19 5M5 5h14v14\"/></svg></span></button>'; return;
   }
   const total=items.reduce((sum,p)=>sum+order[p.id],0);
-  get("#bag-body").innerHTML=items.map(p=>'<div class="mini-row bag-row">'+thumb(p)+'<div class="row-body"><span class="mini-name">'+p.name+'</span><small>'+p.color+'</small><button class="remove" data-remove="'+p.id+'" aria-label="Remove '+p.name+'">Remove</button></div><label class="bag-edit"><input type="number" min="1" max="99999" required step="1" value="'+order[p.id]+'" data-qty="'+p.id+'" aria-label="Quantity for '+p.name+'"> units</label></div>').join("")+'<div class="bag-summary"><div><span>Total units</span><strong>'+total.toLocaleString("en-US")+'</strong></div><div><span>Illustrative volume tier</span><strong>'+tier(total)+'</strong></div><button class="button dark-btn" data-action="export-bag">Download selection request <span>↓</span></button><button class="text-link" data-action="preview-dispatch">View the delivery campaign <span>↗</span></button><p>The CSV records your selection request. Sizes, final pricing and stock require confirmation.</p></div>';
+  get("#bag-body").innerHTML=items.map(p=>'<div class="mini-row bag-row">'+thumb(p)+'<div class="row-body"><span class="mini-name">'+p.name+'</span><small>'+p.color+'</small><button class="remove" data-remove="'+p.id+'" aria-label="Remove '+p.name+'">Remove</button></div><label class="bag-edit"><input type="number" min="1" max="99999" required step="1" value="'+order[p.id]+'" data-qty="'+p.id+'" aria-label="Quantity for '+p.name+'"> units</label></div>').join("")+'<div class="bag-summary"><div><span>Total units</span><strong>'+total.toLocaleString("en-US")+'</strong></div><div><span>Selection size</span><strong>'+tier(total)+'</strong></div><button class="button dark-btn" data-action="export-bag">Download selection request <span><svg class=\"wg-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 4v16M5 13l7 7 7-7\"/></svg></span></button><button class="text-link" data-action="preview-dispatch">View the delivery campaign <span><svg class=\"wg-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 19 19 5M5 5h14v14\"/></svg></span></button><p>The CSV records your selection request. Sizes, final pricing and stock require confirmation.</p></div>';
 }
 function exportCSV(isOrder) {
   const items=isOrder?catalog.filter(p=>order[p.id]):results();
@@ -196,7 +196,7 @@ if(view==="linesheet"){
   document.body.classList.add("linesheet");document.title="Wholesale Gods — Buyer Line Sheet";
   get("#section-label").textContent="BUYER REFERENCE";const heading=document.createElement("h1");heading.className="line-headline";heading.id="collection-title";heading.innerHTML='The <i>line sheet.</i>';get("#collection-title").replaceWith(heading);
   get("#section-meta").innerHTML="Compare the goods by item number.<br> Add units or download the filtered sheet.";
-  get("#catalog-action").dataset.action="export-sheet";get("#catalog-action").innerHTML='<span>Download CSV</span><span>↓</span>';get("#layout-note").textContent="BUYER INDEX";
+  get("#catalog-action").dataset.action="export-sheet";get("#catalog-action").innerHTML='<span>Download CSV</span><span><svg class=\"wg-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 4v16M5 13l7 7 7-7\"/></svg></span>';get("#layout-note").textContent="BUYER INDEX";
 }
 badge();render();filmState();
 
@@ -236,54 +236,83 @@ actions["return-floors"]=()=>{get(".floor-selector").scrollIntoView({block:"star
 
 const originalHeading=get("#collection-title").innerHTML;
 const originalMeta=get("#section-meta").innerHTML;
-let elevatorBusy=false;
+let elevatorBusy=false, activeRide=null;
+const departmentImages=new Map();
+function prepareDepartment(floor){
+  if(departmentImages.has(floor))return departmentImages.get(floor);
+  const ready=Promise.all((floor==="kids"?[]:featuredPieces(floor)).map(p=>new Promise(resolve=>{
+    const image=new Image();image.onload=()=>resolve(true);image.onerror=()=>resolve(false);image.src=imagePath(p);
+  })));
+  departmentImages.set(floor,ready);return ready;
+}
+actions["skip-lift"]=()=>activeRide?.abort();
 async function chooseFloor(floor,trigger){
   if(elevatorBusy || !floorNames[floor])return;
   elevatorBusy=true;film.pause();
-  const reduced=WGPreferences.reducedMotion;
-  const elevator=get("#elevator"),collection=get("#collection");
-  const [number,name,copy]=floorNames[floor];
-  const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
+  const controller=activeRide=new AbortController(),signal=controller.signal;
+  const elevator=get("#elevator"),collection=get("#collection"),[number,name]=floorNames[floor];
+  const wait=ms=>new Promise(resolve=>{
+    if(signal.aborted){resolve();return;}
+    const finish=()=>{clearTimeout(timer);signal.removeEventListener("abort",finish);resolve();};
+    const timer=setTimeout(finish,ms);signal.addEventListener("abort",finish,{once:true});
+  });
+  let arrived=false;
   const arrive=()=>{
+    if(arrived)return;arrived=true;
     setDepartment(floor);category=floor==="all"?"All":"Apparel";family="All";sourceNumber=null;query="";render();
     get("#collection-title").setAttribute("tabindex","-1");
     collection.scrollIntoView({behavior:"instant",block:"start"});
   };
   const frozen=Array.from(document.body.children).filter(el=>el!==elevator && el.tagName!=="SCRIPT");
+  const skipOnKey=event=>{
+    if(event.key==="Escape"){event.preventDefault();controller.abort();}
+    if(event.key==="Tab"){event.preventDefault();get(".lift-skip").focus({preventScroll:true});}
+  };
+  const skipOnMotion=()=>{if(WGPreferences.reducedMotion)controller.abort();};
+  const skipWhenHidden=()=>{if(document.hidden)controller.abort();};
+  document.addEventListener("keydown",skipOnKey);
+  document.addEventListener("visibilitychange",skipWhenHidden);
+  window.addEventListener("wg-motion-change",skipOnMotion);
   try{
     trigger.setAttribute("aria-busy","true");
-    if(reduced){arrive();get("#collection-title").focus({preventScroll:true});return;}
+    if(WGPreferences.reducedMotion){arrive();return;}
     get("#elevator-floor").textContent=number;get("#elevator-name").textContent=name.toUpperCase();
     get("#lift-destination").textContent=name;
     get("#elevator-progress").textContent=floorNames[currentFloor][0];
     const goingUp=Object.keys(floorNames).indexOf(floor)>Object.keys(floorNames).indexOf(currentFloor);
     const ascending=currentFloor==="all" || (floor!=="all" && goingUp);
     get("#lift-state").textContent=ascending?"ASCENDING":"DESCENDING";
-    get(".lift-indicator i").textContent=ascending?"↑":"↓";
+    get(".lift-indicator i").innerHTML=ascending?"<svg class=\"wg-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 20V4M5 11l7-7 7 7\"/></svg>":"<svg class=\"wg-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 4v16M5 13l7 7 7-7\"/></svg>";
     elevator.dataset.destination=floor;
-    get("#lift-preview").innerHTML=floor==="kids"?'<div class="awaiting-pieces"><strong>The little ones.</strong><p>Awaiting confirmed children’s items and sizes.</p></div>':featuredPieces(floor).map(p=>'<figure>'+thumb(p)+'<figcaption>'+p.name+' / '+p.color+'</figcaption></figure>').join("");
+    get("#lift-preview").innerHTML=floor==="kids"?'<div class="awaiting-pieces"><strong>The little ones.</strong><p>Awaiting confirmed children’s items and sizes.</p></div>':featuredPieces(floor).map(p=>'<figure>'+thumb(p,false)+'<figcaption>'+p.name+' / '+p.color+'</figcaption></figure>').join("");
+    // Preload real department images while the doors close, with a bounded wait.
+    const ready=prepareDepartment(floor);
     frozen.forEach(el=>{el.dataset.liftWasInert=String(el.inert);el.inert=true;});
     document.body.classList.add("lift-active");
+    elevator.setAttribute("aria-hidden","false");
     elevator.classList.add("is-travelling");
-    // Closing doors, then a short ride behind the closed bronze panels.
-    await wait(900);
-    elevator.classList.add("is-riding");
-    await wait(650);
-    get("#elevator-progress").textContent=number;
-    get("#lift-state").textContent="ARRIVING";
+    get(".lift-skip").focus({preventScroll:true});
+    await wait(800);
+    if(!signal.aborted)elevator.classList.add("is-riding");
+    await wait(500);
+    await Promise.race([ready,wait(1200)]);
+    get("#elevator-progress").textContent=number;get("#lift-state").textContent="ARRIVING";
+    // Commit the destination behind fully closed doors; never reveal the old floor.
     arrive();
-    await wait(450);
-    elevator.classList.add("is-opening");
-    get("#lift-state").textContent="WELCOME";
-    await wait(1100);
-    elevator.classList.add("is-entering");
-    await wait(750);
+    await wait(250);
+    if(!signal.aborted){elevator.classList.add("is-opening");get("#lift-state").textContent="WELCOME";}
+    await wait(900);
+    if(!signal.aborted)elevator.classList.add("is-entering");
+    await wait(600);
   }finally{
+    arrive();controller.abort();activeRide=null;
+    document.removeEventListener("keydown",skipOnKey);document.removeEventListener("visibilitychange",skipWhenHidden);window.removeEventListener("wg-motion-change",skipOnMotion);
     elevator.classList.remove("is-travelling","is-riding","is-opening","is-entering");
-    document.body.classList.remove("lift-active");
+    elevator.setAttribute("aria-hidden","true");document.body.classList.remove("lift-active");
     frozen.forEach(el=>{if(el.dataset.liftWasInert!==undefined){el.inert=el.dataset.liftWasInert==="true";delete el.dataset.liftWasInert;}});
     trigger.removeAttribute("aria-busy");elevatorBusy=false;
-    if(currentFloor===floor){get("#collection-title").focus({preventScroll:true});get("#floor-announcement").textContent="Arrived at "+name+". Supplied collection displayed. Children’s items await confirmation.";}
+    get("#collection-title").focus({preventScroll:true});
+    get("#floor-announcement").textContent="Arrived at "+name+". "+(floor==="kids"?"Children’s items and sizing await confirmation.":"The collection is ready to explore.");
   }
 }
 document.querySelectorAll("[data-floor]").forEach(button=>button.addEventListener("click",()=>chooseFloor(button.dataset.floor,button)));
@@ -302,15 +331,15 @@ function setDepartment(floor){
   all("[data-floor]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.floor===floor)));
   if(floor==="all"){
     get("#collection-title").innerHTML=originalHeading;
-    get("#section-meta").textContent=catalog.length+" individually prepared pieces from your supplied photos. Stock, sizes and pricing require confirmation.";
+    get("#section-meta").textContent=catalog.length+" curated pieces. Availability, sizing and pricing are confirmed on request.";
     return;
   }
   const [number,name,copy]=floorNames[floor],story=departmentCopy[floor];
   get("#arrival-number").textContent=number;get("#arrival-copy").textContent=copy;
   get("#collection-title").textContent=name+" / Selected pieces.";
-  get("#section-meta").textContent=floor==="kids"?"No children’s assortment or sizes have been confirmed. The supplied adult collection remains available from All wholesale.":"Unisex pieces selected from the supplied photos. Availability and sizing require confirmation.";
+  get("#section-meta").textContent=floor==="kids"?"No children’s assortment or sizes have been confirmed. The supplied adult collection remains available from All wholesale.":"A shared unisex collection, thoughtfully selected. Availability and sizing are confirmed on request.";
   get("#department-title").textContent=story.title;get("#department-kicker").textContent=story.label;get("#department-description").textContent=story.description;
-  get("#department-wardrobe").innerHTML=floor==="kids"?'<div class="awaiting-pieces"><span>THE CHILDRENSWEAR COLLECTION</span><h3>Coming when it’s confirmed.</h3><p>No placeholder garments. Browse the supplied unisex collection while children’s pieces are being confirmed.</p><button data-action="reset">Browse the collection ↗</button></div>':featuredPieces(floor).map(p=>'<button data-open="'+p.id+'" aria-label="Inspect '+p.name+'"><span class="wardrobe-hanger" aria-hidden="true"></span>'+thumb(p)+'<span>'+p.name+'<small>SUPPLIED COLLECTION</small></span></button>').join("");
+  get("#department-wardrobe").innerHTML=floor==="kids"?'<div class="awaiting-pieces"><span>THE CHILDRENSWEAR COLLECTION</span><h3>Coming when it’s confirmed.</h3><p>Children’s pieces and sizing are being confirmed. Explore the unisex collection in the meantime.</p><button data-action="reset">Browse the collection <svg class=\"wg-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 19 19 5M5 5h14v14\"/></svg></button></div>':featuredPieces(floor).map(p=>'<button data-open="'+p.id+'" aria-label="Inspect '+p.name+'"><span class="wardrobe-hanger" aria-hidden="true"></span>'+thumb(p)+'<span>'+p.name+'<small>THE WHOLESALE EDIT</small></span></button>').join("");
 }
 function featuredPieces(floor){
   const ids=floor==="women"?["sailor-bear-knit-ivory","bear-hooded-knit-grey"]:["rider-zip-black","college-bear-knit-navy"];
@@ -330,7 +359,7 @@ film.addEventListener("error",()=>{get("#dispatch-loading").hidden=false;get("#d
 film.ready.then(()=>{if(!film.error)get("#dispatch-loading").hidden=true;else get("#dispatch-loading").textContent="Delivery animation unavailable. Your showroom is ready to browse.";});
 const firstFloor=new URLSearchParams(location.search).get("floor");
 if(firstFloor && departmentCopy[firstFloor]){setDepartment(firstFloor);category="Apparel";render();}
-get("#section-meta").textContent=currentFloor==="all"?catalog.length+" individually prepared pieces from your supplied photos. Stock, sizes and pricing require confirmation.":get("#section-meta").textContent;
+get("#section-meta").textContent=currentFloor==="all"?catalog.length+" curated pieces. Availability, sizing and pricing are confirmed on request.":get("#section-meta").textContent;
 
 const firstProduct=new URLSearchParams(location.search).get("product");if(firstProduct && piece(firstProduct))openProduct(firstProduct,get(".brand"));
 

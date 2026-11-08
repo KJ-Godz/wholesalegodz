@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="wholesale-gods-build" content="06-continuous-showroom">
+  <meta name="wholesale-gods-build" content="07-final-identity-local">
   <meta name="theme-color" content="#f7f5ef">
   <meta name="description" content="Explore Wholesale Gods through three buyer showroom presentations. Browse pieces, inspect details and build a selection request.">
   <title>Wholesale Gods — A Higher Standard</title>
@@ -14,6 +14,7 @@
   <script src="catalog.js?v=04" defer></script>
   <link rel="stylesheet" href="hero.css?v=2">
   <link rel="stylesheet" href="mobile.css?v=2">
+  <link rel="stylesheet" href="experience.css?v=1">
   <script src="vendor/gsap.min.js" defer></script>
   <script src="hero.js?v=2" defer></script>
   <script src="app.js?v=7" defer></script>
@@ -29,7 +30,7 @@
     </nav>
   </div>
   <header class="mast">
-    <a href="?view=campaign" class="brand" aria-label="Wholesale Gods, showroom home"><img src="assets/logo-primary.svg" alt="Wholesale Gods" width="270" height="63"></a>
+    <a href="?view=campaign" class="brand" aria-label="Wholesale Gods, showroom home"><img src="assets/logo-primary.svg" alt="Wholesale Gods" width="970" height="230"></a>
     <nav class="main-nav" aria-label="Showroom navigation">
       <a href="#campaign">Delivery</a><a href="#collection">Collection</a><a href="#guide">Volume guide</a>
     </nav>
@@ -46,7 +47,7 @@
           <div class="hero-eyebrow">WHOLESALE GODS / THE ART OF ARRIVAL</div>
           <h1 id="campaign-title">A higher<br><i>standard.</i></h1>
           <p>Considered pieces.<br>Delivered with distinction.</p>
-          <a class="hero-collection-link" href="#collection">Explore the collection <span aria-hidden="true">↗</span></a>
+          <a class="hero-collection-link" href="#collection">Explore the collection <span aria-hidden="true"><svg class="wg-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a>
         </div>
         <div id="delivery-scene" class="delivery-scene" role="img" aria-label="A Wholesale Gods delivery: headlights, halo and a dimensional branded package" aria-describedby="film-description">
           <div class="delivery-world" aria-hidden="true">
@@ -61,7 +62,7 @@
             </div></div></div>
           </div>
         </div>
-        <div class="hero-ending" aria-hidden="true" inert><img src="assets/logo-gold.svg" alt="Wholesale Gods"><h2>Your package<br>is on its way.</h2><a href="#collection">Explore the collection ↗</a></div>
+        <div class="hero-ending" aria-hidden="true" inert><img src="assets/logo-final-approved.png" width="1536" height="1024" alt="Wholesale Gods"><h2>Your package<br>is on its way.</h2><a href="#collection">Explore the collection <svg class="wg-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></a></div>
         <p id="film-description" class="visually-hidden">Headlights emerge from darkness as the branded truck approaches. A halo opens in mist. A black-and-gold package rises, turns, and moves into the truck. The truck departs. Your package is on its way.</p>
         <div id="dispatch-loading" class="dispatch-loading" role="status">Preparing your delivery…</div>
         <div class="motion-preferences"><label><input id="reduced-motion" type="checkbox"> Reduced motion</label><p id="motion-note">The delivery plays continuously.</p></div>
@@ -70,40 +71,33 @@
     </section>
     <div class="film-caption" id="film-caption"><span id="dispatch-status">The approach</span></div>
     <section class="floor-selector" aria-labelledby="floors-title">
-      <div class="floor-intro"><div class="kicker"><b></b> THE WHOLESALE GODS BUILDING <em>/</em> CONCEPT</div><h2 id="floors-title">Choose your <i>floor.</i></h2><p>A private lift. Three departments. Select a floor and step inside.</p></div>
+      <div class="floor-intro"><div class="kicker"><b></b> THE WHOLESALE GODS BUILDING <em>/</em> PRIVATE SHOWROOM</div><h2 id="floors-title">Choose your <i>floor.</i></h2><p>A private lift. Distinct departments. Discover your next selection.</p></div>
       <div class="floor-buttons" aria-label="Choose a showroom floor">
-        <button type="button" data-floor="men"><small>01 / THE FIRST FLOOR</small><span>Men</span><b>↗</b></button>
-        <button type="button" data-floor="women"><small>02 / THE SECOND FLOOR</small><span>Women</span><b>↗</b></button>
-        <button type="button" data-floor="kids"><small>03 / THE THIRD FLOOR</small><span>Kids</span><b>↗</b></button>
-        <button type="button" data-floor="all"><small>G / THE SHOWROOM</small><span>All goods</span><b>↗</b></button>
+        <button type="button" data-floor="men"><small>01 / THE FIRST FLOOR</small><span>Men</span><b><svg class="wg-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></b></button>
+        <button type="button" data-floor="women"><small>02 / THE SECOND FLOOR</small><span>Women</span><b><svg class="wg-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></b></button>
+        <button type="button" data-floor="kids"><small>03 / THE THIRD FLOOR</small><span>Kids</span><b><svg class="wg-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></b></button>
+        <button type="button" data-floor="all"><small>G / THE SHOWROOM</small><span>All goods</span><b><svg class="wg-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></b></button>
       </div>
     </section>
-    <div class="elevator" id="elevator" aria-hidden="true" data-destination="men">
-      <div class="lift-interior"><div class="lift-ceiling"></div><div class="lift-wall lift-wall-left"></div><div class="lift-wall lift-wall-right"></div><div class="lift-back"><span>WHOLESALE GODS</span><strong id="lift-destination">Men</strong><div id="lift-preview" class="lift-preview"></div><i>Supplied collection / unisex</i></div><div class="lift-ground"></div></div>
-      <div class="elevator-frame"><span>WHOLESALE GODS / THE PRIVATE LIFT</span><div class="lift-indicator"><i>↑</i><b id="elevator-progress">G</b><span id="lift-state">ASCENDING</span></div></div>
-      <div class="elevator-door elevator-left"><span class="door-inlay"></span></div><div class="elevator-door elevator-right"><span class="door-inlay"></span></div>
-      <div class="elevator-display"><span>YOUR DESTINATION</span><strong id="elevator-floor">01</strong><small id="elevator-name">MEN</small><div class="lift-route"><i></i><i></i><i></i></div></div>
-      <div class="lift-sill"></div>
-    </div><p id="floor-announcement" class="visually-hidden" role="status" aria-live="polite"></p>
     <section class="studio" id="studio" aria-labelledby="studio-title" hidden>
       <div class="studio-intro">
         <div class="kicker"><b></b> THE OBJECT STUDIES <em>/</em> VOL. 01</div>
         <h1 id="studio-title">In the<br><i>studio.</i></h1>
         <p>Your supplied pieces, one at a time. Inspect the studio presentation, then compare the original photo inside the product view.</p>
-        <a class="text-link" href="#collection">See the full collection <span aria-hidden="true">↗</span></a>
+        <a class="text-link" href="#collection">See the full collection <span aria-hidden="true"><svg class="wg-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a>
       </div>
       <div class="studio-stage">
         <div class="stage-label"><span class="micro">STUDY <strong id="study-count"></strong></span><span class="micro">STILL LIFE</span></div>
         <button class="study-image-button" data-action="study-open" aria-label="Inspect featured piece"><img id="study-image" alt=""></button>
         <div class="stage-bottom"><div><span class="micro" id="study-cat"></span><h2 id="study-name"></h2></div>
-        <div class="arrows"><button data-action="study-prev" aria-label="Previous study">←</button><button data-action="study-next" aria-label="Next study">→</button></div></div>
+        <div class="arrows"><button data-action="study-prev" aria-label="Previous study"><svg class="wg-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 12H4M11 5l-7 7 7 7"/></svg></button><button data-action="study-next" aria-label="Next study"><svg class="wg-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h16M13 5l7 7-7 7"/></svg></button></div></div>
       </div>
     </section>
     <section class="selection" id="collection" aria-labelledby="collection-title" data-department="all">
       <nav class="department-nav" aria-label="Shop departments"><span>THE DEPARTMENTS</span><button data-floor="all" aria-pressed="true">All wholesale</button><button data-floor="men" aria-pressed="false">Men</button><button data-floor="women" aria-pressed="false">Women</button><button data-floor="kids" aria-pressed="false">Kids</button></nav>
       <div id="department-scene" class="department-scene" hidden><div class="department-editorial"><span class="micro" id="department-kicker">01 / MENSWEAR</span><h2 id="department-title">Men.</h2><p id="department-description"></p><span class="department-disclosure">UNISEX / SUPPLIED COLLECTION</span></div><div class="department-wardrobe" id="department-wardrobe"></div><span class="department-corner">WHOLESALE GODS / THE EDIT</span></div>
-      <div class="collection-notice"><span>THE SUPPLIED COLLECTION</span><p>Individual pieces prepared from your photos. Open a product to compare its original image. Sizes, stock and pricing require confirmation.</p><a href="sources.html">View all 52 supplied images ↗</a></div>
-      <div class="arrival-note" id="arrival-note" hidden><span id="arrival-number">01</span><div><small>WHOLESALE GODS / THE DEPARTMENTS</small><p id="arrival-copy">A considered perspective.</p></div><button type="button" data-action="return-floors">Change floor ↑</button></div>
+      <div class="collection-notice"><span>THE WHOLESALE COLLECTION</span><p>A considered selection, ready for a closer look. Compare studio imagery with original photography inside each piece. Availability, sizing and pricing are confirmed on request.</p><a href="sources.html">View all 52 supplied images <svg class="wg-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></a></div>
+      <div class="arrival-note" id="arrival-note" hidden><span id="arrival-number">01</span><div><small>WHOLESALE GODS / THE DEPARTMENTS</small><p id="arrival-copy">A considered perspective.</p></div><button type="button" data-action="return-floors">Change floor <svg class="wg-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20V4M5 11l7-7 7 7"/></svg></button></div>
       <div class="selection-top">
         <div><div class="kicker"><b></b> <span id="section-label">BUYER SHOWROOM</span> <em>/</em> 001</div>
         <h2 id="collection-title">Selected <i>goods.</i></h2></div>
@@ -111,7 +105,7 @@
       </div>
       <div class="catalog-controls">
         <div class="filters" id="filters" aria-label="Filter products by category"></div>
-        <button class="index-action" id="catalog-action" data-action="search"><span>Search goods</span><span aria-hidden="true">↗</span></button>
+        <button class="index-action" id="catalog-action" data-action="search"><span>Search goods</span><span aria-hidden="true"><svg class="wg-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span></button>
       </div>
       <div id="family-filters" class="family-filters" aria-label="Filter by garment style"></div>
       <div id="query-strip" class="query-strip" hidden><span id="query-note"></span><button data-action="clear-query">Clear search ×</button></div>
@@ -128,7 +122,15 @@
       </div>
     </section>
   </main>
-  <footer><a href="?view=campaign" class="brand foot-brand"><img src="assets/logo-primary.svg" alt="Wholesale Gods" width="270" height="63"></a><p>Buyer showroom · Supplied collection<br>Studio-prepared images. Availability unconfirmed.</p><div class="footer-links"><a class="text-link" href="assets/logo-primary.svg" download="wholesale-gods-logo.svg">Logo SVG ↓</a><a class="text-link" href="brand.html">Brand identity ↗</a><a class="text-link" href="#main">Back to top ↑</a></div></footer>
+    <div class="elevator" id="elevator" role="dialog" aria-modal="true" aria-label="Department elevator" aria-hidden="true" data-destination="men">
+      <div class="lift-interior"><div class="lift-ceiling"></div><div class="lift-wall lift-wall-left"></div><div class="lift-wall lift-wall-right"></div><div class="lift-back"><span>WHOLESALE GODS</span><strong id="lift-destination">Men</strong><div id="lift-preview" class="lift-preview"></div><i>Supplied collection / unisex</i></div><div class="lift-ground"></div></div>
+      <div class="elevator-frame"><img src="assets/logo-gold.svg" alt="Wholesale Gods"><div class="lift-indicator"><i><svg class="wg-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20V4M5 11l7-7 7 7"/></svg></i><b id="elevator-progress">G</b><span id="lift-state">ASCENDING</span></div></div>
+      <div class="elevator-door elevator-left"><span class="door-inlay"></span></div><div class="elevator-door elevator-right"><span class="door-inlay"></span></div>
+      <div class="elevator-display"><span>YOUR DESTINATION</span><strong id="elevator-floor">01</strong><small id="elevator-name">MEN</small><div class="lift-route"><i></i><i></i><i></i></div></div>
+      <div class="lift-sill"></div><button type="button" class="lift-skip" data-action="skip-lift">Enter department <span aria-hidden="true"><svg class="wg-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span></button>
+    </div><p id="floor-announcement" class="visually-hidden" role="status" aria-live="polite"></p>
+
+  <footer><a href="?view=campaign" class="brand foot-brand"><img src="assets/logo-primary.svg" alt="Wholesale Gods" width="970" height="230"></a><p>Buyer showroom · Supplied collection<br>Studio-prepared images. Availability unconfirmed.</p><div class="footer-links"><a class="text-link" href="assets/logo-primary.svg" download="wholesale-gods-logo.svg">Logo SVG <svg class="wg-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4v16M5 13l7 7 7-7"/></svg></a><a class="text-link" href="brand.html">Brand identity <svg class="wg-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></a><a class="text-link" href="#main">Back to top <svg class="wg-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20V4M5 11l7-7 7 7"/></svg></a></div></footer>
 
   <dialog id="product-dialog" aria-labelledby="pd-name">
     <div class="product-shell"><button class="close" data-action="close" aria-label="Close product details">×</button>
@@ -137,16 +139,16 @@
         <div class="photo-tools"><button data-action="full">Full piece</button><button data-action="alternate">Original photo</button><button data-action="detail">Detail crop</button><button data-action="back" hidden>Back view</button></div>
       </div>
       <div class="product-info"><div class="kicker"><b></b> <span id="pd-category"></span></div><h2 id="pd-name"></h2><div class="micro muted" id="pd-ref"></div>
-        <p id="pd-desc"></p><p class="pd-image-note" id="pd-image-note"></p><a class="text-link" id="pd-source" href="#" target="_blank" rel="noreferrer">Open original photo ↗</a><div class="finish"><span class="swatch" id="pd-swatch"></span><span id="pd-color"></span></div>
+        <p id="pd-desc"></p><p class="pd-image-note" id="pd-image-note"></p><a class="text-link" id="pd-source" href="#" target="_blank" rel="noreferrer">Open original photo <svg class="wg-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></a><div class="finish"><span class="swatch" id="pd-swatch"></span><span id="pd-color"></span></div>
         <div class="order-controls"><label for="pd-qty">Requested units</label><div class="stepper"><button data-action="less" aria-label="Decrease quantity">−</button><input id="pd-qty" required type="number" min="1" max="99999" step="1" value="10" inputmode="numeric"><button data-action="more" aria-label="Increase quantity">+</button></div></div>
-        <button class="button dark-btn" data-action="add">Add to buyer bag <span aria-hidden="true">↗</span></button>
+        <button class="button dark-btn" data-action="add">Add to buyer bag <span aria-hidden="true"><svg class="wg-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span></button>
         <div class="tier-hint" id="pd-tier" aria-live="polite"></div><div class="sample-note">Supplied collection. Sizes, stock and pricing require confirmation.</div>
       </div>
     </div>
   </dialog>
   <dialog id="search-dialog" class="drawer" aria-labelledby="search-title"><div class="drawer-inner">
     <button class="close" data-action="close" aria-label="Close search">×</button><div class="kicker"><b></b> CATALOG INDEX</div>
-    <h2 id="search-title">Find a <i>piece.</i></h2><form id="search-form" class="search-form"><label for="search-input">Search by name, category, color or item number</label><div class="search-row"><input id="search-input" type="search" autocomplete="off" placeholder="Try bear, beanie or WG-001"><button type="submit" aria-label="View matching gallery">→</button></div></form>
+    <h2 id="search-title">Find a <i>piece.</i></h2><form id="search-form" class="search-form"><label for="search-input">Search by name, category, color or item number</label><div class="search-row"><input id="search-input" type="search" autocomplete="off" placeholder="Try bear, beanie or WG-001"><button type="submit" aria-label="View matching gallery"><svg class="wg-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h16M13 5l7 7-7 7"/></svg></button></div></form>
     <div id="search-matches" aria-live="polite"></div></div></dialog>
   <dialog id="bag-dialog" class="drawer" aria-labelledby="bag-title"><div class="drawer-inner"><button class="close" data-action="close" aria-label="Close buyer bag">×</button>
     <div class="kicker"><b></b> SELECTION REQUEST</div><h2 id="bag-title">Buyer <i>bag.</i></h2><div id="bag-body"></div></div></dialog>
