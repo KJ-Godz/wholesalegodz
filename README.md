@@ -1,6 +1,6 @@
 # Wholesale Gods
 
-A static wholesale showroom with a black-and-gold identity, a GSAP delivery campaign, department elevator transitions, and a source-backed clothing collection.
+A static wholesale showroom with a black-and-gold identity, the supplied delivery campaign film, department elevator transitions, and a source-backed clothing collection.
 
 ## Run locally
 
@@ -34,9 +34,13 @@ Studio images were prepared from supplied photographs and may reconstruct obscur
 
 ## Delivery campaign
 
-The active hero uses locally bundled GSAP and a six-face CSS 3D package, with separate truck, headlight, halo, mist, and typography layers. The sequence starts automatically and loops continuously, fading through darkness between deliveries. There are no playback, replay, speed, seek, or time controls. It pauses offscreen or in background tabs and resumes when visible. The reduced-motion option respects the operating-system setting and retains an explicit preference; elevator transitions use the same preference.
+The active hero plays the supplied 31.375-second film using a native HTML video element. Its web export is H.264, 1280 × 720, muted, and about 5.5 MB, with the MP4 metadata placed first for streaming. The original `.m4v` master is preserved outside the public website. A real frame from the film is used for the poster and reduced-motion presentation.
 
-The truck is a photographic plane. Fully realistic camera movement, tire contact, suspension, and cargo-door motion still need a rigged 3D truck or production footage. Earlier Canvas code and video assets are retained as inactive references; they are not the main hero.
+The film starts automatically, loops, and plays inline without playback buttons, speed controls, scrubbing, time counters, picture-in-picture or fullscreen controls. Scrolling and shopping remain available. The controller pauses video offscreen or in background tabs and resumes it when visible. Reduced motion shows the poster without loading video initially. Autoplay rejection and media errors retain the poster and the working collection.
+
+Desktop and mobile both show the complete 16:9 frame, with contained video against the brand background. Mobile editorial copy and navigation sit outside the action rather than covering faces, the package or truck branding. A separate portrait edit could fill more phone height, but is not required to see the complete supplied film.
+
+Earlier CSS 3D, Canvas and video implementations remain in Git history or inactive reference files. The main page no longer loads GSAP.
 
 The final crown/WG/globe/truck artwork is preserved unchanged in `dist/assets/logo-final-approved.png`. Native SVG web adaptations provide compact, full and single-ink placements. `brand.html` distinguishes the approved original from these adaptations. Manufacturing artwork and physical foil/print finishes need specialist verification.
 
@@ -49,16 +53,20 @@ npm run build:catalog
 npm test
 ```
 
-Checks cover catalog assets, all three showroom modes, department routing, empty Kids, search and filtering, original-photo comparison, bag persistence, CSV output, source-library grouping, GSAP timeline states, repeated autoplay loops, visibility resume, reduced-motion preferences, asset failures, and focus restoration. These use jsdom and do not replace a visual review in a real browser.
+Checks cover catalog assets, all three showroom modes, department routing, empty Kids, search and filtering, original-photo comparison, bag persistence, CSV output, source-library grouping, native video settings, repeated loops, delayed playback races, autoplay rejection, MP4 streaming layout, visibility resume, reduced-motion preferences, asset failures, and focus restoration. These use jsdom and do not replace a visual review in a real browser.
 
-`npm run test:legacy-render` optionally renders the archived Canvas implementation into ignored local review files; it does not verify the active GSAP hero.
+`npm run test:legacy-render` optionally renders the archived Canvas implementation into ignored local review files; it does not verify the active native-video hero.
 
 Hosting account settings, credentials, installed dependencies, local generation logs, and review archives are excluded from Git. Preserve the bundled GSAP copyright and license notice; see `dist/vendor/README.md`.
 
 The production deployment was checked at `https://wholesalegodz.vercel.app`, including the homepage, animation files, mobile styles, product imagery, and supporting pages. A Chrome iPhone SE preview was used to review navigation, collection layout, and product details. Physical iOS/Android performance still benefits from device testing.
 
-## Local revision 07 — deployment on hold
+## Current campaign integration
 
-The final logo, native SVG arrows, customer-facing department copy, and more resilient elevator transitions are prepared locally. No GitHub push or Vercel redeploy should happen until the replacement campaign video is supplied and reviewed. The current GSAP campaign continues to run while that asset is pending. See `docs/campaign-video-handoff.md`.
+The approved final logo, consistent native SVG arrows, supplied delivery film, customer-facing department copy, and stronger elevator transitions are integrated together. See `docs/campaign-video-handoff.md` for media details.
 
-The lift lives outside the inert browsing page, preloads its department imagery, masks previous sections during travel, and releases focus/scroll locks on normal arrival, the Enter department shortcut, Escape, reduced-motion changes, tab visibility changes and image-load failures. Regression checks exercise those paths. The latest browser visual review is pending because a saved localhost browser permission blocks agent access.
+The lift lives outside the inert browsing page, preloads its department imagery, masks previous sections during travel, and releases focus/scroll locks on normal arrival, the Enter department shortcut, Escape, reduced-motion changes, tab visibility changes and image-load failures. Regression checks exercise those paths.
+
+The local server supports complete, partial, suffix and open-ended byte requests so native video can stream in the local preview. `npm test` includes those protocol checks with isolated synthetic media.
+
+Browser visual testing of this edit remains pending because a saved localhost browser permission blocks agent access. The film and poster were inspected offline, the complete media file decoded successfully, and the application/controller and streaming checks passed. Native iPhone/Safari and Android/Chrome playback still require device verification.

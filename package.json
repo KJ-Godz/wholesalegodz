@@ -4,9 +4,10 @@
   "version": "0.5.0",
   "scripts": {
     "start": "python3 scripts/serve.py",
-    "test": "node scripts/check_showroom.cjs",
+    "test": "node scripts/check_showroom.cjs && python3 scripts/check_server.py",
     "build:catalog": "python3 scripts/build_catalog.py",
-    "test:legacy-render": "node scripts/render_legacy.cjs"
+    "test:legacy-render": "node scripts/render_legacy.cjs",
+    "test:server": "python3 scripts/check_server.py"
   },
   "devDependencies": {
     "@napi-rs/canvas": "1.1.0",

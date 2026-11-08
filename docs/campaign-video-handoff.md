@@ -1,17 +1,22 @@
-# Replacement delivery campaign — pending asset
+# Supplied delivery campaign integration
 
-Deployment is on hold at the client’s request. Keep the existing continuous GSAP sequence working until the new video is supplied. Do not push these local changes to `KJ-Godz/wholesalegodz` until the replacement is integrated and reviewed, because `main` automatically deploys to Vercel.
+The supplied `Wholesales.m4v` replaces the former browser animation. The master remains unchanged outside the public website.
 
-## Media integration
+## Runtime assets
 
-Use the actual new video, not either legacy MP4 in `dist/assets`. Inspect its dimensions, duration, audio and the position of the truck, logo, halo, package and final reveal before selecting a layout. Preserve the final approved logo.
+- `dist/assets/wholesale-gods-arrival.mp4`: the complete 31.375-second H.264 film, 1280 × 720, approximately 5.5 MB. Audio and the embedded thumbnail stream are omitted from this muted background export. MP4 metadata is placed first for streaming.
+- `dist/assets/wholesale-gods-arrival-poster.jpg`: a frame at 4.5 seconds showing the branded truck. Used while loading, for reduced motion and as the fallback.
+- `dist/hero.js`: native video controller for automatic inline looping, reduced motion, offscreen/background pausing, playback rejection and media errors.
+- `dist/hero.css`: contained full-frame layouts. Copy and links stay outside the mobile film area. No face, package or truck branding is intentionally cropped.
 
-- Keep autoplay, muted, loop and playsinline. Do not expose controls, playback speed, scrubbing, time counters or replay buttons.
-- Use an H.264 MP4 with a fast-start layout for broad browser compatibility; add WebM only if useful. Keep the supplied master outside public runtime assets.
-- Desktop: size the scene to preserve the meaningful action and final typography.
-- Mobile: prefer a separately composed portrait export when available. With a single landscape video, show the full frame or a gentle crop within a dedicated video area, using the brand background to fill unused space. Avoid a full-height cover crop that removes the truck, parcel or reveal text. Do not stretch the frame.
-- Place readable editorial copy and navigation outside the mobile action area; respect notch/safe areas and portrait/landscape changes.
-- Use a real poster frame for reduced motion, slow connections, playback rejection and media errors. Keep the collection usable throughout. Pause video offscreen and in background tabs; resume automatically when visible.
-- Verify actual iPhone/Safari and Android/Chrome behavior where available, alongside desktop. Check complete loops, touch scrolling, reduced motion and fallback states before a production push.
+No old demo MP4 is referenced by the active hero. The main page no longer loads the former GSAP animation library. Legacy files remain available in history or as inactive local references.
 
-No placeholder video source or nonfunctional player has been added in advance.
+## Playback contract
+
+Autoplay, muted, loop, playsinline; no playback buttons, speed selection, scrubbing, elapsed time, picture-in-picture or fullscreen controls. Reduced motion shows the poster without initially downloading the film. If the browser disallows autoplay, retain the poster and keep the showroom usable.
+
+The single supplied landscape film remains complete on mobile. A separately composed portrait version can be added later if the client prefers more screen coverage.
+
+## Verification
+
+The source and web-export frames were inspected; the web export was decoded end-to-end. Application tests simulate native media events, blocked autoplay and delayed playback, and check that the catalog, buyer bag, filters and elevator continue working. Streaming tests cover byte ranges and HEAD requests. These do not replace an actual browser/device playback review; localhost browser automation remains blocked by a saved user permission.

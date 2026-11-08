@@ -349,14 +349,14 @@ const motionToggle=get("#reduced-motion");
 function syncMotion(){
   const reduced=WGPreferences.reducedMotion;
   motionToggle.checked=reduced;document.body.classList.toggle("reduce-motion",reduced);document.body.classList.toggle("full-motion",!reduced);
-  get("#motion-note").textContent=reduced?"Static delivery summary. Floor changes are immediate.":"The delivery plays continuously.";
+  get("#motion-note").textContent=reduced?"Still campaign image. Floor changes are immediate.":"The delivery plays continuously.";
   filmState();
 }
 motionToggle.addEventListener("change",()=>WGPreferences.setReducedMotion(motionToggle.checked));
 window.addEventListener("wg-motion-change",syncMotion);syncMotion();
 film.addEventListener("scenechange",event=>get("#dispatch-status").textContent=event.detail.label.toUpperCase());
-film.addEventListener("error",()=>{get("#dispatch-loading").hidden=false;get("#dispatch-loading").textContent="Delivery animation unavailable. Your showroom is ready to browse.";});
-film.ready.then(()=>{if(!film.error)get("#dispatch-loading").hidden=true;else get("#dispatch-loading").textContent="Delivery animation unavailable. Your showroom is ready to browse.";});
+film.addEventListener("error",()=>{get("#dispatch-loading").hidden=false;get("#dispatch-loading").textContent="Delivery film unavailable. Your showroom is ready to browse.";});
+film.ready.then(()=>{if(!film.error)get("#dispatch-loading").hidden=true;else get("#dispatch-loading").textContent="Delivery film unavailable. Your showroom is ready to browse.";});
 const firstFloor=new URLSearchParams(location.search).get("floor");
 if(firstFloor && departmentCopy[firstFloor]){setDepartment(firstFloor);category="Apparel";render();}
 get("#section-meta").textContent=currentFloor==="all"?catalog.length+" curated pieces. Availability, sizing and pricing are confirmed on request.":get("#section-meta").textContent;

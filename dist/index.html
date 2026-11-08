@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="wholesale-gods-build" content="07-final-identity-local">
+  <meta name="wholesale-gods-build" content="08-supplied-film-local">
   <meta name="theme-color" content="#f7f5ef">
   <meta name="description" content="Explore Wholesale Gods through three buyer showroom presentations. Browse pieces, inspect details and build a selection request.">
   <title>Wholesale Gods — A Higher Standard</title>
@@ -12,12 +12,11 @@
   <link rel="stylesheet" href="showroom.css?v=7">
   <script src="motion-preferences.js?v=1" defer></script>
   <script src="catalog.js?v=04" defer></script>
-  <link rel="stylesheet" href="hero.css?v=2">
+  <link rel="stylesheet" href="hero.css?v=3">
   <link rel="stylesheet" href="mobile.css?v=2">
   <link rel="stylesheet" href="experience.css?v=1">
-  <script src="vendor/gsap.min.js" defer></script>
-  <script src="hero.js?v=2" defer></script>
-  <script src="app.js?v=7" defer></script>
+  <script src="hero.js?v=3" defer></script>
+  <script src="app.js?v=8" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -40,7 +39,7 @@
     </div>
   </header>
   <main id="main">
-    <section id="campaign" class="dispatch premium-hero" aria-labelledby="campaign-title">
+    <section id="campaign" class="dispatch premium-hero video-hero" aria-labelledby="campaign-title">
       <div class="film-stage" id="film-stage">
         <div class="hero-ambient" aria-hidden="true"></div>
         <div class="dispatch-copy">
@@ -49,27 +48,18 @@
           <p>Considered pieces.<br>Delivered with distinction.</p>
           <a class="hero-collection-link" href="#collection">Explore the collection <span aria-hidden="true"><svg class="wg-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a>
         </div>
-        <div id="delivery-scene" class="delivery-scene" role="img" aria-label="A Wholesale Gods delivery: headlights, halo and a dimensional branded package" aria-describedby="film-description">
-          <div class="delivery-world" aria-hidden="true">
-            <div class="world-floor"></div>
-            <div class="delivery-truck"><div class="truck-body"><div class="truck-trim"><img src="assets/truck-campaign.png" alt=""></div><img class="truck-identity" src="assets/logo-gold.svg" alt=""></div><div class="truck-headlights"><i></i><i></i></div></div>
-            <div class="cargo-aperture"></div><div class="halo-light"></div><div class="delivery-halo"><i></i><b></b></div>
-            <div class="hero-mist"><i></i><i></i><i></i></div><div class="parcel-shadow"></div>
-            <div class="parcel-lift-layer"><div class="parcel-rig"><div class="parcel-box">
-              <div class="parcel-face parcel-front"><img src="assets/logo-gold.svg" alt=""><span class="foil-sweep"></span></div>
-              <div class="parcel-face parcel-back"></div><div class="parcel-face parcel-left"></div><div class="parcel-face parcel-right"><img src="assets/brand-symbol-gold.svg" alt=""></div>
-              <div class="parcel-face parcel-top"><i></i></div><div class="parcel-face parcel-bottom"></div>
-            </div></div></div>
-          </div>
+        <div id="delivery-scene" class="hero-film-frame" role="img" aria-label="Wholesale Gods delivery campaign film" aria-describedby="film-description">
+          <video id="delivery-video" autoplay muted loop playsinline webkit-playsinline preload="none" poster="assets/wholesale-gods-arrival-poster.jpg" controlslist="nodownload nofullscreen noplaybackrate noremoteplayback" disablepictureinpicture disableremoteplayback tabindex="-1" aria-hidden="true">
+            <source data-src="assets/wholesale-gods-arrival.mp4" type="video/mp4">
+          </video>
+          <img class="hero-film-poster" src="assets/wholesale-gods-arrival-poster.jpg" width="1280" height="720" alt="" aria-hidden="true" fetchpriority="high">
         </div>
-        <div class="hero-ending" aria-hidden="true" inert><img src="assets/logo-final-approved.png" width="1536" height="1024" alt="Wholesale Gods"><h2>Your package<br>is on its way.</h2><a href="#collection">Explore the collection <svg class="wg-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></a></div>
-        <p id="film-description" class="visually-hidden">Headlights emerge from darkness as the branded truck approaches. A halo opens in mist. A black-and-gold package rises, turns, and moves into the truck. The truck departs. Your package is on its way.</p>
+        <p id="film-description" class="visually-hidden">A Wholesale Gods truck arrives through a misty warehouse. The team handles a branded package with care, then a courier delivers it to the customer's door. The branded truck departs in warm evening light.</p>
+        <div class="hero-film-rail"><p class="hero-film-tagline">Your package is on its way.</p><div class="motion-preferences"><label><input id="reduced-motion" type="checkbox"> Reduced motion</label><p id="motion-note">The delivery plays continuously.</p></div></div>
         <div id="dispatch-loading" class="dispatch-loading" role="status">Preparing your delivery…</div>
-        <div class="motion-preferences"><label><input id="reduced-motion" type="checkbox"> Reduced motion</label><p id="motion-note">The delivery plays continuously.</p></div>
-        <div class="hero-footnote">GLOBAL REACH. CONSIDERED DELIVERY.</div>
       </div>
     </section>
-    <div class="film-caption" id="film-caption"><span id="dispatch-status">The approach</span></div>
+    <div class="film-caption" id="film-caption"><span id="dispatch-status">THE ART OF ARRIVAL</span></div>
     <section class="floor-selector" aria-labelledby="floors-title">
       <div class="floor-intro"><div class="kicker"><b></b> THE WHOLESALE GODS BUILDING <em>/</em> PRIVATE SHOWROOM</div><h2 id="floors-title">Choose your <i>floor.</i></h2><p>A private lift. Distinct departments. Discover your next selection.</p></div>
       <div class="floor-buttons" aria-label="Choose a showroom floor">
