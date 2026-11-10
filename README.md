@@ -28,7 +28,7 @@ The server serves `dist/` on port 4173 with caching disabled for local review. N
 
 ## Collection and features
 
-The collection includes 97 records, 99 prepared studio images, and 52 supplied originals for comparison. Shared garments are unisex. Kids awaits confirmed children's products and sizing. Fragrance and Tech remain accessible categories with no supplied stock.
+The collection includes 141 records, 143 prepared studio images, and 121 supplied source files for comparison. The 44 November arrivals appear first. Tracksuit tops and trousers have separate cards; reverse and supporting photos are grouped with their garment. Shared garments are unisex. Kids awaits confirmed children's products and sizing. Fragrance and Tech remain accessible categories with no supplied stock.
 
 Department transitions, category and style filters, global search, product details, source-photo comparisons, persistent selection bags, and CSV selection requests are included. The branded hoodie design reference cannot be added to a selection request. Prices, sizes, materials, authenticity, and availability require confirmation; this is a selection showroom, not a payment checkout.
 
@@ -72,3 +72,11 @@ The lift lives outside the inert browsing page, preloads its department imagery,
 The local server supports complete, partial, suffix and open-ended byte requests so native video can stream in the local preview. `npm test` includes those protocol checks with isolated synthetic media.
 
 Browser visual testing of this edit remains pending because a saved localhost browser permission blocks agent access. The film and poster were inspected offline, the complete media file decoded successfully, and the application/controller and streaming checks passed. Native iPhone/Safari and Android/Chrome playback still require device verification.
+
+## November arrivals
+
+The November 9 supplied batch adds 69 source records and 44 individual studio portraits (1000 × 1333 WebP, approximately 2.94 MB combined), prepared using the built-in image_gen tool to match the existing ivory background, soft shadows and textile lighting. The previous 97 records and their reference numbers remain intact. The collection starts with the new arrivals. Hoodies, jackets, outerwear, shorts and trousers are available in the shared Men/Women selection.
+
+The new product viewer includes SVG photo arrows, swipe and keyboard navigation through all linked source views. Two vertical-letter hoodies are shown from the supplied back view and explicitly say the front is unconfirmed. Studio images can reconstruct hidden fabric or small artwork, so all remain labeled as studio edits with source comparison. One source contains a phone notification; its public reference uses a clean equivalent supplied view, with that substitution recorded. Download originals were left untouched.
+
+Curation is in `catalog/november-studio-jobs.json`; all source mappings are in `catalog/november-sources.json`; the complete final prompt set and output asset paths are in `catalog/november-image-prompts.json`. High-resolution generation outputs and private local review sheets are excluded from publication.

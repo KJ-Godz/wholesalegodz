@@ -11,7 +11,7 @@ class PreviewHandler(SimpleHTTPRequestHandler):
 
  def end_headers(self):
   self.send_header('Cache-Control','no-store, max-age=0')
-  self.send_header('X-Wholesale-Gods-Revision','09-automatic-film')
+  self.send_header('X-Wholesale-Gods-Revision','10-november-arrivals')
   self.send_header('Accept-Ranges','bytes')
   super().end_headers()
 

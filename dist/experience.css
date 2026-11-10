@@ -8,6 +8,8 @@ button{-webkit-appearance:none;appearance:none;border-radius:0;touch-action:mani
 .floor-buttons b .wg-icon{width:17px;height:17px;flex-basis:17px}
 .arrows button{display:grid;place-items:center;color:var(--ink);border:1px solid #bcae91;background:#faf8f0;transition:background .2s,color .2s;min-width:44px;min-height:44px}
 .arrows button:hover{background:#282c22;color:#e8d6af}
+.photo-navigation{position:absolute;left:10px;right:10px;top:50%;transform:translateY(-50%);justify-content:space-between;pointer-events:none}
+.photo-navigation button{pointer-events:auto;box-shadow:0 2px 12px #29251b12}
 .hero-collection-link .wg-icon{color:#d4b36e}
 .text-link,.hero-ending a,.footer-links a,.piece-link{display:inline-flex;gap:10px;align-items:center}
 .button>span,.index-action>span:last-child,.mini-row .go,.search-row button{display:inline-flex;align-items:center;justify-content:center}

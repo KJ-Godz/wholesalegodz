@@ -1,0 +1,890 @@
+[
+  {
+    "id": "washed-hoodie-black",
+    "number": 53,
+    "source": "PHOTO-2026-11-09-08-04-46.JPG",
+    "localSource": "dist/assets/catalog/source/source-53.jpg",
+    "name": "Washed Pullover Hoodie",
+    "color": "Black",
+    "family": "Hoodies",
+    "target": "single black pullover hoodie, blank FRONT with small neck label",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [
+      58
+    ]
+  },
+  {
+    "id": "washed-hoodie-pink",
+    "number": 60,
+    "source": "PHOTO-2026-11-09-08-04-46 8.JPG",
+    "localSource": "dist/assets/catalog/source/source-60.jpg",
+    "name": "Washed Pullover Hoodie",
+    "color": "Pink",
+    "family": "Hoodies",
+    "target": "single washed dusty pink pullover hoodie, blank FRONT with small neck label",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [
+      54
+    ]
+  },
+  {
+    "id": "washed-hoodie-grey",
+    "number": 59,
+    "source": "PHOTO-2026-11-09-08-04-46 7.JPG",
+    "localSource": "dist/assets/catalog/source/source-59.jpg",
+    "name": "Washed Pullover Hoodie",
+    "color": "Grey",
+    "family": "Hoodies",
+    "target": "single light grey pullover hoodie, blank FRONT with small neck label",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [
+      56
+    ]
+  },
+  {
+    "id": "international-satin-top-green",
+    "number": 55,
+    "source": "PHOTO-2026-11-09-08-04-46 3.JPG",
+    "localSource": "dist/assets/catalog/source/source-55.jpg",
+    "name": "International Satin Pullover",
+    "color": "Green",
+    "family": "Jackets",
+    "target": "only the emerald green and gold long-sleeved half-zip pullover on the LEFT, FRONT with chest crest and SUPREME lettering; omit trousers",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [
+      57
+    ],
+    "setGroup": "international-satin-green"
+  },
+  {
+    "id": "international-satin-trousers-green",
+    "number": 55,
+    "source": "PHOTO-2026-11-09-08-04-46 3.JPG",
+    "localSource": "dist/assets/catalog/source/source-55.jpg",
+    "name": "International Satin Trousers",
+    "color": "Green",
+    "family": "Trousers",
+    "target": "only the emerald green satin trousers on the RIGHT, FRONT with crest, SUPREME lettering and gold piping; omit pullover",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [
+      57
+    ],
+    "setGroup": "international-satin-green"
+  },
+  {
+    "id": "international-satin-top-black",
+    "number": 63,
+    "source": "PHOTO-2026-11-09-08-04-47 3.JPG",
+    "localSource": "dist/assets/catalog/source/source-63.jpg",
+    "name": "International Satin Pullover",
+    "color": "Black",
+    "family": "Jackets",
+    "target": "only the black long-sleeved half-zip pullover on the LEFT, FRONT with crest, outlined SUPREME lettering and white piping; omit trousers",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [
+      62
+    ],
+    "setGroup": "international-satin-black"
+  },
+  {
+    "id": "international-satin-trousers-black",
+    "number": 63,
+    "source": "PHOTO-2026-11-09-08-04-47 3.JPG",
+    "localSource": "dist/assets/catalog/source/source-63.jpg",
+    "name": "International Satin Trousers",
+    "color": "Black",
+    "family": "Trousers",
+    "target": "only the black satin trousers on the RIGHT, FRONT with crest, SUPREME lettering and white piping; omit pullover",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [
+      62
+    ],
+    "setGroup": "international-satin-black"
+  },
+  {
+    "id": "international-satin-top-sky",
+    "number": 69,
+    "source": "PHOTO-2026-11-09-08-04-47 9.JPG",
+    "localSource": "dist/assets/catalog/source/source-69.jpg",
+    "name": "International Satin Pullover",
+    "color": "Sky Blue",
+    "family": "Jackets",
+    "target": "only the icy blue and white long-sleeved half-zip pullover on the LEFT, FRONT with crest and outlined SUPREME lettering; omit trousers",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [
+      66
+    ],
+    "setGroup": "international-satin-sky-blue"
+  },
+  {
+    "id": "international-satin-trousers-sky",
+    "number": 69,
+    "source": "PHOTO-2026-11-09-08-04-47 9.JPG",
+    "localSource": "dist/assets/catalog/source/source-69.jpg",
+    "name": "International Satin Trousers",
+    "color": "Sky Blue",
+    "family": "Trousers",
+    "target": "only the icy blue satin trousers on the RIGHT, FRONT with crest, SUPREME lettering and white piping; omit pullover",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [
+      66
+    ],
+    "setGroup": "international-satin-sky-blue"
+  },
+  {
+    "id": "court-23-hoodie-black",
+    "number": 65,
+    "source": "PHOTO-2026-11-09-08-04-47 5.JPG",
+    "localSource": "dist/assets/catalog/source/source-65.jpg",
+    "name": "Court 23 Zip Hoodie",
+    "color": "Black",
+    "family": "Hoodies",
+    "target": "single black zip-front hoodie, FRONT with subtle tonal basketball silhouette, drawstrings, divided kangaroo pocket and small white hood lettering",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [
+      61
+    ]
+  },
+  {
+    "id": "court-23-hoodie-blue",
+    "number": 67,
+    "source": "PHOTO-2026-11-09-08-04-47 7.JPG",
+    "localSource": "dist/assets/catalog/source/source-67.jpg",
+    "name": "Court 23 Zip Hoodie",
+    "color": "Sky Blue",
+    "family": "Hoodies",
+    "target": "single pale blue zip-front hoodie, FRONT with large white basketball silhouette and small white hood lettering",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [
+      64,
+      68
+    ]
+  },
+  {
+    "id": "court-23-hoodie-pink",
+    "number": 73,
+    "source": "PHOTO-2026-11-09-08-04-48 4.JPG",
+    "localSource": "dist/assets/catalog/source/source-73.jpg",
+    "name": "Court 23 Zip Hoodie",
+    "color": "Pink",
+    "family": "Hoodies",
+    "target": "single bright pink zip-front hoodie, FRONT with large red basketball silhouette and small red hood lettering",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [
+      71
+    ]
+  },
+  {
+    "id": "court-mesh-shorts-navy",
+    "number": 70,
+    "source": "PHOTO-2026-11-09-08-04-48.JPG",
+    "localSource": "dist/assets/catalog/source/source-70.jpg",
+    "name": "Court Mesh Shorts",
+    "color": "Navy",
+    "family": "Shorts",
+    "target": "single navy basketball shorts, FRONT with large white SUPREME lettering, white waist and hem piping",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [
+      75
+    ]
+  },
+  {
+    "id": "court-mesh-shorts-white",
+    "number": 72,
+    "source": "PHOTO-2026-11-09-08-04-48 3.JPG",
+    "localSource": "dist/assets/catalog/source/source-72.jpg",
+    "name": "Court Mesh Shorts",
+    "color": "White",
+    "family": "Shorts",
+    "target": "single white basketball shorts, FRONT with large red SUPREME lettering, red waist and hem piping",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [
+      75
+    ]
+  },
+  {
+    "id": "court-mesh-shorts-blue",
+    "number": 74,
+    "source": "PHOTO-2026-11-09-08-04-48 5.JPG",
+    "localSource": "dist/assets/catalog/source/source-74.jpg",
+    "name": "Court Mesh Shorts",
+    "color": "Blue",
+    "family": "Shorts",
+    "target": "single bright blue basketball shorts, FRONT with large white SUPREME lettering, white waist and hem piping",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [
+      75
+    ]
+  },
+  {
+    "id": "script-sweat-shorts-black",
+    "number": 76,
+    "source": "PHOTO-2026-11-09-08-04-48 7.JPG",
+    "localSource": "dist/assets/catalog/source/source-76.jpg",
+    "name": "Script Sweat Shorts",
+    "color": "Black",
+    "family": "Shorts",
+    "target": "only the foreground black sweat shorts on the LEFT, FRONT with yellow small script, elastic waistband and drawstrings; omit ivory shorts",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": []
+  },
+  {
+    "id": "script-sweat-shorts-ivory",
+    "number": 76,
+    "source": "PHOTO-2026-11-09-08-04-48 7.JPG",
+    "localSource": "dist/assets/catalog/source/source-76.jpg",
+    "name": "Script Sweat Shorts",
+    "color": "Grey",
+    "family": "Shorts",
+    "target": "only the ivory sweat shorts on the RIGHT, FRONT with small red script and elastic waistband; omit black shorts",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": []
+  },
+  {
+    "id": "piped-track-jacket-white",
+    "number": 79,
+    "source": "PHOTO-2026-11-09-08-04-49 3.JPG",
+    "localSource": "dist/assets/catalog/source/source-79.jpg",
+    "name": "Piped Track Jacket",
+    "color": "White",
+    "family": "Jackets",
+    "target": "single white stand-collar zip-front track jacket, FRONT with red piping beside zipper and small red chest script",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [
+      77,
+      78
+    ]
+  },
+  {
+    "id": "piped-track-jacket-black",
+    "number": 82,
+    "source": "PHOTO-2026-11-09-08-04-50.JPG",
+    "localSource": "dist/assets/catalog/source/source-82.jpg",
+    "name": "Piped Track Jacket",
+    "color": "Black",
+    "family": "Jackets",
+    "target": "single black stand-collar zip-front track jacket, FRONT with fine white piping beside zipper and small white chest script",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [
+      77,
+      84
+    ]
+  },
+  {
+    "id": "panel-quarterzip-blue",
+    "number": 80,
+    "source": "PHOTO-2026-11-09-08-04-49 4.JPG",
+    "localSource": "dist/assets/catalog/source/source-80.jpg",
+    "name": "Panel Quarter-Zip",
+    "color": "Sky Blue",
+    "family": "Jackets",
+    "target": "single collared quarter-zip long-sleeved top, FRONT with black center, white panels, sky blue sleeves, star row, circular chest crest and SUPREME lettering",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": []
+  },
+  {
+    "id": "panel-quarterzip-red",
+    "number": 81,
+    "source": "PHOTO-2026-11-09-08-04-49 5.JPG",
+    "localSource": "dist/assets/catalog/source/source-81.jpg",
+    "name": "Panel Quarter-Zip",
+    "color": "Red",
+    "family": "Jackets",
+    "target": "single collared quarter-zip long-sleeved top, FRONT with ivory center, red side panels, grey sleeves, star row and circular chest crest",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": []
+  },
+  {
+    "id": "vertical-letter-hoodie-navy",
+    "number": 83,
+    "source": "PHOTO-2026-11-09-08-04-50 2.JPG",
+    "localSource": "dist/assets/catalog/source/source-83.jpg",
+    "name": "Vertical Letter Hoodie",
+    "color": "Navy",
+    "family": "Hoodies",
+    "target": "single dark navy hoodie, BACK view with hood upright and large white Supreme lettering running vertically from hood to lower back; do not invent front",
+    "pose": "back",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [
+      85
+    ]
+  },
+  {
+    "id": "vertical-letter-hoodie-grey",
+    "number": 85,
+    "source": "PHOTO-2026-11-09-08-04-50 4.JPG",
+    "localSource": "dist/assets/catalog/source/source-85.jpg",
+    "name": "Vertical Letter Hoodie",
+    "color": "Grey",
+    "family": "Hoodies",
+    "target": "only the light grey hoodie on the LEFT, BACK view with large red vertical Supreme letters down back, hood resting as photographed; omit navy garment and do not invent front",
+    "pose": "back",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": []
+  },
+  {
+    "id": "arc-letter-zip-hoodie-grey",
+    "number": 86,
+    "source": "PHOTO-2026-11-09-08-04-51.JPG",
+    "localSource": "dist/assets/catalog/source/source-86.jpg",
+    "name": "Arc Letter Zip Hoodie",
+    "color": "Grey",
+    "family": "Hoodies",
+    "target": "only the light heather grey full-zip hoodie on the LEFT, FRONT with red Supreme rectangular chest patch, kangaroo pockets and ribbed hem; omit black garment",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [
+      88,
+      89,
+      92
+    ]
+  },
+  {
+    "id": "arc-letter-zip-hoodie-black",
+    "number": 86,
+    "source": "PHOTO-2026-11-09-08-04-51.JPG",
+    "localSource": "dist/assets/catalog/source/source-86.jpg",
+    "name": "Arc Letter Zip Hoodie",
+    "color": "Black",
+    "family": "Hoodies",
+    "target": "only the black full-zip hoodie on the RIGHT, FRONT with yellow Supreme rectangular chest patch, kangaroo pockets and ribbed hem; omit grey garment",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [
+      87,
+      88,
+      89,
+      92
+    ]
+  },
+  {
+    "id": "letter-shell-jacket-blue",
+    "number": 90,
+    "source": "PHOTO-2026-11-09-08-04-52.JPG",
+    "localSource": "dist/assets/catalog/source/source-90.jpg",
+    "name": "Letter Panel Shell Jacket",
+    "color": "Blue",
+    "family": "Jackets",
+    "target": "single navy and royal blue hooded zip-front shell jacket, FRONT slightly unzipped as photographed with quilted lining, two flap chest pockets and large sleeve letter appliques; remove hanging price tag",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [
+      93,
+      94
+    ]
+  },
+  {
+    "id": "letter-shell-jacket-red",
+    "number": 95,
+    "source": "PHOTO-2026-11-09-08-04-52 6.JPG",
+    "localSource": "dist/assets/catalog/source/source-95.jpg",
+    "name": "Letter Panel Shell Jacket",
+    "color": "Red",
+    "family": "Jackets",
+    "target": "single light grey and red hooded zip-front shell jacket, FRONT slightly unzipped as photographed with quilted lining, two flap chest pockets and large sleeve letter appliques; remove hanging price tag",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [
+      91,
+      96
+    ]
+  },
+  {
+    "id": "alpine-puffer-black",
+    "number": 97,
+    "source": "PHOTO-2026-11-09-08-04-53.JPG",
+    "localSource": "dist/assets/catalog/source/source-97.jpg",
+    "name": "Alpine Hooded Puffer",
+    "color": "Black",
+    "family": "Outerwear",
+    "target": "single black padded hooded jacket, FRONT with black furry trim, horizontal quilting, snap-and-zip closure and thin light sleeve piping; remove hanging tag",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [
+      100
+    ]
+  },
+  {
+    "id": "alpine-puffer-navy",
+    "number": 98,
+    "source": "PHOTO-2026-11-09-08-04-53 2.JPG",
+    "localSource": "dist/assets/catalog/source/source-98.jpg",
+    "name": "Alpine Hooded Puffer",
+    "color": "Navy",
+    "family": "Outerwear",
+    "target": "single navy padded hooded jacket, FRONT with tan furry trim, red small chest motif, horizontal quilting and thin sleeve piping; remove hanging tag",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [
+      101
+    ]
+  },
+  {
+    "id": "alpine-puffer-olive",
+    "number": 99,
+    "source": "PHOTO-2026-11-09-08-04-53 3.JPG",
+    "localSource": "dist/assets/catalog/source/source-99.jpg",
+    "name": "Alpine Hooded Puffer",
+    "color": "Olive",
+    "family": "Outerwear",
+    "target": "single olive grey padded hooded jacket, FRONT with tan furry trim, small dark chest motif, horizontal quilting and thin sleeve piping; remove hanging tag",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [
+      102
+    ]
+  },
+  {
+    "id": "expedition-puffer-black",
+    "number": 109,
+    "source": "PHOTO-2026-11-09-08-04-54 6.JPG",
+    "localSource": "dist/assets/catalog/source/source-109.jpg",
+    "name": "Expedition Puffer",
+    "color": "Black",
+    "family": "Outerwear",
+    "target": "single black padded hooded jacket, FRONT with thick horizontal baffles and white Marmot pocket lettering; preserve small white chest mountain emblem and black rib cuffs; remove hanging tags",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [
+      103
+    ]
+  },
+  {
+    "id": "expedition-puffer-sky",
+    "number": 110,
+    "source": "PHOTO-2026-11-09-08-04-54 7.JPG",
+    "localSource": "dist/assets/catalog/source/source-110.jpg",
+    "name": "Expedition Puffer",
+    "color": "Sky Blue",
+    "family": "Outerwear",
+    "target": "single icy blue and ivory padded hooded jacket, FRONT with thick horizontal baffles and grey Marmot pocket lettering; preserve small red chest mountain emblem and black rib cuffs; remove hanging tag",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [
+      108
+    ]
+  },
+  {
+    "id": "contour-track-jacket-ivory",
+    "number": 104,
+    "source": "PHOTO-2026-11-09-08-04-54.JPG",
+    "localSource": "dist/assets/catalog/source/source-104.jpg",
+    "name": "Contour Track Jacket",
+    "color": "Ivory",
+    "family": "Jackets",
+    "target": "only the ivory stand-collar full-zip jacket on the LEFT, FRONT with black and red curved side/sleeve panels, thin white piping and small red double-diamond Supreme chest mark; omit trousers",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [],
+    "setGroup": "contour-track-ivory"
+  },
+  {
+    "id": "contour-track-trousers-ivory",
+    "number": 104,
+    "source": "PHOTO-2026-11-09-08-04-54.JPG",
+    "localSource": "dist/assets/catalog/source/source-104.jpg",
+    "name": "Contour Track Trousers",
+    "color": "Ivory",
+    "family": "Trousers",
+    "target": "only the ivory trousers on the RIGHT, FRONT with black and red curved leg panels, elastic drawstring waist and small red double-diamond Supreme thigh mark; omit jacket",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [],
+    "setGroup": "contour-track-ivory"
+  },
+  {
+    "id": "contour-track-jacket-black",
+    "number": 107,
+    "source": "PHOTO-2026-11-09-08-04-54 4.JPG",
+    "localSource": "dist/assets/catalog/source/source-107.jpg",
+    "name": "Contour Track Jacket",
+    "color": "Black",
+    "family": "Jackets",
+    "target": "only the black stand-collar full-zip jacket on the LEFT, FRONT with white and red curved side/sleeve panels, thin white piping and small white double-diamond Supreme chest mark; omit trousers",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [],
+    "setGroup": "contour-track-black"
+  },
+  {
+    "id": "contour-track-trousers-black",
+    "number": 107,
+    "source": "PHOTO-2026-11-09-08-04-54 4.JPG",
+    "localSource": "dist/assets/catalog/source/source-107.jpg",
+    "name": "Contour Track Trousers",
+    "color": "Black",
+    "family": "Trousers",
+    "target": "only the black trousers on the RIGHT, FRONT with white and red curved leg panels, elastic drawstring waist and small white double-diamond Supreme thigh mark; omit jacket",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [],
+    "setGroup": "contour-track-black"
+  },
+  {
+    "id": "crest-track-jacket-burgundy",
+    "number": 105,
+    "source": "PHOTO-2026-11-09-08-04-54 2.JPG",
+    "localSource": "dist/assets/catalog/source/source-105.jpg",
+    "name": "Crest Track Jacket",
+    "color": "Burgundy",
+    "family": "Jackets",
+    "target": "single burgundy stand-collar zip-front track jacket, FRONT with thin white chest piping, striped crest with four gold stars, small white chest script and elastic drawcord hem",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [
+      106,
+      121
+    ],
+    "setGroup": "crest-track-burgundy"
+  },
+  {
+    "id": "crest-track-trousers-burgundy",
+    "number": 111,
+    "source": "PHOTO-2026-11-09-08-04-54 8.JPG",
+    "localSource": "dist/assets/catalog/source/source-111.jpg",
+    "name": "Crest Track Trousers",
+    "color": "Burgundy",
+    "family": "Trousers",
+    "target": "single burgundy track trousers, FRONT with small white hip script, large white crossed SUPREME lettering on one leg over striped crest, elastic waist and cuffs; recover plain cropped cuff only",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [
+      121
+    ],
+    "setGroup": "crest-track-burgundy"
+  },
+  {
+    "id": "crest-track-jacket-sky",
+    "number": 120,
+    "source": "PHOTO-2026-11-09-08-04-56.JPG",
+    "localSource": "dist/assets/catalog/source/source-120.jpg",
+    "name": "Crest Track Jacket",
+    "color": "Sky Blue",
+    "family": "Jackets",
+    "target": "single icy blue stand-collar zip-front track jacket, FRONT with thin red chest piping, striped crest with four gold stars, small white chest script and elastic drawcord hem",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [
+      117
+    ],
+    "setGroup": "crest-track-sky-blue"
+  },
+  {
+    "id": "crest-track-trousers-sky",
+    "number": 112,
+    "source": "PHOTO-2026-11-09-08-04-55.JPG",
+    "localSource": "dist/assets/catalog/source/source-112.jpg",
+    "name": "Crest Track Trousers",
+    "color": "Sky Blue",
+    "family": "Trousers",
+    "target": "single icy blue track trousers, FRONT with small white hip script, large white red-outlined crossed SUPREME lettering on one leg over striped crest, elastic waist and cuffs; recover plain cropped cuff only",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [],
+    "setGroup": "crest-track-sky-blue"
+  },
+  {
+    "id": "crest-track-jacket-olive",
+    "number": 114,
+    "source": "PHOTO-2026-11-09-08-04-55 3.JPG",
+    "localSource": "dist/assets/catalog/source/source-114.jpg",
+    "name": "Crest Track Jacket",
+    "color": "Olive",
+    "family": "Jackets",
+    "target": "single olive stand-collar zip-front track jacket, FRONT with thin dark chest piping, striped crest with four gold stars, small white chest script and elastic drawcord hem",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [
+      115
+    ],
+    "setGroup": "crest-track-olive"
+  },
+  {
+    "id": "crest-track-trousers-olive",
+    "number": 113,
+    "source": "PHOTO-2026-11-09-08-04-55 2.JPG",
+    "localSource": "dist/assets/catalog/source/source-113.jpg",
+    "name": "Crest Track Trousers",
+    "color": "Olive",
+    "family": "Trousers",
+    "target": "single olive track trousers, FRONT with small white hip script, large white crossed SUPREME lettering on one leg over striped crest, elastic waist and cuffs; recover plain cropped cuff only",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [],
+    "setGroup": "crest-track-olive"
+  },
+  {
+    "id": "crest-track-jacket-black",
+    "number": 118,
+    "source": "PHOTO-2026-11-09-08-04-55 7.JPG",
+    "localSource": "dist/assets/catalog/source/source-118.jpg",
+    "name": "Crest Track Jacket",
+    "color": "Black",
+    "family": "Jackets",
+    "target": "single black stand-collar zip-front track jacket, FRONT with thin white chest piping, striped crest with four gold stars, small white chest script and elastic drawcord hem",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [
+      116,
+      121
+    ],
+    "setGroup": "crest-track-black"
+  },
+  {
+    "id": "crest-track-trousers-black",
+    "number": 119,
+    "source": "PHOTO-2026-11-09-08-04-55 8.JPG",
+    "localSource": "dist/assets/catalog/source/source-119.jpg",
+    "name": "Crest Track Trousers",
+    "color": "Black",
+    "family": "Trousers",
+    "target": "single black track trousers, FRONT with small light hip script, large light outlined crossed SUPREME lettering on one leg over striped crest, elastic waist and cuffs; recover plain cropped cuff only",
+    "pose": "front",
+    "status": "Supplied garment",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "batch": "2026-11-09",
+    "supportingSources": [
+      121
+    ],
+    "setGroup": "crest-track-black"
+  }
+]

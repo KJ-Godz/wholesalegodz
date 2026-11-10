@@ -35,12 +35,13 @@ function matches(p,text) {
   const index = [p.name,p.color,p.category,p.family,p.department||"",p.ref].join(" ").toLowerCase();
   return text.trim().toLowerCase().split(/\s+/).every(word => index.includes(word));
 }
-function results() { return catalog.filter(p => (currentFloor === "all" || p.departments.includes(currentFloor)) && (category === "All" || p.category === category) && (family === "All" || p.family === family) && (sourceNumber===null || p.sourceNumber===sourceNumber || p.supportingSourceNumber===sourceNumber) && matches(p,query)); }
+function hasSource(p,number) { return p.sourceNumber===number || p.supportingSourceNumber===number || p.sourceNumbers?.includes(number); }
+function results() { return catalog.filter(p => (currentFloor === "all" || p.departments.includes(currentFloor)) && (category === "All" || p.category === category) && (family === "All" || p.family === family) && (sourceNumber===null || hasSource(p,sourceNumber)) && matches(p,query)); }
 function thumb(p,lazy=true) {
   return '<img src="' + imagePath(p) + '" alt="' + p.name + ' in ' + p.color + '"' + (lazy ? ' loading="lazy"' : '') + '>';
 }
 function card(p) {
-  return '<article class="card"><button data-open="' + p.id + '" aria-label="Inspect ' + p.name + '"><span class="card-img"><span class="card-no">' + (p.referenceOnly?"DESIGN REFERENCE":"STUDIO EDIT") + '</span>' + thumb(p,true) + '<span class="card-plus" aria-hidden="true">+</span></span><span class="card-caption"><span class="card-title">' + p.name + '</span><span class="card-category">' + p.family + '</span></span><span class="card-finish"><i class="swatch" style="background:' + p.swatch + '"></i>' + p.color + '</span></button></article>';
+  return '<article class="card"><button data-open="' + p.id + '" aria-label="Inspect ' + p.name + '"><span class="card-img"><span class="card-no">' + (p.referenceOnly?"DESIGN REFERENCE":p.arrival?"NEW / STUDIO EDIT":"STUDIO EDIT") + '</span>' + thumb(p,true) + '<span class="card-plus" aria-hidden="true">+</span></span><span class="card-caption"><span class="card-title">' + p.name + '</span><span class="card-category">' + p.family + '</span></span><span class="card-finish"><i class="swatch" style="background:' + p.swatch + '"></i>' + p.color + '</span></button></article>';
 }
 function sheet(items) {
   const rows = items.map(p => '<tr><td><button class="line-item" data-open="' + p.id + '">' + thumb(p,true) + '<span><span class="line-title">' + p.name + '</span><span class="line-sub">' + p.color + '</span></span></button></td><td class="hide-small line-ref">' + p.ref + '</td><td class="hide-small">' + p.category + '</td><td><button class="row-add" data-quick="' + p.id + '" aria-label="Add ten units of ' + p.name + '">+ 10 units</button></td></tr>').join("");
@@ -202,19 +203,27 @@ badge();render();filmState();
 
 let productFrame=0;
 function showFrame(frame) {
-  const count=selected.backImage?4:3;
+  const frames=[{type:'full',image:imagePath(selected)},{type:'source',image:selected.sourceImage,number:selected.sourceNumber},{type:'detail',image:imagePath(selected)}];
+  if(selected.backImage)frames.push({type:'back',image:selected.backImage});
+  for(const photo of selected.sourcePhotos?.slice(1)||[])frames.push({type:'source',...photo});
+  const count=frames.length;
   productFrame=(frame+count)%count;
-  const source=productFrame===1,detail=productFrame===2,back=productFrame===3;
-  get("#pd-photo").src=source?selected.sourceImage:back?selected.backImage:imagePath(selected);
+  const current=frames[productFrame],source=current.type==='source',detail=current.type==='detail',back=current.type==='back';
+  get("#pd-photo").src=current.image;
   get("#pd-photo").alt=selected.name+(source?", original supplied photograph":detail?", detail crop":back?", back view":", studio view");
   zoom(detail);
   get('[data-action="alternate"]').hidden=false;
   get('[data-action="back"]').hidden=!selected.backImage;
   get("#pd-frame").textContent=num(productFrame+1)+" / "+num(count);
-  for(const [index,action] of ["full","alternate","detail","back"].entries())get('[data-action="'+action+'"]').setAttribute("aria-pressed",String(index===productFrame));
-  get("#pd-image-note").textContent=source?"Original photo supplied for this piece. Stock, size and pricing still require confirmation.":selected.referenceOnly?"Supplied design reference; manufacturing is unconfirmed.":"Studio image re-staged from your supplied photo. Compare Original photo for exact artwork.";
+  for(const [type,action] of [['full','full'],['source','alternate'],['detail','detail'],['back','back']])get('[data-action="'+action+'"]').setAttribute("aria-pressed",String(type===current.type));
+  get("#pd-source").href=source?current.image:selected.sourceImage;
+  get("#pd-image-note").textContent=source?"Original photo — source "+num(current.number)+". Stock, size and pricing still require confirmation.":selected.referenceOnly?"Supplied design reference; manufacturing is unconfirmed.":"Studio image re-staged from your supplied photo. Compare Original photo for exact artwork.";
+  if(selected.studioView==='back'&&!source)get("#pd-image-note").textContent+=' Supplied back view; front not confirmed.';
+  if(source&&current.equivalentSource)get("#pd-image-note").textContent+=' Clean equivalent supplied view from source '+current.equivalentSource+'.';
+  if(selected.sourcePhotos?.length>1)get("#pd-image-note").textContent+=' Use the arrows or swipe to compare all '+selected.sourcePhotos.length+' supplied views.';
 }
 actions.full=()=>showFrame(0);actions.alternate=()=>showFrame(1);actions.detail=()=>showFrame(2);actions.back=()=>showFrame(3);
+actions['photo-prev']=()=>showFrame(productFrame-1);actions['photo-next']=()=>showFrame(productFrame+1);
 actions.zoom=()=>showFrame(productFrame===2?0:2);
 const photoArea=get(".zoom-area");
 let pressX, pressY, swiped=false;
@@ -363,4 +372,4 @@ get("#section-meta").textContent=currentFloor==="all"?catalog.length+" curated p
 
 const firstProduct=new URLSearchParams(location.search).get("product");if(firstProduct && piece(firstProduct))openProduct(firstProduct,get(".brand"));
 
-const firstSource=Number(new URLSearchParams(location.search).get("source"));if(Number.isInteger(firstSource) && firstSource>0 && firstSource<=52){setDepartment("all");category="All";family="All";sourceNumber=firstSource;query="";render();}
+const firstSource=Number(new URLSearchParams(location.search).get("source"));if(Number.isInteger(firstSource) && firstSource>0 && catalog.some(p=>hasSource(p,firstSource))){setDepartment("all");category="All";family="All";sourceNumber=firstSource;query="";render();}

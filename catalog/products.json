@@ -1,5 +1,1746 @@
 [
   {
+    "id": "washed-hoodie-black",
+    "name": "Washed Pullover Hoodie",
+    "color": "Black",
+    "swatch": "#22231f",
+    "family": "Hoodies",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-098",
+    "image": "assets/catalog/studio/washed-hoodie-black.webp",
+    "sourceImage": "assets/catalog/source/source-53.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-46.JPG",
+    "sourceNumber": 53,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      53,
+      58
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-53.jpg",
+        "number": 53,
+        "name": "PHOTO-2026-11-09-08-04-46.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-58.jpg",
+        "number": 58,
+        "name": "PHOTO-2026-11-09-08-04-46 6.JPG"
+      }
+    ]
+  },
+  {
+    "id": "washed-hoodie-pink",
+    "name": "Washed Pullover Hoodie",
+    "color": "Pink",
+    "swatch": "#e2b5bd",
+    "family": "Hoodies",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-099",
+    "image": "assets/catalog/studio/washed-hoodie-pink.webp",
+    "sourceImage": "assets/catalog/source/source-60.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-46 8.JPG",
+    "sourceNumber": 60,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      60,
+      54
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-60.jpg",
+        "number": 60,
+        "name": "PHOTO-2026-11-09-08-04-46 8.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-54.jpg",
+        "number": 54,
+        "name": "PHOTO-2026-11-09-08-04-46 2.JPG"
+      }
+    ]
+  },
+  {
+    "id": "washed-hoodie-grey",
+    "name": "Washed Pullover Hoodie",
+    "color": "Grey",
+    "swatch": "#a1a29d",
+    "family": "Hoodies",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-100",
+    "image": "assets/catalog/studio/washed-hoodie-grey.webp",
+    "sourceImage": "assets/catalog/source/source-59.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-46 7.JPG",
+    "sourceNumber": 59,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      59,
+      56
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-59.jpg",
+        "number": 59,
+        "name": "PHOTO-2026-11-09-08-04-46 7.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-56.jpg",
+        "number": 56,
+        "name": "PHOTO-2026-11-09-08-04-46 4.JPG"
+      }
+    ]
+  },
+  {
+    "id": "international-satin-top-green",
+    "name": "International Satin Pullover",
+    "color": "Green",
+    "swatch": "#28573e",
+    "family": "Jackets",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-101",
+    "image": "assets/catalog/studio/international-satin-top-green.webp",
+    "sourceImage": "assets/catalog/source/source-55.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-46 3.JPG",
+    "sourceNumber": 55,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation. Photographed with a coordinating piece; this card represents only the top.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      55,
+      57
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-55.jpg",
+        "number": 55,
+        "name": "PHOTO-2026-11-09-08-04-46 3.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-57.jpg",
+        "number": 57,
+        "name": "PHOTO-2026-11-09-08-04-46 5.JPG"
+      }
+    ],
+    "setGroup": "international-satin-green"
+  },
+  {
+    "id": "international-satin-trousers-green",
+    "name": "International Satin Trousers",
+    "color": "Green",
+    "swatch": "#28573e",
+    "family": "Trousers",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-102",
+    "image": "assets/catalog/studio/international-satin-trousers-green.webp",
+    "sourceImage": "assets/catalog/source/source-55.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-46 3.JPG",
+    "sourceNumber": 55,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation. Photographed with a coordinating piece; this card represents only the trousers.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      55,
+      57
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-55.jpg",
+        "number": 55,
+        "name": "PHOTO-2026-11-09-08-04-46 3.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-57.jpg",
+        "number": 57,
+        "name": "PHOTO-2026-11-09-08-04-46 5.JPG"
+      }
+    ],
+    "setGroup": "international-satin-green"
+  },
+  {
+    "id": "international-satin-top-black",
+    "name": "International Satin Pullover",
+    "color": "Black",
+    "swatch": "#22231f",
+    "family": "Jackets",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-103",
+    "image": "assets/catalog/studio/international-satin-top-black.webp",
+    "sourceImage": "assets/catalog/source/source-63.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-47 3.JPG",
+    "sourceNumber": 63,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation. Photographed with a coordinating piece; this card represents only the top.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      63,
+      62
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-63.jpg",
+        "number": 63,
+        "name": "PHOTO-2026-11-09-08-04-47 3.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-62.jpg",
+        "number": 62,
+        "name": "PHOTO-2026-11-09-08-04-47 2.JPG"
+      }
+    ],
+    "setGroup": "international-satin-black"
+  },
+  {
+    "id": "international-satin-trousers-black",
+    "name": "International Satin Trousers",
+    "color": "Black",
+    "swatch": "#22231f",
+    "family": "Trousers",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-104",
+    "image": "assets/catalog/studio/international-satin-trousers-black.webp",
+    "sourceImage": "assets/catalog/source/source-63.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-47 3.JPG",
+    "sourceNumber": 63,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation. Photographed with a coordinating piece; this card represents only the trousers.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      63,
+      62
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-63.jpg",
+        "number": 63,
+        "name": "PHOTO-2026-11-09-08-04-47 3.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-62.jpg",
+        "number": 62,
+        "name": "PHOTO-2026-11-09-08-04-47 2.JPG"
+      }
+    ],
+    "setGroup": "international-satin-black"
+  },
+  {
+    "id": "international-satin-top-sky",
+    "name": "International Satin Pullover",
+    "color": "Sky Blue",
+    "swatch": "#9cc8df",
+    "family": "Jackets",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-105",
+    "image": "assets/catalog/studio/international-satin-top-sky.webp",
+    "sourceImage": "assets/catalog/source/source-69.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-47 9.JPG",
+    "sourceNumber": 69,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation. Photographed with a coordinating piece; this card represents only the top.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      69,
+      66
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-69.jpg",
+        "number": 69,
+        "name": "PHOTO-2026-11-09-08-04-47 9.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-66.jpg",
+        "number": 66,
+        "name": "PHOTO-2026-11-09-08-04-47 6.JPG"
+      }
+    ],
+    "setGroup": "international-satin-sky-blue"
+  },
+  {
+    "id": "international-satin-trousers-sky",
+    "name": "International Satin Trousers",
+    "color": "Sky Blue",
+    "swatch": "#9cc8df",
+    "family": "Trousers",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-106",
+    "image": "assets/catalog/studio/international-satin-trousers-sky.webp",
+    "sourceImage": "assets/catalog/source/source-69.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-47 9.JPG",
+    "sourceNumber": 69,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation. Photographed with a coordinating piece; this card represents only the trousers.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      69,
+      66
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-69.jpg",
+        "number": 69,
+        "name": "PHOTO-2026-11-09-08-04-47 9.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-66.jpg",
+        "number": 66,
+        "name": "PHOTO-2026-11-09-08-04-47 6.JPG"
+      }
+    ],
+    "setGroup": "international-satin-sky-blue"
+  },
+  {
+    "id": "court-23-hoodie-black",
+    "name": "Court 23 Zip Hoodie",
+    "color": "Black",
+    "swatch": "#22231f",
+    "family": "Hoodies",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-107",
+    "image": "assets/catalog/studio/court-23-hoodie-black.webp",
+    "sourceImage": "assets/catalog/source/source-65.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-47 5.JPG",
+    "sourceNumber": 65,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      65,
+      61
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-65.jpg",
+        "number": 65,
+        "name": "PHOTO-2026-11-09-08-04-47 5.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-61.jpg",
+        "number": 61,
+        "name": "PHOTO-2026-11-09-08-04-47.JPG"
+      }
+    ]
+  },
+  {
+    "id": "court-23-hoodie-blue",
+    "name": "Court 23 Zip Hoodie",
+    "color": "Sky Blue",
+    "swatch": "#9cc8df",
+    "family": "Hoodies",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-108",
+    "image": "assets/catalog/studio/court-23-hoodie-blue.webp",
+    "sourceImage": "assets/catalog/source/source-67.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-47 7.JPG",
+    "sourceNumber": 67,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      67,
+      64,
+      68
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-67.jpg",
+        "number": 67,
+        "name": "PHOTO-2026-11-09-08-04-47 7.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-64.jpg",
+        "number": 64,
+        "name": "PHOTO-2026-11-09-08-04-47 4.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-68.jpg",
+        "number": 68,
+        "name": "PHOTO-2026-11-09-08-04-47 8.JPG"
+      }
+    ]
+  },
+  {
+    "id": "court-23-hoodie-pink",
+    "name": "Court 23 Zip Hoodie",
+    "color": "Pink",
+    "swatch": "#e2b5bd",
+    "family": "Hoodies",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-109",
+    "image": "assets/catalog/studio/court-23-hoodie-pink.webp",
+    "sourceImage": "assets/catalog/source/source-73.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-48 4.JPG",
+    "sourceNumber": 73,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      73,
+      71
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-73.jpg",
+        "number": 73,
+        "name": "PHOTO-2026-11-09-08-04-48 4.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-71.jpg",
+        "number": 71,
+        "name": "PHOTO-2026-11-09-08-04-48 2.JPG"
+      }
+    ]
+  },
+  {
+    "id": "court-mesh-shorts-navy",
+    "name": "Court Mesh Shorts",
+    "color": "Navy",
+    "swatch": "#20283f",
+    "family": "Shorts",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-110",
+    "image": "assets/catalog/studio/court-mesh-shorts-navy.webp",
+    "sourceImage": "assets/catalog/source/source-70.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-48.JPG",
+    "sourceNumber": 70,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      70,
+      75
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-70.jpg",
+        "number": 70,
+        "name": "PHOTO-2026-11-09-08-04-48.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-75.jpg",
+        "number": 75,
+        "name": "PHOTO-2026-11-09-08-04-48 6.JPG"
+      }
+    ]
+  },
+  {
+    "id": "court-mesh-shorts-white",
+    "name": "Court Mesh Shorts",
+    "color": "White",
+    "swatch": "#eeece1",
+    "family": "Shorts",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-111",
+    "image": "assets/catalog/studio/court-mesh-shorts-white.webp",
+    "sourceImage": "assets/catalog/source/source-72.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-48 3.JPG",
+    "sourceNumber": 72,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      72,
+      75
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-72.jpg",
+        "number": 72,
+        "name": "PHOTO-2026-11-09-08-04-48 3.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-75.jpg",
+        "number": 75,
+        "name": "PHOTO-2026-11-09-08-04-48 6.JPG"
+      }
+    ]
+  },
+  {
+    "id": "court-mesh-shorts-blue",
+    "name": "Court Mesh Shorts",
+    "color": "Blue",
+    "swatch": "#7f9bc8",
+    "family": "Shorts",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-112",
+    "image": "assets/catalog/studio/court-mesh-shorts-blue.webp",
+    "sourceImage": "assets/catalog/source/source-74.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-48 5.JPG",
+    "sourceNumber": 74,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      74,
+      75
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-74.jpg",
+        "number": 74,
+        "name": "PHOTO-2026-11-09-08-04-48 5.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-75.jpg",
+        "number": 75,
+        "name": "PHOTO-2026-11-09-08-04-48 6.JPG"
+      }
+    ]
+  },
+  {
+    "id": "script-sweat-shorts-black",
+    "name": "Script Sweat Shorts",
+    "color": "Black",
+    "swatch": "#22231f",
+    "family": "Shorts",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-113",
+    "image": "assets/catalog/studio/script-sweat-shorts-black.webp",
+    "sourceImage": "assets/catalog/source/source-76.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-48 7.JPG",
+    "sourceNumber": 76,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      76
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-76.jpg",
+        "number": 76,
+        "name": "PHOTO-2026-11-09-08-04-48 7.JPG"
+      }
+    ]
+  },
+  {
+    "id": "script-sweat-shorts-ivory",
+    "name": "Script Sweat Shorts",
+    "color": "Grey",
+    "swatch": "#a1a29d",
+    "family": "Shorts",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-114",
+    "image": "assets/catalog/studio/script-sweat-shorts-ivory.webp",
+    "sourceImage": "assets/catalog/source/source-76.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-48 7.JPG",
+    "sourceNumber": 76,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      76
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-76.jpg",
+        "number": 76,
+        "name": "PHOTO-2026-11-09-08-04-48 7.JPG"
+      }
+    ]
+  },
+  {
+    "id": "piped-track-jacket-white",
+    "name": "Piped Track Jacket",
+    "color": "White",
+    "swatch": "#eeece1",
+    "family": "Jackets",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-115",
+    "image": "assets/catalog/studio/piped-track-jacket-white.webp",
+    "sourceImage": "assets/catalog/source/source-79.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-49 3.JPG",
+    "sourceNumber": 79,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      79,
+      77,
+      78
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-79.jpg",
+        "number": 79,
+        "name": "PHOTO-2026-11-09-08-04-49 3.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-77.jpg",
+        "number": 77,
+        "name": "PHOTO-2026-11-09-08-04-49.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-78.jpg",
+        "number": 78,
+        "name": "PHOTO-2026-11-09-08-04-49 2.JPG"
+      }
+    ]
+  },
+  {
+    "id": "piped-track-jacket-black",
+    "name": "Piped Track Jacket",
+    "color": "Black",
+    "swatch": "#22231f",
+    "family": "Jackets",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-116",
+    "image": "assets/catalog/studio/piped-track-jacket-black.webp",
+    "sourceImage": "assets/catalog/source/source-82.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-50.JPG",
+    "sourceNumber": 82,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      82,
+      77,
+      84
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-82.jpg",
+        "number": 82,
+        "name": "PHOTO-2026-11-09-08-04-50.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-77.jpg",
+        "number": 77,
+        "name": "PHOTO-2026-11-09-08-04-49.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-84.jpg",
+        "number": 84,
+        "name": "PHOTO-2026-11-09-08-04-50 3.JPG"
+      }
+    ]
+  },
+  {
+    "id": "panel-quarterzip-blue",
+    "name": "Panel Quarter-Zip",
+    "color": "Sky Blue",
+    "swatch": "#9cc8df",
+    "family": "Jackets",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-117",
+    "image": "assets/catalog/studio/panel-quarterzip-blue.webp",
+    "sourceImage": "assets/catalog/source/source-80.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-49 4.JPG",
+    "sourceNumber": 80,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      80
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-80.jpg",
+        "number": 80,
+        "name": "PHOTO-2026-11-09-08-04-49 4.JPG"
+      }
+    ]
+  },
+  {
+    "id": "panel-quarterzip-red",
+    "name": "Panel Quarter-Zip",
+    "color": "Red",
+    "swatch": "#bb2829",
+    "family": "Jackets",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-118",
+    "image": "assets/catalog/studio/panel-quarterzip-red.webp",
+    "sourceImage": "assets/catalog/source/source-81.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-49 5.JPG",
+    "sourceNumber": 81,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      81
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-81.jpg",
+        "number": 81,
+        "name": "PHOTO-2026-11-09-08-04-49 5.JPG"
+      }
+    ]
+  },
+  {
+    "id": "vertical-letter-hoodie-navy",
+    "name": "Vertical Letter Hoodie",
+    "color": "Navy",
+    "swatch": "#20283f",
+    "family": "Hoodies",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-119",
+    "image": "assets/catalog/studio/vertical-letter-hoodie-navy.webp",
+    "sourceImage": "assets/catalog/source/source-83.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-50 2.JPG",
+    "sourceNumber": 83,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. The studio image shows the supplied back view; the front is not confirmed. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation.",
+    "arrival": "2026-11-09",
+    "studioView": "back",
+    "sourceNumbers": [
+      83,
+      85
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-83.jpg",
+        "number": 83,
+        "name": "PHOTO-2026-11-09-08-04-50 2.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-85.jpg",
+        "number": 85,
+        "name": "PHOTO-2026-11-09-08-04-50 4.JPG"
+      }
+    ]
+  },
+  {
+    "id": "vertical-letter-hoodie-grey",
+    "name": "Vertical Letter Hoodie",
+    "color": "Grey",
+    "swatch": "#a1a29d",
+    "family": "Hoodies",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-120",
+    "image": "assets/catalog/studio/vertical-letter-hoodie-grey.webp",
+    "sourceImage": "assets/catalog/source/source-85.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-50 4.JPG",
+    "sourceNumber": 85,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. The studio image shows the supplied back view; the front is not confirmed. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation.",
+    "arrival": "2026-11-09",
+    "studioView": "back",
+    "sourceNumbers": [
+      85
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-85.jpg",
+        "number": 85,
+        "name": "PHOTO-2026-11-09-08-04-50 4.JPG"
+      }
+    ]
+  },
+  {
+    "id": "arc-letter-zip-hoodie-grey",
+    "name": "Arc Letter Zip Hoodie",
+    "color": "Grey",
+    "swatch": "#a1a29d",
+    "family": "Hoodies",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-121",
+    "image": "assets/catalog/studio/arc-letter-zip-hoodie-grey.webp",
+    "sourceImage": "assets/catalog/source/source-86.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-51.JPG",
+    "sourceNumber": 86,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      86,
+      88,
+      89,
+      92
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-86.jpg",
+        "number": 86,
+        "name": "PHOTO-2026-11-09-08-04-51.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-88.jpg",
+        "number": 88,
+        "name": "PHOTO-2026-11-09-08-04-51 3.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-89.jpg",
+        "number": 89,
+        "name": "PHOTO-2026-11-09-08-04-51 4.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-92.jpg",
+        "number": 92,
+        "name": "PHOTO-2026-11-09-08-04-52 3.JPG"
+      }
+    ]
+  },
+  {
+    "id": "arc-letter-zip-hoodie-black",
+    "name": "Arc Letter Zip Hoodie",
+    "color": "Black",
+    "swatch": "#22231f",
+    "family": "Hoodies",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-122",
+    "image": "assets/catalog/studio/arc-letter-zip-hoodie-black.webp",
+    "sourceImage": "assets/catalog/source/source-86.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-51.JPG",
+    "sourceNumber": 86,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      86,
+      87,
+      88,
+      89,
+      92
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-86.jpg",
+        "number": 86,
+        "name": "PHOTO-2026-11-09-08-04-51.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-87.jpg",
+        "number": 87,
+        "name": "PHOTO-2026-11-09-08-04-51 2.JPG",
+        "equivalentSource": 92
+      },
+      {
+        "image": "assets/catalog/source/source-88.jpg",
+        "number": 88,
+        "name": "PHOTO-2026-11-09-08-04-51 3.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-89.jpg",
+        "number": 89,
+        "name": "PHOTO-2026-11-09-08-04-51 4.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-92.jpg",
+        "number": 92,
+        "name": "PHOTO-2026-11-09-08-04-52 3.JPG"
+      }
+    ]
+  },
+  {
+    "id": "letter-shell-jacket-blue",
+    "name": "Letter Panel Shell Jacket",
+    "color": "Blue",
+    "swatch": "#7f9bc8",
+    "family": "Jackets",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-123",
+    "image": "assets/catalog/studio/letter-shell-jacket-blue.webp",
+    "sourceImage": "assets/catalog/source/source-90.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-52.JPG",
+    "sourceNumber": 90,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      90,
+      93,
+      94
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-90.jpg",
+        "number": 90,
+        "name": "PHOTO-2026-11-09-08-04-52.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-93.jpg",
+        "number": 93,
+        "name": "PHOTO-2026-11-09-08-04-52 4.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-94.jpg",
+        "number": 94,
+        "name": "PHOTO-2026-11-09-08-04-52 5.JPG"
+      }
+    ]
+  },
+  {
+    "id": "letter-shell-jacket-red",
+    "name": "Letter Panel Shell Jacket",
+    "color": "Red",
+    "swatch": "#bb2829",
+    "family": "Jackets",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-124",
+    "image": "assets/catalog/studio/letter-shell-jacket-red.webp",
+    "sourceImage": "assets/catalog/source/source-95.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-52 6.JPG",
+    "sourceNumber": 95,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      95,
+      91,
+      96
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-95.jpg",
+        "number": 95,
+        "name": "PHOTO-2026-11-09-08-04-52 6.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-91.jpg",
+        "number": 91,
+        "name": "PHOTO-2026-11-09-08-04-52 2.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-96.jpg",
+        "number": 96,
+        "name": "PHOTO-2026-11-09-08-04-52 7.JPG"
+      }
+    ]
+  },
+  {
+    "id": "alpine-puffer-black",
+    "name": "Alpine Hooded Puffer",
+    "color": "Black",
+    "swatch": "#22231f",
+    "family": "Outerwear",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-125",
+    "image": "assets/catalog/studio/alpine-puffer-black.webp",
+    "sourceImage": "assets/catalog/source/source-97.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-53.JPG",
+    "sourceNumber": 97,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      97,
+      100
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-97.jpg",
+        "number": 97,
+        "name": "PHOTO-2026-11-09-08-04-53.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-100.jpg",
+        "number": 100,
+        "name": "PHOTO-2026-11-09-08-04-53 4.JPG"
+      }
+    ]
+  },
+  {
+    "id": "alpine-puffer-navy",
+    "name": "Alpine Hooded Puffer",
+    "color": "Navy",
+    "swatch": "#20283f",
+    "family": "Outerwear",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-126",
+    "image": "assets/catalog/studio/alpine-puffer-navy.webp",
+    "sourceImage": "assets/catalog/source/source-98.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-53 2.JPG",
+    "sourceNumber": 98,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      98,
+      101
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-98.jpg",
+        "number": 98,
+        "name": "PHOTO-2026-11-09-08-04-53 2.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-101.jpg",
+        "number": 101,
+        "name": "PHOTO-2026-11-09-08-04-53 5.JPG"
+      }
+    ]
+  },
+  {
+    "id": "alpine-puffer-olive",
+    "name": "Alpine Hooded Puffer",
+    "color": "Olive",
+    "swatch": "#55583c",
+    "family": "Outerwear",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-127",
+    "image": "assets/catalog/studio/alpine-puffer-olive.webp",
+    "sourceImage": "assets/catalog/source/source-99.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-53 3.JPG",
+    "sourceNumber": 99,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      99,
+      102
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-99.jpg",
+        "number": 99,
+        "name": "PHOTO-2026-11-09-08-04-53 3.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-102.jpg",
+        "number": 102,
+        "name": "PHOTO-2026-11-09-08-04-53 6.JPG"
+      }
+    ]
+  },
+  {
+    "id": "expedition-puffer-black",
+    "name": "Expedition Puffer",
+    "color": "Black",
+    "swatch": "#22231f",
+    "family": "Outerwear",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-128",
+    "image": "assets/catalog/studio/expedition-puffer-black.webp",
+    "sourceImage": "assets/catalog/source/source-109.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-54 6.JPG",
+    "sourceNumber": 109,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      109,
+      103
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-109.jpg",
+        "number": 109,
+        "name": "PHOTO-2026-11-09-08-04-54 6.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-103.jpg",
+        "number": 103,
+        "name": "PHOTO-2026-11-09-08-04-53 7.JPG"
+      }
+    ]
+  },
+  {
+    "id": "expedition-puffer-sky",
+    "name": "Expedition Puffer",
+    "color": "Sky Blue",
+    "swatch": "#9cc8df",
+    "family": "Outerwear",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-129",
+    "image": "assets/catalog/studio/expedition-puffer-sky.webp",
+    "sourceImage": "assets/catalog/source/source-110.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-54 7.JPG",
+    "sourceNumber": 110,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      110,
+      108
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-110.jpg",
+        "number": 110,
+        "name": "PHOTO-2026-11-09-08-04-54 7.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-108.jpg",
+        "number": 108,
+        "name": "PHOTO-2026-11-09-08-04-54 5.JPG"
+      }
+    ]
+  },
+  {
+    "id": "contour-track-jacket-ivory",
+    "name": "Contour Track Jacket",
+    "color": "Ivory",
+    "swatch": "#e9e0cc",
+    "family": "Jackets",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-130",
+    "image": "assets/catalog/studio/contour-track-jacket-ivory.webp",
+    "sourceImage": "assets/catalog/source/source-104.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-54.JPG",
+    "sourceNumber": 104,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation. Photographed with a coordinating piece; this card represents only the top.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      104
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-104.jpg",
+        "number": 104,
+        "name": "PHOTO-2026-11-09-08-04-54.JPG"
+      }
+    ],
+    "setGroup": "contour-track-ivory"
+  },
+  {
+    "id": "contour-track-trousers-ivory",
+    "name": "Contour Track Trousers",
+    "color": "Ivory",
+    "swatch": "#e9e0cc",
+    "family": "Trousers",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-131",
+    "image": "assets/catalog/studio/contour-track-trousers-ivory.webp",
+    "sourceImage": "assets/catalog/source/source-104.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-54.JPG",
+    "sourceNumber": 104,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation. Photographed with a coordinating piece; this card represents only the trousers.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      104
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-104.jpg",
+        "number": 104,
+        "name": "PHOTO-2026-11-09-08-04-54.JPG"
+      }
+    ],
+    "setGroup": "contour-track-ivory"
+  },
+  {
+    "id": "contour-track-jacket-black",
+    "name": "Contour Track Jacket",
+    "color": "Black",
+    "swatch": "#22231f",
+    "family": "Jackets",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-132",
+    "image": "assets/catalog/studio/contour-track-jacket-black.webp",
+    "sourceImage": "assets/catalog/source/source-107.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-54 4.JPG",
+    "sourceNumber": 107,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation. Photographed with a coordinating piece; this card represents only the top.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      107
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-107.jpg",
+        "number": 107,
+        "name": "PHOTO-2026-11-09-08-04-54 4.JPG"
+      }
+    ],
+    "setGroup": "contour-track-black"
+  },
+  {
+    "id": "contour-track-trousers-black",
+    "name": "Contour Track Trousers",
+    "color": "Black",
+    "swatch": "#22231f",
+    "family": "Trousers",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-133",
+    "image": "assets/catalog/studio/contour-track-trousers-black.webp",
+    "sourceImage": "assets/catalog/source/source-107.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-54 4.JPG",
+    "sourceNumber": 107,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation. Photographed with a coordinating piece; this card represents only the trousers.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      107
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-107.jpg",
+        "number": 107,
+        "name": "PHOTO-2026-11-09-08-04-54 4.JPG"
+      }
+    ],
+    "setGroup": "contour-track-black"
+  },
+  {
+    "id": "crest-track-jacket-burgundy",
+    "name": "Crest Track Jacket",
+    "color": "Burgundy",
+    "swatch": "#682c43",
+    "family": "Jackets",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-134",
+    "image": "assets/catalog/studio/crest-track-jacket-burgundy.webp",
+    "sourceImage": "assets/catalog/source/source-105.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-54 2.JPG",
+    "sourceNumber": 105,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation. Photographed with a coordinating piece; this card represents only the top.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      105,
+      106,
+      121
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-105.jpg",
+        "number": 105,
+        "name": "PHOTO-2026-11-09-08-04-54 2.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-106.jpg",
+        "number": 106,
+        "name": "PHOTO-2026-11-09-08-04-54 3.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-121.jpg",
+        "number": 121,
+        "name": "PHOTO-2026-11-09-08-04-56 2.JPG"
+      }
+    ],
+    "setGroup": "crest-track-burgundy"
+  },
+  {
+    "id": "crest-track-trousers-burgundy",
+    "name": "Crest Track Trousers",
+    "color": "Burgundy",
+    "swatch": "#682c43",
+    "family": "Trousers",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-135",
+    "image": "assets/catalog/studio/crest-track-trousers-burgundy.webp",
+    "sourceImage": "assets/catalog/source/source-111.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-54 8.JPG",
+    "sourceNumber": 111,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation. Photographed with a coordinating piece; this card represents only the trousers.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      111,
+      121
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-111.jpg",
+        "number": 111,
+        "name": "PHOTO-2026-11-09-08-04-54 8.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-121.jpg",
+        "number": 121,
+        "name": "PHOTO-2026-11-09-08-04-56 2.JPG"
+      }
+    ],
+    "setGroup": "crest-track-burgundy"
+  },
+  {
+    "id": "crest-track-jacket-sky",
+    "name": "Crest Track Jacket",
+    "color": "Sky Blue",
+    "swatch": "#9cc8df",
+    "family": "Jackets",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-136",
+    "image": "assets/catalog/studio/crest-track-jacket-sky.webp",
+    "sourceImage": "assets/catalog/source/source-120.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-56.JPG",
+    "sourceNumber": 120,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation. Photographed with a coordinating piece; this card represents only the top.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      120,
+      117
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-120.jpg",
+        "number": 120,
+        "name": "PHOTO-2026-11-09-08-04-56.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-117.jpg",
+        "number": 117,
+        "name": "PHOTO-2026-11-09-08-04-55 6.JPG"
+      }
+    ],
+    "setGroup": "crest-track-sky-blue"
+  },
+  {
+    "id": "crest-track-trousers-sky",
+    "name": "Crest Track Trousers",
+    "color": "Sky Blue",
+    "swatch": "#9cc8df",
+    "family": "Trousers",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-137",
+    "image": "assets/catalog/studio/crest-track-trousers-sky.webp",
+    "sourceImage": "assets/catalog/source/source-112.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-55.JPG",
+    "sourceNumber": 112,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation. Photographed with a coordinating piece; this card represents only the trousers.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      112
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-112.jpg",
+        "number": 112,
+        "name": "PHOTO-2026-11-09-08-04-55.JPG"
+      }
+    ],
+    "setGroup": "crest-track-sky-blue"
+  },
+  {
+    "id": "crest-track-jacket-olive",
+    "name": "Crest Track Jacket",
+    "color": "Olive",
+    "swatch": "#55583c",
+    "family": "Jackets",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-138",
+    "image": "assets/catalog/studio/crest-track-jacket-olive.webp",
+    "sourceImage": "assets/catalog/source/source-114.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-55 3.JPG",
+    "sourceNumber": 114,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation. Photographed with a coordinating piece; this card represents only the top.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      114,
+      115
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-114.jpg",
+        "number": 114,
+        "name": "PHOTO-2026-11-09-08-04-55 3.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-115.jpg",
+        "number": 115,
+        "name": "PHOTO-2026-11-09-08-04-55 4.JPG"
+      }
+    ],
+    "setGroup": "crest-track-olive"
+  },
+  {
+    "id": "crest-track-trousers-olive",
+    "name": "Crest Track Trousers",
+    "color": "Olive",
+    "swatch": "#55583c",
+    "family": "Trousers",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-139",
+    "image": "assets/catalog/studio/crest-track-trousers-olive.webp",
+    "sourceImage": "assets/catalog/source/source-113.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-55 2.JPG",
+    "sourceNumber": 113,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation. Photographed with a coordinating piece; this card represents only the trousers.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      113
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-113.jpg",
+        "number": 113,
+        "name": "PHOTO-2026-11-09-08-04-55 2.JPG"
+      }
+    ],
+    "setGroup": "crest-track-olive"
+  },
+  {
+    "id": "crest-track-jacket-black",
+    "name": "Crest Track Jacket",
+    "color": "Black",
+    "swatch": "#22231f",
+    "family": "Jackets",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-140",
+    "image": "assets/catalog/studio/crest-track-jacket-black.webp",
+    "sourceImage": "assets/catalog/source/source-118.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-55 7.JPG",
+    "sourceNumber": 118,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation. Photographed with a coordinating piece; this card represents only the top.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      118,
+      116,
+      121
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-118.jpg",
+        "number": 118,
+        "name": "PHOTO-2026-11-09-08-04-55 7.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-116.jpg",
+        "number": 116,
+        "name": "PHOTO-2026-11-09-08-04-55 5.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-121.jpg",
+        "number": 121,
+        "name": "PHOTO-2026-11-09-08-04-56 2.JPG"
+      }
+    ],
+    "setGroup": "crest-track-black"
+  },
+  {
+    "id": "crest-track-trousers-black",
+    "name": "Crest Track Trousers",
+    "color": "Black",
+    "swatch": "#22231f",
+    "family": "Trousers",
+    "category": "Apparel",
+    "department": "unisex",
+    "departments": [
+      "men",
+      "women"
+    ],
+    "ref": "WG-141",
+    "image": "assets/catalog/studio/crest-track-trousers-black.webp",
+    "sourceImage": "assets/catalog/source/source-119.jpg",
+    "sourceName": "PHOTO-2026-11-09-08-04-55 8.JPG",
+    "sourceNumber": 119,
+    "photoStatus": "Studio edit",
+    "referenceOnly": false,
+    "detail": "An individual piece from the November arrivals, prepared from supplied photography. Studio editing may reconstruct obscured fabric or small details; compare all supplied views for exact artwork and construction. Sizes, materials, authenticity, stock and pricing require confirmation. Photographed with a coordinating piece; this card represents only the trousers.",
+    "arrival": "2026-11-09",
+    "studioView": "front",
+    "sourceNumbers": [
+      119,
+      121
+    ],
+    "sourcePhotos": [
+      {
+        "image": "assets/catalog/source/source-119.jpg",
+        "number": 119,
+        "name": "PHOTO-2026-11-09-08-04-55 8.JPG"
+      },
+      {
+        "image": "assets/catalog/source/source-121.jpg",
+        "number": 121,
+        "name": "PHOTO-2026-11-09-08-04-56 2.JPG"
+      }
+    ],
+    "setGroup": "crest-track-black"
+  },
+  {
     "id": "sailor-bear-knit-ivory",
     "name": "Sailor Bear Knit",
     "color": "Ivory",
